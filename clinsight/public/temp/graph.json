@@ -1,0 +1,5936 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "label": "preterm infants",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 2,
+      "label": " neonatal transfusion",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 3,
+      "label": "infants",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 4,
+      "label": " neonatal iron stores",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 5,
+      "label": "ematocrit",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 6,
+      "label": " infants with delayed cord clamping above the perineum",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 7,
+      "label": " infants with delayed cord clamping below the perineum",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 8,
+      "label": "maternal Hgb/Hct",
+      "group": "Genetic",
+      "isMain": false
+    },
+    {
+      "id": 9,
+      "label": " thirty two patients in each group",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 10,
+      "label": "maternal demographics",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 11,
+      "label": " age",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 12,
+      "label": " race",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 13,
+      "label": " socioeconomic status",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 14,
+      "label": "pre-natal care information",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 15,
+      "label": " IR NUMBER: HSC-MS-11-0633",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 16,
+      "label": "neonatal hematocrit",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 17,
+      "label": " sixty four study participants",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 18,
+      "label": "neonatal hematocrit at 2 ours of life",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 19,
+      "label": "maternal-neonatal contact",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 20,
+      "label": " common practice in many hospitals",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 21,
+      "label": " maternal-infant attachment",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 22,
+      "label": "females",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 23,
+      "label": " pregnancies",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 24,
+      "label": "32 0/7-36 6/7 gestation",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 25,
+      "label": " iron deficiency",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 26,
+      "label": "newborns",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 27,
+      "label": " fetal hemoglobin levels",
+      "group": "Genetic",
+      "isMain": false
+    },
+    {
+      "id": 28,
+      "label": "placenta",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 29,
+      "label": " delayed cord clamping",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 30,
+      "label": " hematocrit",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 31,
+      "label": " extend",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 32,
+      "label": "spontaneous aginal delivery",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 33,
+      "label": " skin-to-skin contact",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 34,
+      "label": "patients",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 35,
+      "label": " spontaneous vaginal delivery",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 36,
+      "label": "study group",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 37,
+      "label": " hematocrit value",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 38,
+      "label": "mother",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 39,
+      "label": " infant",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 40,
+      "label": "infant",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 41,
+      "label": " mother’s abdomen",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 42,
+      "label": "cord",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 43,
+      "label": " clamped",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 44,
+      "label": " Group A",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 45,
+      "label": " Group B",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 46,
+      "label": "Group A",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 47,
+      "label": "designated time-keeper",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 48,
+      "label": " sole responsibility",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 49,
+      "label": " intraventricular hemorrhage",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 50,
+      "label": " periventricular leukomalacia",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 51,
+      "label": " respiratory distress syndrome",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 52,
+      "label": " jaundice",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 53,
+      "label": "NCT01784796.pdf",
+      "group": "pdf_node",
+      "isMain": true
+    },
+    {
+      "id": 54,
+      "label": "infant",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 55,
+      "label": "father",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 56,
+      "label": "iron deficiency",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 57,
+      "label": "hemorrh",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 58,
+      "label": "contact",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 59,
+      "label": "iron",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 60,
+      "label": "hct",
+      "group": "Genetic",
+      "isMain": false
+    },
+    {
+      "id": 61,
+      "label": "mentor",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 62,
+      "label": "neonatal",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 63,
+      "label": "neonatal transfusion",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 64,
+      "label": "transfusion",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 65,
+      "label": "cord clamping",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 66,
+      "label": "delaying",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 67,
+      "label": "infants",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 68,
+      "label": "breastfeeding",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 69,
+      "label": "vitamins",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 70,
+      "label": "jaundice",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 71,
+      "label": "birth",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 72,
+      "label": "life",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 73,
+      "label": "cord c",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 74,
+      "label": "newborn",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 75,
+      "label": "mother ewborn believe",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 76,
+      "label": "hem",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 77,
+      "label": "delayed cord clamping",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 78,
+      "label": "effect",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 79,
+      "label": "8",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 80,
+      "label": "born",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 81,
+      "label": "cord",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 82,
+      "label": "1",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 83,
+      "label": "source",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 84,
+      "label": "hemoglobin",
+      "group": "Genetic",
+      "isMain": false
+    },
+    {
+      "id": 85,
+      "label": "-",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 86,
+      "label": "adverse effect",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 87,
+      "label": "NCT01837069.pdf",
+      "group": "pdf_node",
+      "isMain": true
+    },
+    {
+      "id": 88,
+      "label": "age",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 89,
+      "label": "sex",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 90,
+      "label": "cardiovascular events",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 91,
+      "label": "mortality",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 92,
+      "label": "model",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 93,
+      "label": "nature of the outcome",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 94,
+      "label": "study",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 95,
+      "label": "not powered",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 96,
+      "label": "subgroup analyses",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 97,
+      "label": "exploratory",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 98,
+      "label": "we",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 99,
+      "label": "may use",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 100,
+      "label": "mediation type analyses",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 101,
+      "label": "e.g. causal models",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 102,
+      "label": "will also assess",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 103,
+      "label": "impact",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 104,
+      "label": "baseline characteristics",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 105,
+      "label": "assess",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 106,
+      "label": "routine data",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 107,
+      "label": "primary outcome",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 108,
+      "label": "secondary outcomes",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 109,
+      "label": "missingness",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 110,
+      "label": "SCOT-HEART 2",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 111,
+      "label": "health economics analysis",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 112,
+      "label": "NHS",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 113,
+      "label": "cost-effectiveness",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 114,
+      "label": "PSS",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 115,
+      "label": "assessment",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 116,
+      "label": "EQ-5D-3L",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 117,
+      "label": "health-related quality of life",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 118,
+      "label": "EuroQol Group",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 119,
+      "label": "quality-of-life weights",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 120,
+      "label": "UK tariffs",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 121,
+      "label": "patient questionnaire",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 122,
+      "label": "health care resource use",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 123,
+      "label": "routine NHS data",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 124,
+      "label": "hospital records",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 125,
+      "label": "intervention-related costs",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 126,
+      "label": "6 months",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 127,
+      "label": "time horizon",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 128,
+      "label": "2 years",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 129,
+      "label": "SCOT-HEART 2 trial",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 130,
+      "label": "trial data",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 131,
+      "label": "routine linked data",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 132,
+      "label": "reporting",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 133,
+      "label": "future trial data",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 134,
+      "label": "trial design",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 135,
+      "label": "regulatory authorities",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 136,
+      "label": "sponsor",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 137,
+      "label": "AE/SAE",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 138,
+      "label": "documentation",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 139,
+      "label": "Investigator",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 140,
+      "label": "SAE form",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 141,
+      "label": "SAE",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 142,
+      "label": "life-threatening",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 143,
+      "label": "event",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 144,
+      "label": "participant",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 145,
+      "label": "definition",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 146,
+      "label": "study participant",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 147,
+      "label": "Sponsor",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 148,
+      "label": "information",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 149,
+      "label": "ACCORD",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 150,
+      "label": "SAE report",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 151,
+      "label": "Medical Monitors",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 152,
+      "label": "Data Monitoring Committee",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 153,
+      "label": "trial",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 154,
+      "label": "Research Ethics Committee",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 155,
+      "label": "NIHR",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 156,
+      "label": "clinical trial",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 157,
+      "label": "ECTU",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 158,
+      "label": "clinical trial management",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 159,
+      "label": "University of Leeds",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 160,
+      "label": "University of Sheffield",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 161,
+      "label": "University of Manchester",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 162,
+      "label": "University of Birmingham",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 163,
+      "label": "REEACT trial",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 164,
+      "label": "computerised CBT",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 165,
+      "label": "patients",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 166,
+      "label": "decision to participate",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 167,
+      "label": "2230",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 168,
+      "label": "study recruitment",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 169,
+      "label": "134",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 170,
+      "label": "short PIS arm",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 171,
+      "label": "63",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 172,
+      "label": "108",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 173,
+      "label": "full PIS arm",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 174,
+      "label": "59",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 175,
+      "label": "11.5%",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 176,
+      "label": "15.3%",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 177,
+      "label": "Cochrane review",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 178,
+      "label": "single relatively small trial",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 179,
+      "label": "envelopes with study logo",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 180,
+      "label": "plain envelope",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 181,
+      "label": "mail",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 182,
+      "label": "less effective",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 183,
+      "label": "response rates to mailed surveys",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 184,
+      "label": "lower",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 185,
+      "label": "coronary heart disease",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 186,
+      "label": "reducing number of deaths",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 187,
+      "label": "American Heart Association",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 188,
+      "label": "reducing number of deaths from coronary heart disease",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 189,
+      "label": "American College of Cardiology",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 190,
+      "label": "National Institute for Health and Care Excellence",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 191,
+      "label": "NICE",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 192,
+      "label": "cardiovascular disease",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 193,
+      "label": "JBCGP",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 194,
+      "label": "Framingham Risk Score",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 195,
+      "label": "QRISK2",
+      "group": "Genetic",
+      "isMain": false
+    },
+    {
+      "id": 196,
+      "label": "ASSIGN score",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 197,
+      "label": "Scottish population",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 198,
+      "label": "JBS3",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 199,
+      "label": "United Kingdom",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 200,
+      "label": "QRISK2 score",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 201,
+      "label": "individuals aged 30-74 years",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 202,
+      "label": "individuals over 50 years of age",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 203,
+      "label": "statin",
+      "group": "Genetic",
+      "isMain": false
+    },
+    {
+      "id": 204,
+      "label": "NCT03920176.pdf",
+      "group": "pdf_node",
+      "isMain": true
+    },
+    {
+      "id": 205,
+      "label": "Million Hearts CVD model",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 206,
+      "label": "heart event",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 207,
+      "label": "age",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 208,
+      "label": "sex",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 209,
+      "label": "race",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 210,
+      "label": "diabetes",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 211,
+      "label": "hypertension",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 212,
+      "label": "smoking status",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 213,
+      "label": "cholesterol level",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 214,
+      "label": "null",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 215,
+      "label": "attack and stroke",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 216,
+      "label": "Cox proportional hazard models",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 217,
+      "label": "biostatistics",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 218,
+      "label": "intervention period",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 219,
+      "label": "beneficiaries",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 220,
+      "label": "heart attack or stroke",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 221,
+      "label": "Mipes",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 222,
+      "label": "hazard",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 223,
+      "label": "FeOkes",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 224,
+      "label": "organization",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 225,
+      "label": "CARLY",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 226,
+      "label": "model",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 227,
+      "label": "ALT",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 228,
+      "label": "covariate",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 229,
+      "label": "MY",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 230,
+      "label": "vector",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 231,
+      "label": "ap",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 232,
+      "label": "regression",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 233,
+      "label": "js",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 234,
+      "label": "time-varying",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 235,
+      "label": "cardiovascular disease",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 236,
+      "label": "high-risk beneficiaries",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 237,
+      "label": "high-risk",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 238,
+      "label": "CVD risk reduction",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 239,
+      "label": "medium and high-risk",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 240,
+      "label": "modifiable factors",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 241,
+      "label": "CVD risk",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 242,
+      "label": "non-modifiable factors",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 243,
+      "label": "specific gene variant",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 244,
+      "label": "disease risk",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 245,
+      "label": "heart attacks and strokes",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 246,
+      "label": "total cost of care",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 247,
+      "label": "Centers for Medicare & Medicaid Services",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 248,
+      "label": "CVD Risk Reduction model",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 249,
+      "label": "Medicare beneficiaries",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 250,
+      "label": "high cardiovascular risk",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 251,
+      "label": "Centers for Disease Control and Prevention",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 252,
+      "label": "CVD",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 253,
+      "label": "high blood pressure",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 254,
+      "label": "heart attacks",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 255,
+      "label": "high cholesterol",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 256,
+      "label": "smoking",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 257,
+      "label": "obesity",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 258,
+      "label": "ACC/AHA",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 259,
+      "label": "risk estimation",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 260,
+      "label": "Diabetes mellitus",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 261,
+      "label": "high-risk enrollees",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 262,
+      "label": "Chronic kidney disease",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 263,
+      "label": "Hypertension",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 264,
+      "label": "Heart failure",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 265,
+      "label": "Myocardial infarction",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 266,
+      "label": "Peripheral arterial disease",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 267,
+      "label": "Coronary artery disease",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 268,
+      "label": "Atrial fibrillation",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 269,
+      "label": "Chronic obstructive pulmonary disease",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 270,
+      "label": "Depression",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 271,
+      "label": "Anemia",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 272,
+      "label": "Chronic liver disease",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 273,
+      "label": "Rheumatoid arthritis",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 274,
+      "label": "Chronic obesity",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 275,
+      "label": "Metastatic malignancy",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 276,
+      "label": "CMS",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 277,
+      "label": "clinical data",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 278,
+      "label": "high risk",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 279,
+      "label": "cardiovascular care management",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 280,
+      "label": "care plan",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 281,
+      "label": "risk profile",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 282,
+      "label": "clinical needs",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 283,
+      "label": "adjusting",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 284,
+      "label": "treatment options",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 285,
+      "label": "clinical approach",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 286,
+      "label": "risk",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 287,
+      "label": "progress",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 288,
+      "label": "NCT04047147.pdf",
+      "group": "pdf_node",
+      "isMain": true
+    },
+    {
+      "id": 289,
+      "label": "prolonged sitting",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 290,
+      "label": "postprandial glucose",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 291,
+      "label": "2 minutes",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 292,
+      "label": "sitting",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 293,
+      "label": "overweight/obese",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 294,
+      "label": "impaired qlycaemia",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 295,
+      "label": "CR",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 296,
+      "label": "longer term health outcomes",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 297,
+      "label": "NHANES",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 298,
+      "label": "waist circumference",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 299,
+      "label": "HDL-C",
+      "group": "Genetic",
+      "isMain": false
+    },
+    {
+      "id": 300,
+      "label": "triglyceride levels",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 301,
+      "label": "total sitting time",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 302,
+      "label": "improved cardiometabolic risk",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 303,
+      "label": "dysglycaemic women",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 304,
+      "label": "sitting time",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 305,
+      "label": "5 minutes",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 306,
+      "label": "standing",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 307,
+      "label": "light-intensity self-paced walking",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 308,
+      "label": "postmenopausal women",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 309,
+      "label": "blood pressure",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 310,
+      "label": "Henson et al.",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 311,
+      "label": "2016",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 312,
+      "label": "Dempsey et al.",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 313,
+      "label": "T2DM",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 314,
+      "label": "postprandial glucose metabolism",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 315,
+      "label": "cardiometabolic risk markers",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 316,
+      "label": "type 2 diabetes",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 317,
+      "label": "postprandial glycemic control",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 318,
+      "label": "lipid profile",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 319,
+      "label": "metabolic syndrome",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 320,
+      "label": "LV mass",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 321,
+      "label": "high fasting glucose",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 322,
+      "label": "eccentric hypertrophy of the LV",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 323,
+      "label": "high triglycerides",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 324,
+      "label": "low HDL-C",
+      "group": "Genetic",
+      "isMain": false
+    },
+    {
+      "id": 325,
+      "label": "BACPR",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 326,
+      "label": "cardiac event population",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 327,
+      "label": "CR programmes",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 328,
+      "label": "reducing sedentary behaviour",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 329,
+      "label": "individuals with a cardiac event",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 330,
+      "label": "investigating",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 331,
+      "label": "cardiac function",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 332,
+      "label": "postprandial cardiometabolic risk markers",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 333,
+      "label": "health outcomes following a cardiac event",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 334,
+      "label": "patient",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 335,
+      "label": "individual guidance and advice",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 336,
+      "label": "physical fitness",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 337,
+      "label": "overall daily energy expenditure",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 338,
+      "label": "metronome",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 339,
+      "label": "ensuring patients are familiar with an intensity",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 340,
+      "label": "participants",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 341,
+      "label": "finding an RPE of 8-11",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 342,
+      "label": "Borg RPE scale",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 343,
+      "label": "used in the respective experimental condition",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 344,
+      "label": "patients",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 345,
+      "label": "stepping to different metronome paces",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 346,
+      "label": "intensity selection process",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 347,
+      "label": "imitated by stepping to different metronome paces",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 348,
+      "label": "slow pace",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 349,
+      "label": "building up gradually every 1-2 minutes",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 350,
+      "label": "gradually",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 351,
+      "label": "every 1-2 minutes",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 352,
+      "label": "building up",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 353,
+      "label": "finding",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 354,
+      "label": "an RPE of 8-11",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 355,
+      "label": "found",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 356,
+      "label": "warming up of CR",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 357,
+      "label": "30 minutes",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 358,
+      "label": "baseline",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 359,
+      "label": "echocardiography",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 360,
+      "label": "echocardiogram scan",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 361,
+      "label": "es",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 362,
+      "label": "electrocardiogram",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 363,
+      "label": "electrical contraindications",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 364,
+      "label": "alconol",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 365,
+      "label": "caffeine",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 366,
+      "label": "exercise",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 367,
+      "label": "overnight fast",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 368,
+      "label": "obese individuals",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 369,
+      "label": "insulin sensitivity",
+      "group": "Genetic",
+      "isMain": false
+    },
+    {
+      "id": 370,
+      "label": "islet function",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 371,
+      "label": "chicken sandwich",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 372,
+      "label": "54%",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 373,
+      "label": "salted crisps",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 374,
+      "label": "34%",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 375,
+      "label": "jammie dodger biscuit",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 376,
+      "label": "12%",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 377,
+      "label": "diet",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 378,
+      "label": "Public Health England",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 379,
+      "label": "nil",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 380,
+      "label": "EDTA",
+      "group": "Chemical",
+      "isMain": false
+    },
+    {
+      "id": 381,
+      "label": "whole capillary blood",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 382,
+      "label": "Heraeus Pico 17 microcentrifuge",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 383,
+      "label": "plasma",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 384,
+      "label": "UIE Pall",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 385,
+      "label": "echocardiographic examination",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 386,
+      "label": "left ventricle",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 387,
+      "label": "valvular abnormalities",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 388,
+      "label": "echocardiogram",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 389,
+      "label": "LV mass index",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 390,
+      "label": "LV ejection fraction",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 391,
+      "label": "LV end diastolic volume",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 392,
+      "label": "LV end systolic volume",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 393,
+      "label": "LV stroke volume",
+      "group": "Disease",
+      "isMain": false
+    },
+    {
+      "id": 394,
+      "label": "LV cardiac output",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 395,
+      "label": "LV end diastolic diameter",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 396,
+      "label": "LV end systolic diameter",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 397,
+      "label": "LV wall thickness",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 398,
+      "label": "LV posterior wall thickness",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 399,
+      "label": "interventricular septal thickness",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 400,
+      "label": "left atrial volume index",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 401,
+      "label": "MAP",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 402,
+      "label": "condition",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 403,
+      "label": "dependent variables",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 404,
+      "label": "null",
+      "group": "others",
+      "isMain": false
+    },
+    {
+      "id": 405,
+      "label": "NCT05193175.pdf",
+      "group": "pdf_node",
+      "isMain": true
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "label": " risk"
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": " source"
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "label": "no clinically significant difference"
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "label": "no clinically significant difference"
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "label": "documented"
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "label": " documented"
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "label": " documented"
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "label": " documented"
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "label": " documented"
+    },
+    {
+      "source": 16,
+      "target": 9,
+      "label": "needed"
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "label": "total"
+    },
+    {
+      "source": 18,
+      "target": 9,
+      "label": "anticipated"
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "label": "relating to"
+    },
+    {
+      "source": 19,
+      "target": 21,
+      "label": "benefits"
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "label": " include"
+    },
+    {
+      "source": 24,
+      "target": 23,
+      "label": " with"
+    },
+    {
+      "source": 1,
+      "target": 25,
+      "label": " at risk"
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "label": " improve"
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "label": " related to"
+    },
+    {
+      "source": 1,
+      "target": 30,
+      "label": " compare"
+    },
+    {
+      "source": 1,
+      "target": 31,
+      "label": " study"
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "label": "encouraging"
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "label": "proceed"
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "label": " not change"
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "label": " delivery"
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "label": " placed"
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "label": " 30-45 seconds"
+    },
+    {
+      "source": 34,
+      "target": 44,
+      "label": " randomized"
+    },
+    {
+      "source": 34,
+      "target": 45,
+      "label": " randomized"
+    },
+    {
+      "source": 46,
+      "target": 39,
+      "label": " held below perineum"
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "label": " ensuring accurate timing"
+    },
+    {
+      "source": 1,
+      "target": 49,
+      "label": " lower risk"
+    },
+    {
+      "source": 1,
+      "target": 50,
+      "label": " lower risk"
+    },
+    {
+      "source": 1,
+      "target": 51,
+      "label": " lower risk"
+    },
+    {
+      "source": 1,
+      "target": 52,
+      "label": " lower risk"
+    },
+    {
+      "source": 53,
+      "target": 1,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 2,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 3,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 4,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 5,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 6,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 7,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 8,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 9,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 10,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 11,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 12,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 13,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 14,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 15,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 16,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 17,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 18,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 19,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 20,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 21,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 22,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 23,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 24,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 25,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 26,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 27,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 28,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 29,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 30,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 31,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 32,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 33,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 34,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 35,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 36,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 37,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 38,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 39,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 40,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 41,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 42,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 43,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 44,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 45,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 46,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 47,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 48,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 49,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 50,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 51,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 52,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 81,
+      "target": 54,
+      "label": "has part"
+    },
+    {
+      "source": 81,
+      "target": 74,
+      "label": "use"
+    },
+    {
+      "source": 67,
+      "target": 81,
+      "label": "with"
+    },
+    {
+      "source": 59,
+      "target": 81,
+      "label": "has part"
+    },
+    {
+      "source": 72,
+      "target": 81,
+      "label": "has part"
+    },
+    {
+      "source": 78,
+      "target": 81,
+      "label": "has part"
+    },
+    {
+      "source": 56,
+      "target": 81,
+      "label": "subclass of"
+    },
+    {
+      "source": 64,
+      "target": 81,
+      "label": "uses"
+    },
+    {
+      "source": 70,
+      "target": 81,
+      "label": "has cause"
+    },
+    {
+      "source": 55,
+      "target": 81,
+      "label": "product or material produced"
+    },
+    {
+      "source": 71,
+      "target": 81,
+      "label": "has effect"
+    },
+    {
+      "source": 81,
+      "target": 61,
+      "label": "used by"
+    },
+    {
+      "source": 60,
+      "target": 81,
+      "label": "instance of"
+    },
+    {
+      "source": 87,
+      "target": 54,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 55,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 56,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 57,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 58,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 59,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 60,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 61,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 62,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 63,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 64,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 65,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 66,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 67,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 68,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 69,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 70,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 71,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 72,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 73,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 74,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 75,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 76,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 77,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 78,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 79,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 80,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 81,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 82,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 83,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 84,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 85,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 86,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 88,
+      "target": 89,
+      "label": " secondary outcomes"
+    },
+    {
+      "source": 90,
+      "target": 91,
+      "label": " outcome"
+    },
+    {
+      "source": 92,
+      "target": 93,
+      "label": " suitable"
+    },
+    {
+      "source": 94,
+      "target": 95,
+      "label": " subgroup analyses"
+    },
+    {
+      "source": 96,
+      "target": 97,
+      "label": " assess moderation"
+    },
+    {
+      "source": 98,
+      "target": 99,
+      "label": " mediation type analyses"
+    },
+    {
+      "source": 100,
+      "target": 101,
+      "label": " using instrumental variables"
+    },
+    {
+      "source": 98,
+      "target": 102,
+      "label": " impact"
+    },
+    {
+      "source": 103,
+      "target": 104,
+      "label": " on treatment effects"
+    },
+    {
+      "source": 98,
+      "target": 105,
+      "label": " impact"
+    },
+    {
+      "source": 98,
+      "target": 102,
+      "label": " impact"
+    },
+    {
+      "source": 98,
+      "target": 102,
+      "label": " impact"
+    },
+    {
+      "source": 106,
+      "target": 107,
+      "label": "obtained"
+    },
+    {
+      "source": 108,
+      "target": 109,
+      "label": "around 20%"
+    },
+    {
+      "source": 110,
+      "target": 111,
+      "label": "assessment"
+    },
+    {
+      "source": 112,
+      "target": 113,
+      "label": "from"
+    },
+    {
+      "source": 114,
+      "target": 115,
+      "label": "perspective"
+    },
+    {
+      "source": 116,
+      "target": 117,
+      "label": "collection"
+    },
+    {
+      "source": 118,
+      "target": 119,
+      "label": "converted"
+    },
+    {
+      "source": 120,
+      "target": 119,
+      "label": "used for calculating"
+    },
+    {
+      "source": 121,
+      "target": 122,
+      "label": "collected using"
+    },
+    {
+      "source": 123,
+      "target": 122,
+      "label": "collected using"
+    },
+    {
+      "source": 124,
+      "target": 122,
+      "label": "collected using"
+    },
+    {
+      "source": 122,
+      "target": 125,
+      "label": "included in the economic evaluation"
+    },
+    {
+      "source": 126,
+      "target": 127,
+      "label": " calculating"
+    },
+    {
+      "source": 128,
+      "target": 127,
+      "label": " calculating"
+    },
+    {
+      "source": 129,
+      "target": 130,
+      "label": " synthesising"
+    },
+    {
+      "source": 131,
+      "target": 132,
+      "label": " informing"
+    },
+    {
+      "source": 133,
+      "target": 134,
+      "label": " informing"
+    },
+    {
+      "source": 135,
+      "target": 132,
+      "label": "adverse events and serious adverse events"
+    },
+    {
+      "source": 136,
+      "target": 132,
+      "label": "adverse events and serious adverse events"
+    },
+    {
+      "source": 137,
+      "target": 138,
+      "label": " review"
+    },
+    {
+      "source": 139,
+      "target": 140,
+      "label": " record"
+    },
+    {
+      "source": 141,
+      "target": 142,
+      "label": " refers to"
+    },
+    {
+      "source": 141,
+      "target": 143,
+      "label": " meets the criteria of"
+    },
+    {
+      "source": 141,
+      "target": 144,
+      "label": " was at risk of death"
+    },
+    {
+      "source": 141,
+      "target": 145,
+      "label": " refers to"
+    },
+    {
+      "source": 141,
+      "target": 146,
+      "label": "occurred in"
+    },
+    {
+      "source": 147,
+      "target": 148,
+      "label": "became aware of"
+    },
+    {
+      "source": 149,
+      "target": 150,
+      "label": " review"
+    },
+    {
+      "source": 151,
+      "target": 141,
+      "label": " discuss"
+    },
+    {
+      "source": 152,
+      "target": 153,
+      "label": " ensure safety and validity"
+    },
+    {
+      "source": 139,
+      "target": 132,
+      "label": " study drug or device"
+    },
+    {
+      "source": 139,
+      "target": 132,
+      "label": " new or worsening AEs"
+    },
+    {
+      "source": 139,
+      "target": 132,
+      "label": " new conditions"
+    },
+    {
+      "source": 149,
+      "target": 154,
+      "label": " reporting fatal or life-threatening SUSARs"
+    },
+    {
+      "source": 155,
+      "target": 156,
+      "label": " registering"
+    },
+    {
+      "source": 157,
+      "target": 158,
+      "label": "overseeing"
+    },
+    {
+      "source": 159,
+      "target": 158,
+      "label": "overseeing"
+    },
+    {
+      "source": 160,
+      "target": 158,
+      "label": "overseeing"
+    },
+    {
+      "source": 161,
+      "target": 158,
+      "label": "overseeing"
+    },
+    {
+      "source": 162,
+      "target": 158,
+      "label": "overseeing"
+    },
+    {
+      "source": 163,
+      "target": 164,
+      "label": " evaluating"
+    },
+    {
+      "source": 165,
+      "target": 166,
+      "label": "intended"
+    },
+    {
+      "source": 167,
+      "target": 168,
+      "label": "sent"
+    },
+    {
+      "source": 169,
+      "target": 170,
+      "label": "responded"
+    },
+    {
+      "source": 171,
+      "target": 170,
+      "label": "recruited"
+    },
+    {
+      "source": 172,
+      "target": 173,
+      "label": "responded"
+    },
+    {
+      "source": 174,
+      "target": 173,
+      "label": "recruited"
+    },
+    {
+      "source": 175,
+      "target": 170,
+      "label": "proportion with history of cancer"
+    },
+    {
+      "source": 176,
+      "target": 173,
+      "label": "proportion with history of cancer"
+    },
+    {
+      "source": 177,
+      "target": 178,
+      "label": "comparing"
+    },
+    {
+      "source": 179,
+      "target": 180,
+      "label": "no statistically significant difference"
+    },
+    {
+      "source": 181,
+      "target": 182,
+      "label": "recruitment"
+    },
+    {
+      "source": 183,
+      "target": 184,
+      "label": "than response rates to other modes of recruitment"
+    },
+    {
+      "source": 185,
+      "target": 186,
+      "label": "target"
+    },
+    {
+      "source": 187,
+      "target": 188,
+      "label": "setting"
+    },
+    {
+      "source": 189,
+      "target": 188,
+      "label": "setting"
+    },
+    {
+      "source": 190,
+      "target": 188,
+      "label": "setting"
+    },
+    {
+      "source": 191,
+      "target": 192,
+      "label": "recommends"
+    },
+    {
+      "source": 193,
+      "target": 192,
+      "label": "risk assessment tool"
+    },
+    {
+      "source": 194,
+      "target": 192,
+      "label": "risk assessment tool"
+    },
+    {
+      "source": 195,
+      "target": 192,
+      "label": "risk assessment tool"
+    },
+    {
+      "source": 196,
+      "target": 197,
+      "label": "calibrated for"
+    },
+    {
+      "source": 198,
+      "target": 199,
+      "label": "recommends the use of"
+    },
+    {
+      "source": 200,
+      "target": 201,
+      "label": "recommended"
+    },
+    {
+      "source": 88,
+      "target": 202,
+      "label": " dominant predictor"
+    },
+    {
+      "source": 203,
+      "target": 202,
+      "label": " widespread and near universal adoption"
+    },
+    {
+      "source": 204,
+      "target": 88,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 89,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 90,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 91,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 92,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 93,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 94,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 95,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 96,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 97,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 98,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 99,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 100,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 101,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 102,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 103,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 104,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 105,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 106,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 107,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 108,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 109,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 110,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 111,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 112,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 113,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 114,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 115,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 116,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 117,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 118,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 119,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 120,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 121,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 122,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 123,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 124,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 125,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 126,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 127,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 128,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 129,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 130,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 131,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 132,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 133,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 134,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 135,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 136,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 137,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 138,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 139,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 140,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 141,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 142,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 143,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 144,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 145,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 146,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 147,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 148,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 149,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 150,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 151,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 152,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 153,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 154,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 155,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 156,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 157,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 158,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 159,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 160,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 161,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 162,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 163,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 164,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 165,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 166,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 167,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 168,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 169,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 170,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 171,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 172,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 173,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 174,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 175,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 176,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 177,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 178,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 179,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 180,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 181,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 182,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 183,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 184,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 185,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 186,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 187,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 188,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 189,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 190,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 191,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 192,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 193,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 194,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 195,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 196,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 197,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 198,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 199,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 200,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 201,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 202,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 204,
+      "target": 203,
+      "label": "related to NCT03920176.pdf"
+    },
+    {
+      "source": 205,
+      "target": 206,
+      "label": " includes"
+    },
+    {
+      "source": 207,
+      "target": 206,
+      "label": " predictor"
+    },
+    {
+      "source": 208,
+      "target": 206,
+      "label": " predictor"
+    },
+    {
+      "source": 209,
+      "target": 206,
+      "label": " predictor"
+    },
+    {
+      "source": 210,
+      "target": 206,
+      "label": " predictor"
+    },
+    {
+      "source": 211,
+      "target": 206,
+      "label": " predictor"
+    },
+    {
+      "source": 212,
+      "target": 206,
+      "label": " predictor"
+    },
+    {
+      "source": 213,
+      "target": 206,
+      "label": " predictor"
+    },
+    {
+      "source": 214,
+      "target": 215,
+      "label": "null"
+    },
+    {
+      "source": 216,
+      "target": 217,
+      "label": " model impacts"
+    },
+    {
+      "source": 205,
+      "target": 218,
+      "label": " enrolled later"
+    },
+    {
+      "source": 219,
+      "target": 220,
+      "label": " risk factors"
+    },
+    {
+      "source": 221,
+      "target": 222,
+      "label": "estimated"
+    },
+    {
+      "source": 223,
+      "target": 224,
+      "label": "part of"
+    },
+    {
+      "source": 225,
+      "target": 226,
+      "label": "component"
+    },
+    {
+      "source": 227,
+      "target": 228,
+      "label": "affects"
+    },
+    {
+      "source": 229,
+      "target": 230,
+      "label": "of"
+    },
+    {
+      "source": 231,
+      "target": 232,
+      "label": "coefficients"
+    },
+    {
+      "source": 233,
+      "target": 234,
+      "label": "covariate"
+    },
+    {
+      "source": 205,
+      "target": 219,
+      "label": " estimate effects on"
+    },
+    {
+      "source": 219,
+      "target": 206,
+      "label": " have"
+    },
+    {
+      "source": 205,
+      "target": 235,
+      "label": " preventing"
+    },
+    {
+      "source": 205,
+      "target": 236,
+      "label": " identifying"
+    },
+    {
+      "source": 237,
+      "target": 238,
+      "label": " expected impact"
+    },
+    {
+      "source": 239,
+      "target": 238,
+      "label": " expected impact"
+    },
+    {
+      "source": 240,
+      "target": 241,
+      "label": " component"
+    },
+    {
+      "source": 242,
+      "target": 241,
+      "label": " component"
+    },
+    {
+      "source": 219,
+      "target": 241,
+      "label": " subgroup"
+    },
+    {
+      "source": 219,
+      "target": 240,
+      "label": " subgroup"
+    },
+    {
+      "source": 219,
+      "target": 242,
+      "label": " subgroup"
+    },
+    {
+      "source": 210,
+      "target": 219,
+      "label": " subgroup"
+    },
+    {
+      "source": 207,
+      "target": 219,
+      "label": " subgroup"
+    },
+    {
+      "source": 208,
+      "target": 219,
+      "label": " subgroup"
+    },
+    {
+      "source": 243,
+      "target": 244,
+      "label": " association"
+    },
+    {
+      "source": 205,
+      "target": 245,
+      "label": "impact"
+    },
+    {
+      "source": 205,
+      "target": 246,
+      "label": "reduce"
+    },
+    {
+      "source": 247,
+      "target": 248,
+      "label": " designed"
+    },
+    {
+      "source": 249,
+      "target": 250,
+      "label": " targeted"
+    },
+    {
+      "source": 251,
+      "target": 252,
+      "label": "estimated cost"
+    },
+    {
+      "source": 253,
+      "target": 254,
+      "label": "risk reduction"
+    },
+    {
+      "source": 255,
+      "target": 254,
+      "label": "risk reduction"
+    },
+    {
+      "source": 256,
+      "target": 254,
+      "label": "risk reduction"
+    },
+    {
+      "source": 210,
+      "target": 254,
+      "label": "risk reduction"
+    },
+    {
+      "source": 257,
+      "target": 254,
+      "label": "risk reduction"
+    },
+    {
+      "source": 258,
+      "target": 259,
+      "label": "eligible beneficiaries"
+    },
+    {
+      "source": 260,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 262,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 263,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 264,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 265,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 266,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 267,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 268,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 269,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 270,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 271,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 272,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 273,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 274,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 275,
+      "target": 261,
+      "label": " associated"
+    },
+    {
+      "source": 276,
+      "target": 236,
+      "label": " supporting"
+    },
+    {
+      "source": 276,
+      "target": 277,
+      "label": " collecting and reporting"
+    },
+    {
+      "source": 219,
+      "target": 278,
+      "label": " being"
+    },
+    {
+      "source": 219,
+      "target": 252,
+      "label": " having"
+    },
+    {
+      "source": 252,
+      "target": 279,
+      "label": " requiring"
+    },
+    {
+      "source": 219,
+      "target": 280,
+      "label": " developing and implementing"
+    },
+    {
+      "source": 219,
+      "target": 281,
+      "label": " based on"
+    },
+    {
+      "source": 219,
+      "target": 282,
+      "label": " based on"
+    },
+    {
+      "source": 280,
+      "target": 283,
+      "label": " as needed"
+    },
+    {
+      "source": 252,
+      "target": 219,
+      "label": "understand"
+    },
+    {
+      "source": 219,
+      "target": 284,
+      "label": "decide"
+    },
+    {
+      "source": 219,
+      "target": 285,
+      "label": "reflect"
+    },
+    {
+      "source": 219,
+      "target": 286,
+      "label": "identify"
+    },
+    {
+      "source": 219,
+      "target": 280,
+      "label": "update"
+    },
+    {
+      "source": 219,
+      "target": 287,
+      "label": "assist"
+    },
+    {
+      "source": 288,
+      "target": 205,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 206,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 207,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 208,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 209,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 210,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 211,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 212,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 213,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 214,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 215,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 216,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 217,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 218,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 219,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 220,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 221,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 222,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 223,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 224,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 225,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 226,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 227,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 228,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 229,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 230,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 231,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 232,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 233,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 234,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 235,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 236,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 237,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 238,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 239,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 240,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 241,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 242,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 243,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 244,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 245,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 246,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 247,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 248,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 249,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 250,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 251,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 252,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 253,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 254,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 255,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 256,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 257,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 258,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 259,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 260,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 261,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 262,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 263,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 264,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 265,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 266,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 267,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 268,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 269,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 270,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 271,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 272,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 273,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 274,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 275,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 276,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 277,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 278,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 279,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 280,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 281,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 282,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 283,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 284,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 285,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 286,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 288,
+      "target": 287,
+      "label": "related to NCT04047147.pdf"
+    },
+    {
+      "source": 289,
+      "target": 290,
+      "label": "reduced"
+    },
+    {
+      "source": 291,
+      "target": 292,
+      "label": "every 20 minutes"
+    },
+    {
+      "source": 293,
+      "target": 294,
+      "label": " people with T2DM"
+    },
+    {
+      "source": 295,
+      "target": 296,
+      "label": " reducing risk"
+    },
+    {
+      "source": 297,
+      "target": 298,
+      "label": "detrimental linear association"
+    },
+    {
+      "source": 297,
+      "target": 299,
+      "label": "detrimental linear association"
+    },
+    {
+      "source": 297,
+      "target": 300,
+      "label": "detrimental linear association"
+    },
+    {
+      "source": 301,
+      "target": 302,
+      "label": " associated"
+    },
+    {
+      "source": 303,
+      "target": 290,
+      "label": " reduction"
+    },
+    {
+      "source": 304,
+      "target": 290,
+      "label": " increase"
+    },
+    {
+      "source": 305,
+      "target": 306,
+      "label": " reduction of postprandial glucose iAUC"
+    },
+    {
+      "source": 305,
+      "target": 307,
+      "label": " greater reduction of postprandial glucose iAUC"
+    },
+    {
+      "source": 308,
+      "target": 309,
+      "label": " risk markers"
+    },
+    {
+      "source": 310,
+      "target": 311,
+      "label": " study"
+    },
+    {
+      "source": 312,
+      "target": 311,
+      "label": " study"
+    },
+    {
+      "source": 313,
+      "target": 314,
+      "label": " beneficial effects"
+    },
+    {
+      "source": 313,
+      "target": 315,
+      "label": " beneficial effects"
+    },
+    {
+      "source": 316,
+      "target": 317,
+      "label": " improving"
+    },
+    {
+      "source": 316,
+      "target": 318,
+      "label": " improving"
+    },
+    {
+      "source": 316,
+      "target": 309,
+      "label": " reducing"
+    },
+    {
+      "source": 319,
+      "target": 320,
+      "label": " significantly higher"
+    },
+    {
+      "source": 321,
+      "target": 322,
+      "label": " independently associated"
+    },
+    {
+      "source": 323,
+      "target": 322,
+      "label": " independently associated"
+    },
+    {
+      "source": 324,
+      "target": 322,
+      "label": " independently associated"
+    },
+    {
+      "source": 325,
+      "target": 326,
+      "label": "recommending"
+    },
+    {
+      "source": 327,
+      "target": 328,
+      "label": "vague"
+    },
+    {
+      "source": 329,
+      "target": 330,
+      "label": "effects of breaking up prolonged sitting time"
+    },
+    {
+      "source": 315,
+      "target": 330,
+      "label": "effects of breaking up prolonged sitting time"
+    },
+    {
+      "source": 331,
+      "target": 330,
+      "label": "effects of breaking up prolonged sitting time"
+    },
+    {
+      "source": 304,
+      "target": 332,
+      "label": "improves"
+    },
+    {
+      "source": 295,
+      "target": 333,
+      "label": "recommends"
+    },
+    {
+      "source": 334,
+      "target": 335,
+      "label": "receives"
+    },
+    {
+      "source": 336,
+      "target": 337,
+      "label": "increases"
+    },
+    {
+      "source": 338,
+      "target": 339,
+      "label": "imitates"
+    },
+    {
+      "source": 340,
+      "target": 341,
+      "label": "ensuring"
+    },
+    {
+      "source": 342,
+      "target": 343,
+      "label": "used"
+    },
+    {
+      "source": 344,
+      "target": 345,
+      "label": "imitating"
+    },
+    {
+      "source": 346,
+      "target": 347,
+      "label": "imitates"
+    },
+    {
+      "source": 348,
+      "target": 349,
+      "label": "starting at"
+    },
+    {
+      "source": 350,
+      "target": 351,
+      "label": "building up"
+    },
+    {
+      "source": 351,
+      "target": 352,
+      "label": "finding"
+    },
+    {
+      "source": 353,
+      "target": 351,
+      "label": "an RPE of 8-11"
+    },
+    {
+      "source": 354,
+      "target": 355,
+      "label": "ensuring patients are familiar with an intensity"
+    },
+    {
+      "source": 325,
+      "target": 356,
+      "label": "recommended"
+    },
+    {
+      "source": 299,
+      "target": 315,
+      "label": "component"
+    },
+    {
+      "source": 340,
+      "target": 357,
+      "label": " steady state"
+    },
+    {
+      "source": 358,
+      "target": 359,
+      "label": " cardiac function measurements"
+    },
+    {
+      "source": 360,
+      "target": 361,
+      "label": " measure"
+    },
+    {
+      "source": 362,
+      "target": 363,
+      "label": " ensure"
+    },
+    {
+      "source": 340,
+      "target": 364,
+      "label": " refrain from"
+    },
+    {
+      "source": 340,
+      "target": 365,
+      "label": " refrain from"
+    },
+    {
+      "source": 340,
+      "target": 366,
+      "label": " avoid"
+    },
+    {
+      "source": 340,
+      "target": 367,
+      "label": " complete"
+    },
+    {
+      "source": 368,
+      "target": 369,
+      "label": "investigate"
+    },
+    {
+      "source": 370,
+      "target": 368,
+      "label": "relate"
+    },
+    {
+      "source": 371,
+      "target": 372,
+      "label": " carbohydrate"
+    },
+    {
+      "source": 373,
+      "target": 374,
+      "label": " fat"
+    },
+    {
+      "source": 375,
+      "target": 376,
+      "label": " protein"
+    },
+    {
+      "source": 377,
+      "target": 372,
+      "label": " carbohydrate"
+    },
+    {
+      "source": 377,
+      "target": 374,
+      "label": " fat"
+    },
+    {
+      "source": 377,
+      "target": 376,
+      "label": " protein"
+    },
+    {
+      "source": 378,
+      "target": 311,
+      "label": " guidelines"
+    },
+    {
+      "source": 379,
+      "target": 379,
+      "label": " nil"
+    },
+    {
+      "source": 380,
+      "target": 381,
+      "label": "collected"
+    },
+    {
+      "source": 382,
+      "target": 383,
+      "label": "centrifuged"
+    },
+    {
+      "source": 384,
+      "target": 385,
+      "label": " assessing"
+    },
+    {
+      "source": 386,
+      "target": 385,
+      "label": " assessing"
+    },
+    {
+      "source": 387,
+      "target": 385,
+      "label": " presence"
+    },
+    {
+      "source": 320,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 389,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 390,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 391,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 392,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 393,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 394,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 395,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 396,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 397,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 398,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 399,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 400,
+      "target": 388,
+      "label": "measured"
+    },
+    {
+      "source": 401,
+      "target": 309,
+      "label": "calculation"
+    },
+    {
+      "source": 402,
+      "target": 403,
+      "label": "comparison"
+    },
+    {
+      "source": 404,
+      "target": 404,
+      "label": " null"
+    },
+    {
+      "source": 405,
+      "target": 289,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 290,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 291,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 292,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 293,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 294,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 295,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 296,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 297,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 298,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 299,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 300,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 301,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 302,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 303,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 304,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 305,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 306,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 307,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 308,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 309,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 310,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 311,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 312,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 313,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 314,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 315,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 316,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 317,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 318,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 319,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 320,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 321,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 322,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 323,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 324,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 325,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 326,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 327,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 328,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 329,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 330,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 331,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 332,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 333,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 334,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 335,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 336,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 337,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 338,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 339,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 340,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 341,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 342,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 343,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 344,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 345,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 346,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 347,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 348,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 349,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 350,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 351,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 352,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 353,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 354,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 355,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 356,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 357,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 358,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 359,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 360,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 361,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 362,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 363,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 364,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 365,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 366,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 367,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 368,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 369,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 370,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 371,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 372,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 373,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 374,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 375,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 376,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 377,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 378,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 379,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 380,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 381,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 382,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 383,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 384,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 385,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 386,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 387,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 388,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 389,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 390,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 391,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 392,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 393,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 394,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 395,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 396,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 397,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 398,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 399,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 400,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 401,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 402,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 403,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 405,
+      "target": 404,
+      "label": "related to NCT05193175.pdf"
+    },
+    {
+      "source": 3,
+      "target": 67,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 34,
+      "target": 165,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 34,
+      "target": 344,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 165,
+      "target": 344,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 40,
+      "target": 54,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 42,
+      "target": 81,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 88,
+      "target": 207,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 89,
+      "target": 208,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 92,
+      "target": 226,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 192,
+      "target": 235,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 214,
+      "target": 404,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 53,
+      "target": 87,
+      "label": "2024-03-13"
+    },
+    {
+      "source": 204,
+      "target": 288,
+      "label": "2024-03-20"
+    },
+    {
+      "source": 204,
+      "target": 405,
+      "label": "2024-03-20"
+    },
+    {
+      "source": 288,
+      "target": 405,
+      "label": "2024-03-20"
+    }
+  ]
+}

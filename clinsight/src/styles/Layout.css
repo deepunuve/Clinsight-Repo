@@ -1,0 +1,205 @@
+/* src/styles/Layout.css */
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Ensures that the layout takes up at least full height of the screen */
+}
+
+.card-hover-source:hover {
+  border: 2px solid black;
+  /* Highlight with a black border */
+  transform: scale(1.05);
+  /* Slight scale-up effect */
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 992px) {
+  .login-container .row {
+    flex-direction: column;
+  }
+}
+
+.content-area {
+  flex-grow: 1;
+  /* This ensures the main content area expands to take available space */
+  padding: 10px;
+  /* Add padding around the content */
+  background-color: #f8f9fa;
+}
+
+footer {
+  background-color: #f8f9fa;
+  /* You can adjust this color */
+  color: #6c757d;
+  text-align: center;
+  width: 100%;
+}
+
+.bg-light-blue {
+  background-color: #b7bbc4 !important;
+  /* Light blue color */
+}
+
+.custom-small-font {
+  font-size: 0.75rem;
+  /* Adjust this value as needed */
+}
+
+.custom-box {
+  border: 1px solid #ccc;
+  /* Light grey border */
+  border-radius: 10px;
+  /* Rounded corners */
+  padding: 5px;
+  /* Tight padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Optional shadow */
+}
+
+/* Reduce padding inside each element */
+.custom-box .p-1 {
+  padding-left: 5px;
+  /* Adjust padding for closer fit */
+  padding-right: 5px;
+}
+
+.separator {
+  margin: 0 8px;
+  /* Adjust the margin for spacing */
+  font-size: 20px;
+  /* Change font size */
+  color: #888;
+  /* Set color for separator */
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+  /* White color */
+}
+
+.card:active {
+  transform: scale(1.02);
+}
+
+/* Disabled card styling */
+.card.bg-light {
+  opacity: 0.6;
+}
+
+.card-footer small {
+  font-size: 0.8rem;
+}
+
+.dashboard-container {
+  padding: 20px;
+  /* Reduced padding around the content */
+  margin: 0;
+  /* Remove any extra margins */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.g-4>.col {
+  margin-bottom: 16px;
+  /* Optional: adjust space between cards */
+}
+
+.card-border-left-green {
+  border-left: 5px solid #4caf50 !important;
+  /* Green */
+}
+
+.card-border-left-blue {
+  border-left: 5px solid #2196f3 !important;
+  /* Blue */
+}
+
+.card-border-left-orange {
+  border-left: 5px solid #ff5722 !important;
+  /* Orange */
+}
+
+.card-border-left-purple {
+  border-left: 5px solid #9c27b0 !important;
+  /* Purple */
+}
+
+.card-border-left-green {
+  border-left: 5px solid #4caf50 !important;
+  /* Green */
+}
+
+.card-border-left-blue {
+  border-left: 5px solid #2196f3 !important;
+  /* Blue */
+}
+
+.card-border-left-orange {
+  border-left: 5px solid #ff5722 !important;
+  /* Orange */
+}
+
+.card-border-left-purple {
+  border-left: 5px solid #9c27b0 !important;
+  /* Purple */
+}
+
+/* New light color borders */
+.card-border-left-lightgreen {
+  border-left: 5px solid #81c784 !important;
+  /* Light Green */
+}
+
+.card-border-left-lightblue {
+  border-left: 5px solid #64b5f6 !important;
+  /* Light Blue */
+}
+
+.card-border-left-lightorange {
+  border-left: 5px solid #ffb74d !important;
+  /* Light Orange */
+}
+
+.card-border-left-lightpurple {
+  border-left: 5px solid #ce93d8 !important;
+  /* Light Purple */
+}
+
+.card-border-green {
+  border-bottom: 5px solid #81c784 !important;
+}
+
+.card-border-blue {
+  border-bottom: 5px solid #64b5f6 !important;
+}
+
+.card-border-orange {
+  border-bottom: 5px solid #ffb74d !important;
+}
+
+.title-border {
+  border-bottom: 1px solid #8e8d8c !important;
+  padding: 5px !important;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive design tweaks for smaller screens */
+@media (max-width: 768px) {
+  footer {
+    padding: 20px;
+  }
+}

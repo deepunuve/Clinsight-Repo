@@ -1,0 +1,23 @@
+[
+  {
+      "id": 24579,
+      "title": "Acne Phase III AI Analysis Package",
+      "brief_summary": "Acne is a common skin condition that occurs when hair follicles become clogged with oil and dead skin cells. It typically appears on the face, neck, chest, back, and shoulders. There are various types of acne, including whiteheads, blackheads, papules, pustules, nodules, and cysts. Acne can range from mild to severe and can cause emotional distress and scarring if not properly treated.",
+      "study_status": "Completed",
+      "study_type": "Intervention"
+  },
+  {
+      "id": 24580,
+      "title": "invoices",
+      "brief_summary": "invoices",
+      "study_status": "invoices",
+      "study_type": "invoices"
+  },
+  {
+      "id": 24581,
+      "title": "RetroNectin",
+      "brief_summary": "Studies related to RectoNectin",
+      "study_status": "Completed",
+      "study_type": "Intervention"
+  }
+]

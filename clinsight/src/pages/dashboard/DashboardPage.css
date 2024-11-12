@@ -1,0 +1,98 @@
+/* DashboardPage.css */
+
+
+
+.text-primary {
+    color: #000 !important;
+}
+
+.dashboard-card {
+    border: 1px solid #ddd;
+    /* Add border to the card */
+    border-radius: 8px;
+    /* Round the corners */
+    padding: 20px;
+    /* Add some padding inside the card */
+    background-color: #f9f9f9;
+    /* Light background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    /* transition: transform 0.3s ease-in-out; */
+    /* Smooth hover effect */
+}
+
+
+
+.brief-summary {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Add ellipsis (...) if the text overflows */
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100% !important;
+    }
+}
+
+.card-body {
+    padding: 1.5rem;
+    /* Optional: Adjust padding for better spacing */
+}
+
+.dashboard-card:hover {
+    transform: translateY(-10px);
+    /* Lift the card when hovered */
+}
+
+
+/* For the Dashboard Cards */
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Optional: Styled badge for 'View Details' */
+.card-footer .badge {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-footer .badge:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    /* transition: all 0.3s ease-in-out; */
+    /* Smooth transition for all properties */
+    border-radius: 10px;
+    /* Optional: makes the card corners rounded */
+    overflow: hidden;
+    /* Ensures that the content inside the card doesn't overflow */
+}
+
+
+
+.card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    /* Zoom-in effect on the card image */
+}
+
+.card:hover .card-title {
+    color: #007bff;
+    /* Change text color to blue on hover */
+}
+
+.card:hover .card-text {
+    color: #555;
+    /* Lighter text color */
+}

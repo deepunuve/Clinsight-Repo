@@ -1,0 +1,137 @@
+/* src/pages/LoginPage.css */
+
+.login-container {
+  height: 100vh;
+  /* Full viewport height */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* Center content horizontally */
+  align-items: center;
+  /* Center content vertically */
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  .login-container {
+    flex-direction: column;
+    /* Stack elements vertically on small screens */
+  }
+
+  .col-lg-6 {
+    width: 100%;
+  }
+
+  .login-form-container {
+    margin-bottom: 20px;
+  }
+
+  .img-fluid {
+    display: none;
+    /* Hide background image on small screens */
+  }
+}
+
+.object-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  padding: 10px 15px;
+}
+
+/* Fullscreen container */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form container */
+.login-form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Background image for large screens */
+.img-fluid {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Center spinner during loading */
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Error styling */
+.text-danger {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Button styling */
+button {
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 12px;
+}
+
+/* Custom CSS for Stylish Bootstrap Textboxes */
+.stylish-input {
+  background-color: #f5f5f5;
+  /* Light gray background */
+  border: 2px solid #ccc;
+  /* Border color */
+  border-radius: 12px;
+  /* Rounded corners */
+  padding: 12px 15px;
+  /* Add padding for better spacing */
+  font-size: 16px;
+  /* Larger text */
+  transition: all 0.3s ease;
+  /* Smooth transition on focus */
+}
+
+.stylish-input:focus {
+  border-color: #007bff;
+  /* Blue border on focus */
+  background-color: #e9f4fe;
+  /* Light blue background on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  /* Blue shadow for focus */
+  outline: none;
+  /* Remove default outline */
+}
+
+.stylish-input::placeholder {
+  color: #6c757d;
+  /* Gray color for placeholder */
+  font-style: italic;
+  /* Italic style for placeholder text */
+}
+
+/* Optional: Add a box shadow to the card */
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

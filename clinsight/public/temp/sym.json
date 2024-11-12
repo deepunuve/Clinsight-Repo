@@ -1,0 +1,416 @@
+{
+  "study": {
+    "Degree Centrality": 0.6666666666666667,
+    "Betweenness Centrality": 0.2896155327415285,
+    "Closeness Centrality": 0.5487804878048781,
+    "Eigenvector Centrality": 0.3087489363309456,
+    "Clustering": 0.1619047619047619,
+    "Hub": 0.05360658179331159,
+    "Authority": 0.05360658179331158
+  },
+  "protocols": {
+    "Degree Centrality": 0.13333333333333333,
+    "Betweenness Centrality": 0.005262314462165001,
+    "Closeness Centrality": 0.36585365853658536,
+    "Eigenvector Centrality": 0.06162513804435148,
+    "Clustering": 0.6666666666666666,
+    "Hub": 0.010699520515468646,
+    "Authority": 0.010699520515468646
+  },
+  "clinical": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.005945335145185682,
+    "Closeness Centrality": 0.375,
+    "Eigenvector Centrality": 0.07856039704328666,
+    "Clustering": 0.6666666666666666,
+    "Hub": 0.013639858636362447,
+    "Authority": 0.013639858636362436
+  },
+  "trials": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.0024098124098124096,
+    "Closeness Centrality": 0.3082191780821918,
+    "Eigenvector Centrality": 0.05927130586743523,
+    "Clustering": 0.5,
+    "Hub": 0.010290767820853534,
+    "Authority": 0.010290767820853515
+  },
+  "acne": {
+    "Degree Centrality": 0.3111111111111111,
+    "Betweenness Centrality": 0.03358573325131312,
+    "Closeness Centrality": 0.41284403669724773,
+    "Eigenvector Centrality": 0.13966041681182223,
+    "Clustering": 0.3333333333333333,
+    "Hub": 0.024248359249233273,
+    "Authority": 0.024248359249233253
+  },
+  "treatment": {
+    "Degree Centrality": 0.3111111111111111,
+    "Betweenness Centrality": 0.03762988955907793,
+    "Closeness Centrality": 0.4166666666666667,
+    "Eigenvector Centrality": 0.14967637951512353,
+    "Clustering": 0.3333333333333333,
+    "Hub": 0.025987323764550724,
+    "Authority": 0.025987323764550718
+  },
+  "objective": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.004450952098010922,
+    "Closeness Centrality": 0.3409090909090909,
+    "Eigenvector Centrality": 0.07026144425420904,
+    "Clustering": 0.5,
+    "Hub": 0.012198862885828003,
+    "Authority": 0.012198862885827978
+  },
+  "comparing": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.007182256252236111,
+    "Closeness Centrality": 0.37815126050420167,
+    "Eigenvector Centrality": 0.08929725264944491,
+    "Clustering": 0.5,
+    "Hub": 0.0155039586365226,
+    "Authority": 0.015503958636522598
+  },
+  "safety": {
+    "Degree Centrality": 0.3111111111111111,
+    "Betweenness Centrality": 0.03042839837709539,
+    "Closeness Centrality": 0.4205607476635514,
+    "Eigenvector Centrality": 0.1305304193149003,
+    "Clustering": 0.2857142857142857,
+    "Hub": 0.02266299009665895,
+    "Authority": 0.02266299009665892
+  },
+  "efficacy": {
+    "Degree Centrality": 0.6666666666666667,
+    "Betweenness Centrality": 0.21726643756660222,
+    "Closeness Centrality": 0.5294117647058824,
+    "Eigenvector Centrality": 0.29664402914271976,
+    "Clustering": 0.1619047619047619,
+    "Hub": 0.05150479909418383,
+    "Authority": 0.051504799094183824
+  },
+  "different": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.0011111111111111111,
+    "Closeness Centrality": 0.371900826446281,
+    "Eigenvector Centrality": 0.10433489493303073,
+    "Clustering": 0.6666666666666666,
+    "Hub": 0.01811486016483096,
+    "Authority": 0.018114860164830927
+  },
+  "treatments": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.003274749941416608,
+    "Closeness Centrality": 0.4166666666666667,
+    "Eigenvector Centrality": 0.12594560470742414,
+    "Clustering": 0.8333333333333334,
+    "Hub": 0.021867057223933735,
+    "Authority": 0.021867057223933714
+  },
+  "formulations": {
+    "Degree Centrality": 0.35555555555555557,
+    "Betweenness Centrality": 0.0248351140920214,
+    "Closeness Centrality": 0.44554455445544555,
+    "Eigenvector Centrality": 0.20296618379008757,
+    "Clustering": 0.35714285714285715,
+    "Hub": 0.03523979182710017,
+    "Authority": 0.03523979182710014
+  },
+  "aims": {
+    "Degree Centrality": 0.22222222222222224,
+    "Betweenness Centrality": 0.01567928801851218,
+    "Closeness Centrality": 0.45,
+    "Eigenvector Centrality": 0.1556903401988062,
+    "Clustering": 0.4,
+    "Hub": 0.02703184793940654,
+    "Authority": 0.027031847939406512
+  },
+  "compare": {
+    "Degree Centrality": 0.3111111111111111,
+    "Betweenness Centrality": 0.06712040638482478,
+    "Closeness Centrality": 0.45918367346938777,
+    "Eigenvector Centrality": 0.15107197606174316,
+    "Clustering": 0.3333333333333333,
+    "Hub": 0.026229628656394086,
+    "Authority": 0.02622962865639408
+  },
+  "profiles": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.01280106556522216,
+    "Closeness Centrality": 0.38461538461538464,
+    "Eigenvector Centrality": 0.07861808464308967,
+    "Clustering": 0.5,
+    "Hub": 0.013650036114767793,
+    "Authority": 0.013650036114767788
+  },
+  "taro": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.01898326845630767,
+    "Closeness Centrality": 0.3813559322033898,
+    "Eigenvector Centrality": 0.07279108595845733,
+    "Clustering": 0.5,
+    "Hub": 0.012638524700445821,
+    "Authority": 0.012638524700445818
+  },
+  "pharmaceuticals": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.011921966450828929,
+    "Closeness Centrality": 0.3543307086614173,
+    "Eigenvector Centrality": 0.069759891381549,
+    "Clustering": 0.5,
+    "Hub": 0.012112669564823285,
+    "Authority": 0.012112669564823299
+  },
+  "incs": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.007246210579543913,
+    "Closeness Centrality": 0.3488372093023256,
+    "Eigenvector Centrality": 0.08247858049458165,
+    "Clustering": 0.5,
+    "Hub": 0.014321265046438067,
+    "Authority": 0.014321265046438067
+  },
+  "clindamycin": {
+    "Degree Centrality": 0.5333333333333333,
+    "Betweenness Centrality": 0.13544059916989012,
+    "Closeness Centrality": 0.45454545454545453,
+    "Eigenvector Centrality": 0.27165079026441835,
+    "Clustering": 0.2878787878787879,
+    "Hub": 0.04716818074712336,
+    "Authority": 0.04716818074712339
+  },
+  "phosphate": {
+    "Degree Centrality": 0.3111111111111111,
+    "Betweenness Centrality": 0.018512173202991283,
+    "Closeness Centrality": 0.391304347826087,
+    "Eigenvector Centrality": 0.18350901611451245,
+    "Clustering": 0.5238095238095238,
+    "Hub": 0.03186386543387654,
+    "Authority": 0.031863865433876565
+  },
+  "benzoyl": {
+    "Degree Centrality": 0.26666666666666666,
+    "Betweenness Centrality": 0.006485063757791031,
+    "Closeness Centrality": 0.40540540540540543,
+    "Eigenvector Centrality": 0.19198241927050388,
+    "Clustering": 0.6666666666666666,
+    "Hub": 0.03333493219477623,
+    "Authority": 0.03333493219477625
+  },
+  "peroxide": {
+    "Degree Centrality": 0.35555555555555557,
+    "Betweenness Centrality": 0.018430434506172155,
+    "Closeness Centrality": 0.4205607476635514,
+    "Eigenvector Centrality": 0.23012327569514918,
+    "Clustering": 0.5,
+    "Hub": 0.03995741713878366,
+    "Authority": 0.03995741713878369
+  },
+  "gel": {
+    "Degree Centrality": 0.5777777777777778,
+    "Betweenness Centrality": 0.1463739488528467,
+    "Closeness Centrality": 0.5056179775280899,
+    "Eigenvector Centrality": 0.33493276416758605,
+    "Clustering": 0.2564102564102564,
+    "Hub": 0.05815520868387619,
+    "Authority": 0.05815520868387621
+  },
+  "acanya": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0,
+    "Closeness Centrality": 0.375,
+    "Eigenvector Centrality": 0.1407803963906195,
+    "Clustering": 1,
+    "Hub": 0.02444456145732104,
+    "Authority": 0.02444456145732105
+  },
+  "demonstrate": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.007026842405630283,
+    "Closeness Centrality": 0.40540540540540543,
+    "Eigenvector Centrality": 0.13571451955902397,
+    "Clustering": 0.5,
+    "Hub": 0.023564192049511972,
+    "Authority": 0.02356419204951195
+  },
+  "superior": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.005049252094706639,
+    "Closeness Centrality": 0.40540540540540543,
+    "Eigenvector Centrality": 0.12179673104567253,
+    "Clustering": 0.5,
+    "Hub": 0.021147392399683305,
+    "Authority": 0.021147392399683298
+  },
+  "active": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.002705828122494789,
+    "Closeness Centrality": 0.3879310344827586,
+    "Eigenvector Centrality": 0.11534356652350637,
+    "Clustering": 0.5,
+    "Hub": 0.02002657118401554,
+    "Authority": 0.020026571184015546
+  },
+  "vehicle": {
+    "Degree Centrality": 0.35555555555555557,
+    "Betweenness Centrality": 0.062172776331596354,
+    "Closeness Centrality": 0.4411764705882353,
+    "Eigenvector Centrality": 0.2144596333950505,
+    "Clustering": 0.21428571428571427,
+    "Hub": 0.037236428573200114,
+    "Authority": 0.037236428573200094
+  },
+  "assess": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.00813577408072172,
+    "Closeness Centrality": 0.4411764705882353,
+    "Eigenvector Centrality": 0.13110444394470858,
+    "Clustering": 0.5,
+    "Hub": 0.022763011780353195,
+    "Authority": 0.022763011780353185
+  },
+  "test": {
+    "Degree Centrality": 0.3111111111111111,
+    "Betweenness Centrality": 0.05626040595043373,
+    "Closeness Centrality": 0.4787234042553192,
+    "Eigenvector Centrality": 0.2050279453300893,
+    "Clustering": 0.3333333333333333,
+    "Hub": 0.03559908977258999,
+    "Authority": 0.03559908977259
+  },
+  "product": {
+    "Degree Centrality": 0.3111111111111111,
+    "Betweenness Centrality": 0.09812844968107506,
+    "Closeness Centrality": 0.47368421052631576,
+    "Eigenvector Centrality": 0.17641366235478836,
+    "Clustering": 0.2857142857142857,
+    "Hub": 0.03063092091604264,
+    "Authority": 0.030630920916042654
+  },
+  "evaluating": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.025049679778547395,
+    "Closeness Centrality": 0.35714285714285715,
+    "Eigenvector Centrality": 0.06059210358142231,
+    "Clustering": 0.5,
+    "Hub": 0.010520677707607135,
+    "Authority": 0.010520677707607135
+  },
+  "iga": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.025188774837897648,
+    "Closeness Centrality": 0.3488372093023256,
+    "Eigenvector Centrality": 0.0380797763192161,
+    "Clustering": 0.5,
+    "Hub": 0.0066118291068613,
+    "Authority": 0.006611829106861309
+  },
+  "lesion": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.007617660117660116,
+    "Closeness Centrality": 0.2903225806451613,
+    "Eigenvector Centrality": 0.019578181199948252,
+    "Clustering": 0.5,
+    "Hub": 0.0033993316824307345,
+    "Authority": 0.0033993316824307285
+  },
+  "counting": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.00895080302177591,
+    "Closeness Centrality": 0.3125,
+    "Eigenvector Centrality": 0.01937295357122372,
+    "Clustering": 0.5,
+    "Hub": 0.0033636252699783455,
+    "Authority": 0.0033636252699783317
+  },
+  "evaluation": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.012831911428402653,
+    "Closeness Centrality": 0.30612244897959184,
+    "Eigenvector Centrality": 0.02383406178466376,
+    "Clustering": 0.5,
+    "Hub": 0.004138120281553163,
+    "Authority": 0.004138120281553167
+  },
+  "application": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.04536897873819723,
+    "Closeness Centrality": 0.3879310344827586,
+    "Eigenvector Centrality": 0.058898920085155994,
+    "Clustering": 0.5,
+    "Hub": 0.010226214322428954,
+    "Authority": 0.010226214322428944
+  },
+  "additionally": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.030319367117612735,
+    "Closeness Centrality": 0.39473684210526316,
+    "Eigenvector Centrality": 0.0748687908390413,
+    "Clustering": 0.5,
+    "Hub": 0.01299892899307995,
+    "Authority": 0.012998928993079927
+  },
+  "products": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.03005644573152241,
+    "Closeness Centrality": 0.39823008849557523,
+    "Eigenvector Centrality": 0.08114307049139718,
+    "Clustering": 0.5,
+    "Hub": 0.01408848661763253,
+    "Authority": 0.014088486617632515
+  },
+  "used": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.02370036538169481,
+    "Closeness Centrality": 0.3543307086614173,
+    "Eigenvector Centrality": 0.047153073048244606,
+    "Clustering": 0.5,
+    "Hub": 0.008187049597743872,
+    "Authority": 0.008187049597743865
+  },
+  "protocol": {
+    "Degree Centrality": 0.26666666666666666,
+    "Betweenness Centrality": 0.03237527593647187,
+    "Closeness Centrality": 0.371900826446281,
+    "Eigenvector Centrality": 0.08104987231721048,
+    "Clustering": 0.4,
+    "Hub": 0.014073083356617227,
+    "Authority": 0.01407308335661721
+  },
+  "prgo": {
+    "Degree Centrality": 0.13333333333333333,
+    "Betweenness Centrality": 0.0015489379199056619,
+    "Closeness Centrality": 0.29605263157894735,
+    "Eigenvector Centrality": 0.028442627212270102,
+    "Clustering": 0.6666666666666666,
+    "Hub": 0.004938653459448652,
+    "Authority": 0.0049386534594486565
+  },
+  "tolmar": {
+    "Degree Centrality": 0.17777777777777778,
+    "Betweenness Centrality": 0.013225108225108223,
+    "Closeness Centrality": 0.33088235294117646,
+    "Eigenvector Centrality": 0.07791666022858401,
+    "Clustering": 0.5,
+    "Hub": 0.013529265384456533,
+    "Authority": 0.013529265384456542
+  },
+  "topical": {
+    "Degree Centrality": 0.26666666666666666,
+    "Betweenness Centrality": 0.030780149630885833,
+    "Closeness Centrality": 0.45,
+    "Eigenvector Centrality": 0.19463877155368742,
+    "Clustering": 0.5333333333333333,
+    "Hub": 0.03379575374642158,
+    "Authority": 0.03379575374642159
+  },
+  "onexton": {
+    "Degree Centrality": 0.08888888888888889,
+    "Betweenness Centrality": 0,
+    "Closeness Centrality": 0.3409090909090909,
+    "Eigenvector Centrality": 0.07307622368779637,
+    "Clustering": 1,
+    "Hub": 0.012688504411472196,
+    "Authority": 0.012688504411472188
+  }
+}

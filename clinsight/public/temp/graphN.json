@@ -1,0 +1,1638 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "label": "preterm infants",
+      "shape":"cylinder"
+    },
+    {
+      "id": 2,
+      "label": " neonatal transfusion"
+    },
+    {
+      "id": 3,
+      "label": "infants"
+    },
+    {
+      "id": 4,
+      "label": " neonatal iron stores"
+    },
+    {
+      "id": 5,
+      "label": "ematocrit"
+    },
+    {
+      "id": 6,
+      "label": " infants with delayed cord clamping above the perineum"
+    },
+    {
+      "id": 7,
+      "label": " infants with delayed cord clamping below the perineum"
+    },
+    {
+      "id": 8,
+      "label": "maternal Hgb/Hct"
+    },
+    {
+      "id": 9,
+      "label": " thirty two patients in each group"
+    },
+    {
+      "id": 10,
+      "label": "maternal demographics"
+    },
+    {
+      "id": 11,
+      "label": " age"
+    },
+    {
+      "id": 12,
+      "label": " race"
+    },
+    {
+      "id": 13,
+      "label": " socioeconomic status"
+    },
+    {
+      "id": 14,
+      "label": "pre-natal care information"
+    },
+    {
+      "id": 15,
+      "label": " IR NUMBER: HSC-MS-11-0633"
+    },
+    {
+      "id": 16,
+      "label": "neonatal hematocrit"
+    },
+    {
+      "id": 17,
+      "label": " sixty four study participants"
+    },
+    {
+      "id": 18,
+      "label": "neonatal hematocrit at 2 ours of life"
+    },
+    {
+      "id": 19,
+      "label": "maternal-neonatal contact"
+    },
+    {
+      "id": 20,
+      "label": " common practice in many hospitals"
+    },
+    {
+      "id": 21,
+      "label": " maternal-infant attachment"
+    },
+    {
+      "id": 22,
+      "label": "females"
+    },
+    {
+      "id": 23,
+      "label": " pregnancies"
+    },
+    {
+      "id": 24,
+      "label": "32 0/7-36 6/7 gestation"
+    },
+    {
+      "id": 25,
+      "label": " iron deficiency"
+    },
+    {
+      "id": 26,
+      "label": "newborns"
+    },
+    {
+      "id": 27,
+      "label": " fetal hemoglobin levels"
+    },
+    {
+      "id": 28,
+      "label": "placenta"
+    },
+    {
+      "id": 29,
+      "label": " delayed cord clamping"
+    },
+    {
+      "id": 30,
+      "label": " hematocrit"
+    },
+    {
+      "id": 31,
+      "label": " extend"
+    },
+    {
+      "id": 32,
+      "label": "spontaneous aginal delivery"
+    },
+    {
+      "id": 33,
+      "label": " skin-to-skin contact"
+    },
+    {
+      "id": 34,
+      "label": "patients"
+    },
+    {
+      "id": 35,
+      "label": " spontaneous vaginal delivery"
+    },
+    {
+      "id": 36,
+      "label": "study group"
+    },
+    {
+      "id": 37,
+      "label": " hematocrit value"
+    },
+    {
+      "id": 38,
+      "label": "mother"
+    },
+    {
+      "id": 39,
+      "label": " infant"
+    },
+    {
+      "id": 40,
+      "label": "infant"
+    },
+    {
+      "id": 41,
+      "label": " mother’s abdomen"
+    },
+    {
+      "id": 42,
+      "label": "cord"
+    },
+    {
+      "id": 43,
+      "label": " clamped"
+    },
+    {
+      "id": 44,
+      "label": " Group A"
+    },
+    {
+      "id": 45,
+      "label": " Group B"
+    },
+    {
+      "id": 46,
+      "label": "Group A"
+    },
+    {
+      "id": 47,
+      "label": "designated time-keeper"
+    },
+    {
+      "id": 48,
+      "label": " sole responsibility"
+    },
+    {
+      "id": 49,
+      "label": " intraventricular hemorrhage"
+    },
+    {
+      "id": 50,
+      "label": " periventricular leukomalacia"
+    },
+    {
+      "id": 51,
+      "label": " respiratory distress syndrome"
+    },
+    {
+      "id": 52,
+      "label": " jaundice"
+    },
+    {
+      "id": 53,
+      "label": "NCT01784796.pdf"
+    },
+    {
+      "id": 54,
+      "label": "infant"
+    },
+    {
+      "id": 55,
+      "label": "father"
+    },
+    {
+      "id": 56,
+      "label": "iron deficiency"
+    },
+    {
+      "id": 57,
+      "label": "hemorrh"
+    },
+    {
+      "id": 58,
+      "label": "contact"
+    },
+    {
+      "id": 59,
+      "label": "iron"
+    },
+    {
+      "id": 60,
+      "label": "hct"
+    },
+    {
+      "id": 61,
+      "label": "mentor"
+    },
+    {
+      "id": 62,
+      "label": "neonatal"
+    },
+    {
+      "id": 63,
+      "label": "neonatal transfusion"
+    },
+    {
+      "id": 64,
+      "label": "transfusion"
+    },
+    {
+      "id": 65,
+      "label": "cord clamping"
+    },
+    {
+      "id": 66,
+      "label": "delaying"
+    },
+    {
+      "id": 67,
+      "label": "infants"
+    },
+    {
+      "id": 68,
+      "label": "breastfeeding"
+    },
+    {
+      "id": 69,
+      "label": "vitamins"
+    },
+    {
+      "id": 70,
+      "label": "jaundice"
+    },
+    {
+      "id": 71,
+      "label": "birth"
+    },
+    {
+      "id": 72,
+      "label": "life"
+    },
+    {
+      "id": 73,
+      "label": "cord c"
+    },
+    {
+      "id": 74,
+      "label": "newborn"
+    },
+    {
+      "id": 75,
+      "label": "mother ewborn believe"
+    },
+    {
+      "id": 76,
+      "label": "hem"
+    },
+    {
+      "id": 77,
+      "label": "delayed cord clamping"
+    },
+    {
+      "id": 78,
+      "label": "effect"
+    },
+    {
+      "id": 79,
+      "label": "8"
+    },
+    {
+      "id": 80,
+      "label": "born"
+    },
+    {
+      "id": 81,
+      "label": "cord"
+    },
+    {
+      "id": 82,
+      "label": "1"
+    },
+    {
+      "id": 83,
+      "label": "source"
+    },
+    {
+      "id": 84,
+      "label": "hemoglobin"
+    },
+    {
+      "id": 85,
+      "label": "-"
+    },
+    {
+      "id": 86,
+      "label": "adverse effect"
+    },
+    {
+      "id": 87,
+      "label": "NCT01837069.pdf"
+    },
+    {
+      "id": 88,
+      "label": "preterm infants"
+    },
+    {
+      "id": 89,
+      "label": " neonatal transfusion"
+    },
+    {
+      "id": 90,
+      "label": "infants"
+    },
+    {
+      "id": 91,
+      "label": " neonatal iron stores"
+    },
+    {
+      "id": 92,
+      "label": "ematocrit"
+    },
+    {
+      "id": 93,
+      "label": " infants with delayed cord clamping above the perineum"
+    },
+    {
+      "id": 94,
+      "label": " infants with delayed cord clamping below the perineum"
+    },
+    {
+      "id": 95,
+      "label": "maternal Hgb/Hct"
+    },
+    {
+      "id": 96,
+      "label": " thirty two patients in each group"
+    },
+    {
+      "id": 97,
+      "label": "maternal demographics"
+    },
+    {
+      "id": 98,
+      "label": " age"
+    },
+    {
+      "id": 99,
+      "label": " race"
+    },
+    {
+      "id": 100,
+      "label": " socioeconomic status"
+    },
+    {
+      "id": 101,
+      "label": "pre-natal care information"
+    },
+    {
+      "id": 102,
+      "label": " IR NUMBER: HSC-MS-11-0633"
+    },
+    {
+      "id": 103,
+      "label": "neonatal hematocrit"
+    },
+    {
+      "id": 104,
+      "label": " sixty four study participants"
+    },
+    {
+      "id": 105,
+      "label": "neonatal hematocrit at 2 ours of life"
+    },
+    {
+      "id": 106,
+      "label": "maternal-neonatal contact"
+    },
+    {
+      "id": 107,
+      "label": " common practice in many hospitals"
+    },
+    {
+      "id": 108,
+      "label": " maternal-infant attachment"
+    },
+    {
+      "id": 109,
+      "label": "females"
+    },
+    {
+      "id": 110,
+      "label": " pregnancies"
+    },
+    {
+      "id": 111,
+      "label": "32 0/7-36 6/7 gestation"
+    },
+    {
+      "id": 112,
+      "label": " iron deficiency"
+    },
+    {
+      "id": 113,
+      "label": "newborns"
+    },
+    {
+      "id": 114,
+      "label": " fetal hemoglobin levels"
+    },
+    {
+      "id": 115,
+      "label": "placenta"
+    },
+    {
+      "id": 116,
+      "label": " delayed cord clamping"
+    },
+    {
+      "id": 117,
+      "label": "Acra"
+    },
+    {
+      "id": 118,
+      "label": " J Matern Fetal Neonatal Med."
+    },
+    {
+      "id": 119,
+      "label": "Botet"
+    },
+    {
+      "id": 120,
+      "label": "Palacio"
+    },
+    {
+      "id": 121,
+      "label": "Carbonell-Estrany"
+    },
+    {
+      "id": 122,
+      "label": "HSC-MS-11-0633"
+    },
+    {
+      "id": 123,
+      "label": " IRB NUMBER"
+    },
+    {
+      "id": 124,
+      "label": "data.pdf"
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "label": " risk"
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": " source"
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "label": "no clinically significant difference"
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "label": "no clinically significant difference"
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "label": "documented"
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "label": " documented"
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "label": " documented"
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "label": " documented"
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "label": " documented"
+    },
+    {
+      "source": 16,
+      "target": 9,
+      "label": "needed"
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "label": "total"
+    },
+    {
+      "source": 18,
+      "target": 9,
+      "label": "anticipated"
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "label": "relating to"
+    },
+    {
+      "source": 19,
+      "target": 21,
+      "label": "benefits"
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "label": " include"
+    },
+    {
+      "source": 24,
+      "target": 23,
+      "label": " with"
+    },
+    {
+      "source": 1,
+      "target": 25,
+      "label": " at risk"
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "label": " improve"
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "label": " related to"
+    },
+    {
+      "source": 1,
+      "target": 30,
+      "label": " compare"
+    },
+    {
+      "source": 1,
+      "target": 31,
+      "label": " study"
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "label": "encouraging"
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "label": "proceed"
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "label": " not change"
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "label": " delivery"
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "label": " placed"
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "label": " 30-45 seconds"
+    },
+    {
+      "source": 34,
+      "target": 44,
+      "label": " randomized"
+    },
+    {
+      "source": 34,
+      "target": 45,
+      "label": " randomized"
+    },
+    {
+      "source": 46,
+      "target": 39,
+      "label": " held below perineum"
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "label": " ensuring accurate timing"
+    },
+    {
+      "source": 1,
+      "target": 49,
+      "label": " lower risk"
+    },
+    {
+      "source": 1,
+      "target": 50,
+      "label": " lower risk"
+    },
+    {
+      "source": 1,
+      "target": 51,
+      "label": " lower risk"
+    },
+    {
+      "source": 1,
+      "target": 52,
+      "label": " lower risk"
+    },
+    {
+      "source": 53,
+      "target": 1,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 2,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 3,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 4,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 5,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 6,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 7,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 8,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 9,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 10,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 11,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 12,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 13,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 14,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 15,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 16,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 17,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 18,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 19,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 20,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 21,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 22,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 23,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 24,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 25,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 26,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 27,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 28,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 29,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 30,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 31,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 32,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 33,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 34,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 35,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 36,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 37,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 38,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 39,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 40,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 41,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 42,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 43,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 44,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 45,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 46,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 47,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 48,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 49,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 50,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 51,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 53,
+      "target": 52,
+      "label": "related to NCT01784796.pdf"
+    },
+    {
+      "source": 81,
+      "target": 54,
+      "label": "has part"
+    },
+    {
+      "source": 81,
+      "target": 74,
+      "label": "use"
+    },
+    {
+      "source": 67,
+      "target": 81,
+      "label": "with"
+    },
+    {
+      "source": 59,
+      "target": 81,
+      "label": "has part"
+    },
+    {
+      "source": 72,
+      "target": 81,
+      "label": "has part"
+    },
+    {
+      "source": 78,
+      "target": 81,
+      "label": "has part"
+    },
+    {
+      "source": 56,
+      "target": 81,
+      "label": "subclass of"
+    },
+    {
+      "source": 64,
+      "target": 81,
+      "label": "uses"
+    },
+    {
+      "source": 70,
+      "target": 81,
+      "label": "has cause"
+    },
+    {
+      "source": 55,
+      "target": 81,
+      "label": "product or material produced"
+    },
+    {
+      "source": 71,
+      "target": 81,
+      "label": "has effect"
+    },
+    {
+      "source": 81,
+      "target": 61,
+      "label": "used by"
+    },
+    {
+      "source": 60,
+      "target": 81,
+      "label": "instance of"
+    },
+    {
+      "source": 87,
+      "target": 54,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 55,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 56,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 57,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 58,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 59,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 60,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 61,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 62,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 63,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 64,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 65,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 66,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 67,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 68,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 69,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 70,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 71,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 72,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 73,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 74,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 75,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 76,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 77,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 78,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 79,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 80,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 81,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 82,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 83,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 84,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 85,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 87,
+      "target": 86,
+      "label": "related to NCT01837069.pdf"
+    },
+    {
+      "source": 88,
+      "target": 89,
+      "label": " risk"
+    },
+    {
+      "source": 90,
+      "target": 91,
+      "label": " source"
+    },
+    {
+      "source": 92,
+      "target": 93,
+      "label": "no clinically significant difference"
+    },
+    {
+      "source": 92,
+      "target": 94,
+      "label": "no clinically significant difference"
+    },
+    {
+      "source": 95,
+      "target": 96,
+      "label": "documented"
+    },
+    {
+      "source": 97,
+      "target": 98,
+      "label": " documented"
+    },
+    {
+      "source": 97,
+      "target": 99,
+      "label": " documented"
+    },
+    {
+      "source": 97,
+      "target": 100,
+      "label": " documented"
+    },
+    {
+      "source": 101,
+      "target": 102,
+      "label": " documented"
+    },
+    {
+      "source": 103,
+      "target": 96,
+      "label": "needed"
+    },
+    {
+      "source": 103,
+      "target": 104,
+      "label": "total"
+    },
+    {
+      "source": 105,
+      "target": 96,
+      "label": "anticipated"
+    },
+    {
+      "source": 106,
+      "target": 107,
+      "label": "relating to"
+    },
+    {
+      "source": 106,
+      "target": 108,
+      "label": "benefits"
+    },
+    {
+      "source": 109,
+      "target": 110,
+      "label": " include"
+    },
+    {
+      "source": 111,
+      "target": 110,
+      "label": " with"
+    },
+    {
+      "source": 88,
+      "target": 112,
+      "label": " at risk"
+    },
+    {
+      "source": 113,
+      "target": 114,
+      "label": " improve"
+    },
+    {
+      "source": 115,
+      "target": 116,
+      "label": " related to"
+    },
+    {
+      "source": 117,
+      "target": 118,
+      "label": " published"
+    },
+    {
+      "source": 119,
+      "target": 118,
+      "label": " published"
+    },
+    {
+      "source": 120,
+      "target": 118,
+      "label": " published"
+    },
+    {
+      "source": 121,
+      "target": 118,
+      "label": " published"
+    },
+    {
+      "source": 122,
+      "target": 123,
+      "label": " assigned"
+    },
+    {
+      "source": 124,
+      "target": 88,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 89,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 90,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 91,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 92,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 93,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 94,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 95,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 96,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 97,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 98,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 99,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 100,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 101,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 102,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 103,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 104,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 105,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 106,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 107,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 108,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 109,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 110,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 111,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 112,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 113,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 114,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 115,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 116,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 117,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 118,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 119,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 120,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 121,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 122,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 124,
+      "target": 123,
+      "label": "related to data.pdf"
+    },
+    {
+      "source": 1,
+      "target": 88,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 2,
+      "target": 89,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 3,
+      "target": 67,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 3,
+      "target": 90,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 67,
+      "target": 90,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 4,
+      "target": 91,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 5,
+      "target": 92,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 6,
+      "target": 93,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 7,
+      "target": 94,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 8,
+      "target": 95,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 9,
+      "target": 96,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 10,
+      "target": 97,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 11,
+      "target": 98,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 12,
+      "target": 99,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 13,
+      "target": 100,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 14,
+      "target": 101,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 15,
+      "target": 102,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 16,
+      "target": 103,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 17,
+      "target": 104,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 18,
+      "target": 105,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 19,
+      "target": 106,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 20,
+      "target": 107,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 21,
+      "target": 108,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 22,
+      "target": 109,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 23,
+      "target": 110,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 24,
+      "target": 111,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 25,
+      "target": 112,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 26,
+      "target": 113,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 27,
+      "target": 114,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 28,
+      "target": 115,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 29,
+      "target": 116,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 40,
+      "target": 54,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 42,
+      "target": 81,
+      "label": "synonymously connected"
+    },
+    {
+      "source": 53,
+      "target": 87,
+      "label": "2024-03-13"
+    }
+  ]
+}

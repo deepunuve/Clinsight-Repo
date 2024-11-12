@@ -1,0 +1,57 @@
+{
+   "tables": {
+       "primary_key": "Unnamed: 0",
+       "columns": {
+           "Unnamed: 0": {
+               "sdtype": "id"
+           },
+           "ROW_ID": {
+               "sdtype": "unknown",
+               "pii": true
+           },
+           "SUBJECT_ID": {
+               "sdtype": "unknown",
+               "pii": true
+           },
+           "HADM_ID": {
+               "sdtype": "unknown",
+               "pii": true
+           },
+           "CHARTDATE": {
+               "sdtype": "datetime",
+               "datetime_format": "%Y-%m-%d"
+           },
+           "CHARTTIME": {
+               "sdtype": "datetime",
+               "datetime_format": "%Y-%m-%d %H:%M:%S"
+           },
+           "STORETIME": {
+               "sdtype": "datetime",
+               "datetime_format": "%Y-%m-%d %H:%M:%S"
+           },
+           "CATEGORY": {
+               "sdtype": "categorical"
+           },
+           "DESCRIPTION": {
+               "sdtype": "unknown",
+               "pii": true
+           },
+           "CGID": {
+               "sdtype": "numerical"
+           },
+           "ISERROR": {
+               "sdtype": "numerical"
+           },
+           "TEXT": {
+               "sdtype": "unknown",
+               "pii": true
+           },
+           "ADMITTIME": {
+               "sdtype": "datetime",
+               "datetime_format": "%Y-%m-%d %H:%M:%S"
+           }
+       },
+       "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+   },
+   "relationships": []
+}

@@ -1,0 +1,55 @@
+{
+  "answer": "According to the provided PDF, acne is a multifactorial skin condition characterized by hyperkeratinization, excess production and inflammation of sebum, insulin-like growth factor-1, adrenocorticotropic hormone, and growth hormone – and thus frequently begins at or before adrenarche or puberty.",
+  "source": "\nThe file name is JDD2.pdf and the page number is 1\n",
+  "matrix": [
+    {
+      "word": " Benzoyl Peroxide",
+      "start_index": 92,
+      "end_index": 108,
+      "type": "Chemical",
+      "color": "green"
+    },
+    {
+      "word": "a",
+      "start_index": 139,
+      "end_index": 140,
+      "type": "Disease",
+      "color": "orange"
+    },
+    {
+      "word": "##cne vulgaris",
+      "start_index": 140,
+      "end_index": 152,
+      "type": "Disease",
+      "color": "orange"
+    },
+    {
+      "word": "Adapalene",
+      "start_index": 72,
+      "end_index": 81,
+      "type": "PERSON",
+      "color": "#925393"
+    },
+    {
+      "word": "0.1%",
+      "start_index": 83,
+      "end_index": 87,
+      "type": "PERCENT",
+      "color": "#73f7b6"
+    },
+    {
+      "word": "Benzoyl Peroxide",
+      "start_index": 92,
+      "end_index": 108,
+      "type": "PERSON",
+      "color": "#925393"
+    },
+    {
+      "word": "2.5%",
+      "start_index": 110,
+      "end_index": 114,
+      "type": "PERCENT",
+      "color": "#73f7b6"
+    }
+  ]
+}

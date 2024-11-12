@@ -1,0 +1,70 @@
+/* Navbar background and border */
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e0e0e0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Ensure that the Nav container stretches to full width */
+.navbar-nav {
+  margin-left: auto !important;
+  /* Push navbar items to the right */
+  display: flex !important;
+  /* Enable Flexbox layout */
+  justify-content: flex-end !important;
+  /* Align items to the right */
+}
+
+/* Navbar logo size */
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+}
+
+/* Ensure proper text color for navbar items */
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .dropdown-toggle {
+  color: #333333 !important;
+  /* Dark text color */
+  font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .dropdown-toggle:hover {
+  color: #007bff !important;
+  /* Highlight color on hover */
+}
+
+/* Spacing between icon and text */
+.icon-spacing {
+  margin-right: 8px !important;
+}
+
+/* User dropdown menu */
+/* Dropdown item hover effects */
+#user-dropdown .dropdown-item {
+  color: #333333 !important;
+  margin-top: 10px !important;
+}
+
+.dropdown-toggle::after {
+  content: none !important;
+}
+
+#user-dropdown .dropdown-item:hover {
+  background-color: #f8f9fa !important;
+}
+
+/* Login button styling */
+.btn-outline-light {
+  color: #007bff !important;
+  border-color: #007bff !important;
+}
+
+.btn-outline-light:hover {
+  background-color: #007bff !important;
+  color: #ffffff !important;
+}

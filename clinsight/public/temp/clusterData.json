@@ -1,0 +1,82 @@
+{
+   "data":"\n** Summary of the Study**\n\n**Title:** The Effects of the Dietary Supplement Cardioflex Q10 on Reducing Cardiovascular Disease Risk Factors in Adults\n\n**Objective:** To determine if daily supplementation with the dietary supplement Cardioflex for 90 days will reduce risk factor biomarkers for CVD in adults aged 30–65 years old.\n\n**Methods:**\n\n* Participants (n=69) were randomly assigned to receive either Cardioflex or a placebo for 90 days.\n* Blood samples were collected at baseline and at the end of the study to measure lipid profiles, inflammatory markers, and endothelial function biomarkers.\n* Anthropometric measurements (waist circumference, body mass index) and cardiac measures (heart rate, heart rate variability, accelerated plethysmography (APG age), blood pressure) were also assessed.\n* Participants recorded their dietary intake and wore a pedometer to track physical activity.\n\n**Results:**\n\n* Cardioflex supplementation significantly improved lipid profiles, including reducing total cholesterol, LDL-cholesterol, and triglycerides, and increasing HDL-cholesterol.\n* Cardioflex supplementation also significantly improved anthropometric measures, including reducing waist circumference and body mass index.\n* Cardioflex supplementation did not significantly improve cardiac measures or inflammatory and endothelial function biomarkers.\n* Cardioflex supplementation was well-tolerated, with no significant changes in liver or kidney function tests.\n\n**Conclusion:**\n\nDaily supplementation with the dietary supplement Cardioflex for 90 days can improve lipid profiles and anthropometric measures in adults aged 30–65 years old. Further research is needed to determine the long-term effects of Cardioflex supplementation on CVD risk factors and outcomes.\n",
+   "matrix":[
+      {
+         "word":" Cardioflex Q10",
+         "start_index":77,
+         "end_index":91,
+         "type":"Protein",
+         "color":"red"
+      },
+      {
+         "word":" lipid",
+         "start_index":527,
+         "end_index":532,
+         "type":"Chemical",
+         "color":"green"
+      },
+      {
+         "word":" lipid",
+         "start_index":965,
+         "end_index":970,
+         "type":"Chemical",
+         "color":"green"
+      },
+      {
+         "word":" cholesterol",
+         "start_index":1006,
+         "end_index":1017,
+         "type":"Chemical",
+         "color":"green"
+      },
+      {
+         "word":" LDL-cholesterol",
+         "start_index":1019,
+         "end_index":1034,
+         "type":"Chemical",
+         "color":"green"
+      },
+      {
+         "word":" triglycerides",
+         "start_index":1040,
+         "end_index":1053,
+         "type":"Chemical",
+         "color":"green"
+      },
+      {
+         "word":" HDL-cholesterol",
+         "start_index":1070,
+         "end_index":1085,
+         "type":"Chemical",
+         "color":"green"
+      },
+      {
+         "word":" lipid",
+         "start_index":1573,
+         "end_index":1578,
+         "type":"Chemical",
+         "color":"green"
+      },
+      {
+         "word":"Cardiovascular Disease",
+         "start_index":104,
+         "end_index":126,
+         "type":"Disease",
+         "color":"orange"
+      },
+      {
+         "word":"CVD",
+         "start_index":294,
+         "end_index":297,
+         "type":"Disease",
+         "color":"orange"
+      },
+      {
+         "word":"CVD",
+         "start_index":1743,
+         "end_index":1746,
+         "type":"Disease",
+         "color":"orange"
+      }
+   ]
+}

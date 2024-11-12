@@ -1,0 +1,282 @@
+{
+    "AAD": {
+        "P": "Adults and adolescents aged 9 years and older with acne vulgaris",
+        "I": "Topical and systemic treatments, including benzoyl peroxide, retinoids, antibiotics, hormonal agents, and physical modalities",
+        "C": "Comparing different treatments and combinations of treatments",
+        "O": "Improving acne severity, reducing inflammation, and promoting clearance"
+    },
+    "JAAD": {
+        "P": "Patients with moderate to severe acne vulgaris aged 9 years and older",
+        "I": "Clascoterone cream 1, a topical androgen receptor inhibitor",
+        "C": "Vehicle cream (no treatment)",
+        "O": "Treatment-emergent adverse events (TEAEs), including local skin reactions, nasopharyngitis, and upper respiratory tract infection"
+    },
+    "JAMAD": {
+        "P": "Patients with facial acne vulgaris, 9 years old or older",
+        "I": "Topical clascoterone cream 1",
+        "C": "Vehicle cream",
+        "O": "Treatment success, reduction in non-inflammatory and inflammatory lesion counts, and safety"
+    },
+    "DRREDDY": {
+        "P": "Population: approximately 550 subjects with mild to moderate facial acne vulgaris, randomized 1:1 ratio to either dfd-03 lotion or vehicle lotion",
+        "I": "Intervention: dfd-03 lotion, a topical treatment containing 0.1% tazarotene, applied twice daily for 12 weeks",
+        "C": "Comparison: vehicle lotion, a placebo treatment, applied twice daily for 12 weeks",
+        "O": "Outcome: primary efficacy endpoints include absolute change in inflammatory and non-inflammatory lesion counts, proportion of subjects with clinical response, and secondary endpoints include percent change in lesion counts and proportion of subjects with 2-grade reduction in lesion counts"
+    },
+    "DRREDDY1": {
+        "P": "Population: approximately 550 subjects with mild to moderate facial acne vulgaris, randomized 1:1 ratio to either dfd-03 lotion or vehicle lotion",
+        "I": "Intervention: dfd-03 lotion, a topical treatment containing 0.1% tazarotene, applied twice daily for 12 weeks",
+        "C": "Comparison: vehicle lotion, a placebo treatment, applied twice daily for 12 weeks",
+        "O": "Outcome: primary efficacy endpoints include absolute change in inflammatory papules and pustules lesion counts, absolute change in non-inflammatory open and closed comedones lesion counts, and proportion of subjects with clinical response at week 12; secondary endpoints include percent change in inflammatory and non-inflammatory lesion counts, and exploratory endpoints include time to 50% reduction in total lesion counts and proportion of subjects with 2-grade improvement in investigator's global assessment"
+    },
+    "PRGO2": {
+        "P": "Male and female subjects aged 12-40 years with moderate facial acne vulgaris",
+        "I": "Adapalene benzoyl peroxide topical gel 0.3/2.5 and Epiduo Forte adapalene benzoyl peroxide gel 0.3/2.5",
+        "C": "Vehicle test product",
+        "O": "Mean percent change in inflammatory papules and pustules lesion count, mean percent change in non-inflammatory open and closed comedones lesion count, and proportion of subjects with clinical response at week 12"
+    },
+    "TARO": {
+        "P": "Population: healthy males and females, 12-40 years of age, with a clinical diagnosis of facial acne vulgaris, and a baseline IGA acne severity grade of 2 (mild), 3 (moderate), or 4 (severe).",
+        "I": "Intervention: Clindamycin phosphate benzoyl peroxide gel 1.2/2.5 (test product) and Acanya (reference product), applied topically to the affected areas of the face.",
+        "C": "Comparison: The test product (Clindamycin phosphate benzoyl peroxide gel 1.2/2.5) will be compared to the reference product (Acanya) and the vehicle control.",
+        "O": "Outcome: The primary efficacy endpoints are the mean percent change in inflammatory papules and pustules lesion count and non-inflammatory open and closed comedones lesion count at week 12. The secondary efficacy endpoint is the proportion of subjects with a clinical response (defined as a 2-grade improvement in IGA acne severity) at week 12."
+    },
+    "PRGO1": {
+        "P": "Population: male and female subjects aged 12-40 years with moderate to severe facial acne vulgaris",
+        "I": "Intervention: topical gel containing clindamycin phosphate and benzoyl peroxide, and a vehicle control treatment",
+        "C": "Comparison: the efficacy and safety of the two active formulations (Perrigo UK Finco and Onexton) compared to the vehicle control treatment",
+        "O": "Outcome: the primary efficacy endpoints are the mean percent change in inflammatory papules and pustules lesion count, and the mean percent change in non-inflammatory open and closed comedones lesion count, and the secondary endpoint is the proportion of subjects with a clinical response at week 12"
+    },
+    "GandW": {
+        "P": "healthy male non-pregnant female subjects aged 12-40 years inclusive with clinical diagnosis of acne vulgaris",
+        "I": "tazarotene cream 0.1 (test product) and tazorac cream 0.1 (reference product)",
+        "C": "vehicle placebo cream",
+        "O": "percent change in baseline visit 4/week 12 inflammatory lesion counts and non-inflammatory lesion counts, and proportion of subjects with clinical response'success' at visit 4/week 12"
+    },
+    "PRGO": {
+        "P": "Population: male and female subjects aged 12-40 years with moderate to severe facial acne vulgaris",
+        "I": "Intervention: Clindamycin phosphate benzoyl peroxide topical gel 1.2/2.5 and Acanya topical gel",
+        "C": "Comparison: Vehicle control treatment",
+        "O": "Outcome: Efficacy and safety of the study medications, including inflammatory lesion count, non-inflammatory lesion count, and investigator's global assessment"
+    },
+    "JDD1": {
+        "P": "patients ≥ 12 years age with moderate-to-severe acne vulgaris",
+        "I": "clascoterone cream 1",
+        "C": "vehicle cream",
+        "O": "favorable long-term safety and efficacy"
+    },
+    "JDD2": {
+        "P": "patients aged ≥12 years with moderate-to-severe facial acne vulgaris",
+        "I": "topical application of clascoterone cream, a novel androgen receptor inhibitor",
+        "C": "vehicle cream (placebo)",
+        "O": "efficacy and safety of clascoterone cream in treating facial acne vulgaris"
+    },
+    "JDD3": {
+        "P": "male and female subjects ≥12 years with facial acne vulgaris",
+        "I": "clascoterone 0.1, 0.5, and 1 topical cream",
+        "C": "vehicle-controlled dose escalation study",
+        "O": "efficacy assessed by investigator's global assessment (IGA), overall severity of acne using a five-point scale, and lesion counts"
+    },
+    "UCALGARY": {},
+    "NCT00988026": {
+        "P": "patients with mild to moderate acne",
+        "I": "minocycline microgranules and lymecycline",
+        "C": "two antibiotic treatments",
+        "O": "adverse events profile"
+    },
+    "NCT03122457": {
+        "P": "eligible women age 18 with current therapy for perimenstrual acne",
+        "I": "investigational product",
+        "C": "no comparison mentioned",
+        "O": "acne quality life (Acne QOL), subjective assessments, zit count, inflammatory and non-inflammatory acne, global assessment, menses duration"
+    },
+    "NCT01929057": {
+        "P": "patients with acne",
+        "I": "anti-p.acnes antibodies",
+        "C": "healthy control patients",
+        "O": "reduced inflammation in pimples"
+    },
+    "NCT01017120": {
+        "P": "subjects with acne vulgaris",
+        "I": "new foam formulation of tazarotene",
+        "C": "none mentioned",
+        "O": "safety and efficacy"
+    },
+    "NCT05517720": {
+        "P": "individuals with skin related issues",
+        "I": "aria trio complete facial system",
+        "C": "no comparison mentioned",
+        "O": "reduce wrinkles, reduce skin related issues, improve skin quality"
+    },
+    "NCT01631474": {
+        "P": "acne vulgaris androgen-dependent skin disorder",
+        "I": "cb-03-01",
+        "C": "vehicle treatment",
+        "O": "safety efficacy"
+    },
+    "NCT06202274": {
+        "P": "adults with chronic wounds",
+        "I": "candela medical technology",
+        "C": "no comparison specified",
+        "O": "clinical treatment"
+    },
+    "NCT01289574": {
+        "P": "facial acne",
+        "I": "topical 0.1 0.025 asc-j9 creams applied twice daily",
+        "C": "vehicle control",
+        "O": "safety efficacy"
+    },
+    "NCT01160757": {
+        "P": "patients with acute acne lesions",
+        "I": "experimental ultrasound device",
+        "C": "no comparison mentioned",
+        "O": "treating acute acne lesions"
+    },
+    "NCT03850925": {
+        "P": "patients with acne scarring",
+        "I": "picosecond 1064-nm laser diffractive lens array nonablative fractional laser treatment",
+        "C": "nonablative fractional laser treatment",
+        "O": "acne scarring"
+    },
+    "39184919": {
+        "P": "skin",
+        "I": "topical retinoid formulation technology",
+        "C": "none",
+        "O": "skin irritation"
+    },
+    "39184770": {
+        "P": "teenagers, populations",
+        "I": "none",
+        "C": "none",
+        "O": "prevalence, inflammatory conditions"
+    },
+    "39184705": {
+        "P": "population from the middle east region, specifically the united arab emirates (uae), including patients from a dermatology outpatient clinic in dubai, uae, with varying factors such as age, gender, socioeconomic status, location, climate, and dietary habits",
+        "I": "none mentioned",
+        "C": "none mentioned",
+        "O": "types and frequency of dermatological disorders encountered"
+    },
+    "39182678": {},
+    "39180584": {},
+    "39180560": {
+        "P": "patients with rosacea",
+        "I": "595 nm pulsed dye laser (PDL) combination with supramolecular salicylic acid (SSA) treatment",
+        "C": "no comparison specified",
+        "O": "clinical effects"
+    },
+    "39179105": {
+        "P": "cutibacterium acnes, acne vulgaris",
+        "I": "clindamycin, fluoroquinolones",
+        "C": "none",
+        "O": "antibiotic susceptibility"
+    },
+    "39177615": {
+        "P": "women with polycystic ovary syndrome (PCOS) in childbearing years",
+        "I": "manual examination and ultrasound images",
+        "C": "normal cyst vs. PCOS cyst",
+        "O": "infertility"
+    },
+    "JDD": {
+        "P": "Patients aged ≥12 years with moderate-to-severe facial and/or truncal acne vulgaris",
+        "I": "Clascoterone cream 1",
+        "C": "Vehicle cream",
+        "O": "Treatment success, lesion counts, and investigator's global assessment scores"
+    },
+    "39175550": {
+        "P": "patients with rosacea",
+        "I": "combination of standard biomedical treatment and traditional Chinese medicine (TCM)",
+        "C": "standard biomedical treatment",
+        "O": "lowered recurrence rate, clinical symptom scores, and interleukin-37 (IL-37) levels"
+    },
+    "39166269": {
+        "P": "children with phosphatase tensin homolog pten hamartoma tumor syndrome (phts) and vascular anomalies",
+        "I": "sirolimus (an mtor inhibitor)",
+        "C": "no comparison specified",
+        "O": "significant clinical improvement"
+    },
+    "39165893": {
+        "P": "patients with severe acne who are insensitive to conventional therapy, including systemic antibiotics",
+        "I": "isotretinoin oral medicine",
+        "C": "conventional therapy, including systemic antibiotics",
+        "O": "development of acute psychosis"
+    },
+    "39165891": {
+        "P": "acne vulgaris patients",
+        "I": "isotretinoin",
+        "C": "variations serum lipid concentration side effect",
+        "O": "psychiatric symptoms suicidal ideation"
+    },
+    "39164814": {
+        "P": "gastrointestinal tract, skin, digestive system, skin diseases, acne, psoriasis, atopic dermatitis",
+        "I": "supplementation, beneficial bacteria, probiotics, topical administration of probiotics",
+        "C": "known positive effect, different favorable effects, accelerated wound healing, suppression of inflammation, lower infection risk, reduced antibiotic requirement",
+        "O": "eliminate pathological conditions, favorable impact on management of skin diseases, increased"
+    },
+    "39163914": {
+        "P": "humans, HACAT cells",
+        "I": "centella asiatica-derived triterpenoids",
+        "C": "no comparison mentioned",
+        "O": "hacat viability, lactate dehydrogenase (LDH) release"
+    },
+    "39162381": {
+        "P": "24-year-old woman, patients with keloids, patients with pyoderma gangrenosum",
+        "I": "surgery, systemic prednisone, adalimumab, corticosteroid taping",
+        "C": "no comparison mentioned",
+        "O": "ulcer re-epithelialization, relapse of keloids"
+    },
+    "39161490": {
+        "P": "patients diagnosed with SAPHO syndrome, a 56-year-old woman with progressive back pain, and patients with spinal bone metastases",
+        "I": "diagnosis of SAPHO syndrome, spinal CT scan, MRI, and PET/CT",
+        "C": "spinal bone metastases",
+        "O": "progressive back pain, hyperdense lesions, bone marrow edema, hypointense T1-weighted imaging, hyperintense T2-weighted imaging, multiple skeletal lesions affecting the spine"
+    },
+    "39159340": {
+        "P": "patients undergoing current recent treatment isotretinoin, 25-year-old competitive aerial trapeze artist, athletes undergoing isotretinoin treatment",
+        "I": "isotretinoin",
+        "C": "no comparison mentioned",
+        "O": "skin fragility, blistering, erosions, delayed wound healing, hypertrophic scarring"
+    },
+    "39159339": {},
+    "39158749": {
+        "P": "homeless individuals, undomiciled and sheltered populations, vulnerable group",
+        "I": "teledermatology, dermatologic care, dermatologists",
+        "C": "in-person dermatologic care, traditional dermatologic care",
+        "O": "improved clinical outcomes, enhanced access to dermatologic care, reduced disparities in healthcare access"
+    },
+    "39156816": {
+        "P": "young acne patients",
+        "I": "social media information exposure",
+        "C": "no comparison mentioned",
+        "O": "anxiety"
+    },
+    "TOLMAR": {
+        "P": "Healthy males and females aged ≥ 12 ≤ 40 years with clinical diagnosis of acne vulgaris, defined as face ≥ 20 facial inflammatory lesions, ≥ 25 non-inflammatory lesions, and ≤ 2 nodulocystic lesions",
+        "I": "Clindamycin 1 benzoyl peroxide 5 topical gel (test product) and duac® topical gel (reference product)",
+        "C": "Vehicle control treatment (gel vehicle placebo)",
+        "O": "Mean percent reduction in inflammatory lesion counts, mean percent reduction in non-inflammatory lesion counts, and proportion of subjects achieving at least a 2-grade reduction in acne severity"
+    },
+    "TOLMAR1": {
+        "P": "Healthy male and non-pregnant female subjects aged 12-40 years inclusive with clinical diagnosis of acne vulgaris",
+        "I": "Clindamycin 1 benzoyl peroxide 5 topical gel (test product) and Benzaclin topical gel (reference product)",
+        "C": "Vehicle control treatment (gel placebo)",
+        "O": "Mean percent reduction in inflammatory papules and pustules lesion count, mean percent reduction in non-inflammatory open and closed comedones lesion count, and proportion of subjects achieving at least a 2-grade reduction in acne severity"
+    },
+    "TOLMAR2": {
+        "P": "Population: male and female subjects, 12-40 years of age, with clinical diagnosis of acne vulgaris, defined as ≥ 20 facial inflammatory lesions, ≥ 25 facial non-inflammatory lesions, ≤ 2 nodulocystic lesions, and acne severity grade 2-4.",
+        "I": "Intervention: clindamycin phosphate benzoyl peroxide gel 1.2/2.5 (test product) and vehicle (reference listed drug, RLD) applied topically to the face, avoiding contact with eyes, lips, inside nose, and mouth.",
+        "C": "Comparison: test product (clindamycin phosphate benzoyl peroxide gel 1.2/2.5) vs. vehicle (RLD) in a double-blind, randomized, parallel-group, vehicle-controlled multicenter study.",
+        "O": "Outcome: efficacy endpoints include mean percent change in inflammatory papules/pustules lesion count and non-inflammatory open/closed comedones lesion count at week 12, and safety endpoints include incidence of adverse events (AEs) and application site reactions."
+    },
+    "TOLMAR3": {
+        "P": "Population: male and female subjects aged 12-40 years with acne vulgaris, defined as ≥ 20 facial inflammatory lesions, ≥ 25 facial non-inflammatory lesions, ≤ 2 nodulocystic lesions, and acne severity grade 2-4",
+        "I": "Intervention: adapalene 0.1 benzoyl peroxide 2.5 gel, a generic formulation of the reference listed drug (RLD) epiduo gel",
+        "C": "Comparison: vehicle control arm",
+        "O": "Outcome: bioequivalence, safety, and efficacy of the test product (adapalene 0.1 benzoyl peroxide 2.5 gel) compared to the RLD (epiduo gel) using clinical endpoints such as mean percent change in inflammatory and non-inflammatory lesion counts, and proportion of subjects achieving at least a 2-grade reduction in acne severity"
+    },
+    "TOLMAR4": {
+        "P": "Population: approximately 900 healthy males and females, 12 years of age or older, with clinical diagnosis of acne vulgaris",
+        "I": "Intervention: adapalene gel 0.3, generic and branded (Differin)",
+        "C": "Comparison: vehicle-controlled treatment",
+        "O": "Outcome: safety and efficacy of adapalene gel 0.3 compared to vehicle control, measured by mean percent change in inflammatory lesions, lesion counts, and investigator's global assessment"
+    }
+}

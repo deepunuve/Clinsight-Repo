@@ -1,0 +1,493 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "label": "CLBG_1210.pdf",
+      "protocolNumber": "CLBG 1210",
+      "protocolVersion": "2.0",
+      "currentversionDate": "Previous Protocol",
+      "sponsor": "Taro Pharmaceuticals U.S.A., Inc."
+    },
+    {
+      "id": 2,
+      "label": "DFD-03-CD-005.pdf",
+      "protocolNumber": "DFD-03-CD-005",
+      "protocolVersion": "7.0 (Amendment 06)",
+      "currentversionDate": "02 November 2017",
+      "sponsor": "Dr. Reddy‟s Laboratories, Ltd"
+    },
+    {
+      "id": 3,
+      "label": "DFD-03-CD-006.pdf",
+      "protocolNumber": "DFD-03-CD-006",
+      "protocolVersion": "6.0 (Amendment 05)",
+      "currentversionDate": "31 October 2017",
+      "sponsor": "Dr. Reddy’s Laboratories, Ltd"
+    },
+    {
+      "id": 4,
+      "label": "PRG-817.pdf"
+    },
+    {
+      "id": 5,
+      "label": "PRG-NY-12-005.pdf",
+      "protocolNumber": "PRG-NY-12-005",
+      "protocolVersion": "Date: 2/9/2012",
+      "currentversionDate": "2/9/2012"
+    },
+    {
+      "id": 6,
+      "label": "PRG-NY-15-003.pdf",
+      "protocolNumber": "PRG-NY-15-003",
+      "protocolVersion": "1",
+      "currentversionDate": "June 12, 2015"
+    },
+    {
+      "id": 7,
+      "label": "PRG-NY-17-008.pdf",
+      "protocolNumber": "PRG-NY-17-008",
+      "protocolVersion": "1 Date: September 28, 2017",
+      "currentversionDate": "September 28, 2017"
+    },
+    {
+      "id": 8,
+      "label": "SYM_2014-01.pdf",
+      "protocolNumber": "SYM 2014-01",
+      "protocolVersion": "1.0",
+      "currentversionDate": "13 February 2014",
+      "sponsor": "G & W Laboratories, Inc."
+    },
+    {
+      "id": 9,
+      "label": "TOL2635A.pdf",
+      "protocolNumber": "TOL2635A",
+      "protocolVersion": "3.0",
+      "currentversionDate": "November 20, 2010",
+      "sponsor": "TOLMAR Inc."
+    },
+    {
+      "id": 10,
+      "label": "TOL2648A.pdf",
+      "protocolNumber": "TOL2648A",
+      "protocolVersion": "is final:",
+      "currentversionDate": "February 8, 2011",
+      "sponsor": "TOLMAR Inc."
+    },
+    {
+      "id": 11,
+      "label": "TOL2680A.pdf",
+      "protocolNumber": "TOL2680A",
+      "protocolVersion": "1.1",
+      "currentversionDate": "12 November 2012",
+      "sponsor": "TOLMAR Inc."
+    },
+    {
+      "id": 12,
+      "label": "TOL2681B.pdf",
+      "protocolNumber": "TOL2681B",
+      "protocolVersion": "1.2",
+      "currentversionDate": "28 January 2013",
+      "sponsor": "TOLMAR Inc."
+    },
+    {
+      "id": 13,
+      "label": "TolmarAdapaleneGel.pdf",
+      "protocolNumber": "SYM 2008-01",
+      "protocolVersion": "1.0",
+      "currentversionDate": "July 23, 2008",
+      "sponsor": "TOLMAR Inc."
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 1,
+      "target": 5,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 1,
+      "target": 6,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 1,
+      "target": 7,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 1,
+      "target": 8,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 1,
+      "target": 9,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 1,
+      "target": 10,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 1,
+      "target": 11,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 1,
+      "target": 12,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 1,
+      "target": 13,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 2,
+      "target": 6,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 2,
+      "target": 7,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 2,
+      "target": 8,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 2,
+      "target": 9,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 2,
+      "target": 10,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 2,
+      "target": 11,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 2,
+      "target": 12,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 2,
+      "target": 13,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 3,
+      "target": 7,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 3,
+      "target": 8,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 3,
+      "target": 9,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 3,
+      "target": 10,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 3,
+      "target": 11,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 3,
+      "target": 12,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 3,
+      "target": 13,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 4,
+      "target": 8,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 4,
+      "target": 9,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 4,
+      "target": 10,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 4,
+      "target": 11,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 4,
+      "target": 12,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 4,
+      "target": 13,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 5,
+      "target": 9,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 5,
+      "target": 10,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 5,
+      "target": 11,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 5,
+      "target": 12,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 5,
+      "target": 13,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 6,
+      "target": 10,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 6,
+      "target": 11,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 6,
+      "target": 12,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 6,
+      "target": 13,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 7,
+      "target": 11,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 7,
+      "target": 12,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 7,
+      "target": 13,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 8,
+      "target": 12,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 8,
+      "target": 13,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 9,
+      "target": 13,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "label": "2024-03-24"
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "label": "2024-03-24"
+    }
+  ]
+}
