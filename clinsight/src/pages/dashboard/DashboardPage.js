@@ -5,6 +5,8 @@ import { getMockStudies, fetchStudyTypes } from '../../api/studies';
 import './DashboardPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt, faTachometerAlt, faDatabase, faCog, faUserCircle, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faStar } from '@fortawesome/free-regular-svg-icons';
 
 const DashboardPage = () => {
   const [studies, setStudies] = useState([]);
@@ -65,38 +67,37 @@ const DashboardPage = () => {
   return (
     <div className="dashboard-container">
       <Row className="g-4">
-        <div className="col-md-2">
-          <select
-            className="form-select"
-            id="dropdown"
-            onChange={handleDropdownChange}
-            value={selectedStudyType} // Controlled component
-          >
-            <option value="">Select all studies</option>
-            {studyTypes?.map((category) => (
-              <option key={category.id} value={category.title}>
-                {category.title}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="col-md-3">
-          <div className="input-group">
-            <input
-              type="text"
-              className="form-control"
-            />
-          </div>
-        </div>
-      </Row>
-      <Row className="g-4">
         {filteredStudies.map((study) => (
           <Col key={study.id} md={4} lg={4}>
             <div className="container mt-4">
               <div
-                className="card border-primary"
+                className="card border-primary position-relative"
                 style={{ cursor: 'pointer', minHeight: '250px' }}
               >
+                {/* Icons in the Top-Right Corner */}
+                <div
+                  className="position-absolute top-0 end-0 p-2 d-flex"
+                  style={{ gap: '0.5rem', zIndex: 10 }}
+                >
+
+                  <FontAwesomeIcon
+                    icon={faHeart}
+                    style={{ cursor: 'pointer', fontSize: '1rem' }}
+                    title="Edit"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    style={{ cursor: 'pointer', fontSize: '1rem' }}
+                    title="Delete"
+                  />
+                  <FontAwesomeIcon
+                    icon={faSyncAlt}
+                    style={{ cursor: 'pointer', fontSize: '1rem' }}
+                    title="Share"
+                  />
+                </div>
+
+                {/* Card Header */}
                 <div className="card-header" onClick={() => handleCardClick(study.id)}>
                   <div className={getBorderClass(study.study_type)}>
                     <div className="card-header-div">
@@ -105,6 +106,8 @@ const DashboardPage = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* Card Body */}
                 <div className="card-body" onClick={() => handleCardClick(study.id)}>
                   <p className="card-text">
                     {study.brief_summary.length > 150
@@ -126,6 +129,8 @@ const DashboardPage = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* Card Footer */}
                 <div className="card-footer bg-white">
                   <div className="d-flex justify-content-between">
                     <button className="btn me-2">Dashboard</button>
@@ -134,7 +139,7 @@ const DashboardPage = () => {
                     <div className="divider"></div>
                     <button className="btn me-2">Chat</button>
                     <div className="divider"></div>
-                    <button className="btn">Graphs</button>
+                    <button className="btn me-2">Graphs</button>
                   </div>
                 </div>
               </div>
@@ -142,6 +147,7 @@ const DashboardPage = () => {
           </Col>
         ))}
       </Row>
+
     </div>
   );
 };

@@ -20,6 +20,12 @@ import AdminUserPage from './pages/User/AdminUserPage';
 import './App.css';
 
 function App() {
+  const [headerTitle, setHeaderTitle] = useState('Study Details');
+
+  const updateHeaderTitle = (newTitle) => {
+    setHeaderTitle(newTitle);
+  };
+
   return (
     <AuthProvider>
       <GlobalStyle />
@@ -66,8 +72,8 @@ function App() {
           path="/study/:studyId"
           element={
             <ProtectedRoute>
-              <Layout>
-                <StudyDetailPage />
+              <Layout title={headerTitle}>
+                <StudyDetailPage updateHeaderTitle={updateHeaderTitle} />
               </Layout>
             </ProtectedRoute>
           }

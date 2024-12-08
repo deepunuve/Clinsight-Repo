@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Row, Col, Card, Form, ListGroup, Button, Container } from 'react-bootstrap';
-
+import React, { useState } from 'react';
+import { Form, ListGroup, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 const SourceDocumentSelector = (props) => {
     const pdfList = props.pdfList;
 
-    // Initialize selectedPDFs state from the pdfList based on the 'selected' field
     const [selectedPDFs, setSelectedPDFs] = useState(
         pdfList.filter(pdf => pdf.selected).map(pdf => pdf.id)  // Select PDFs that are marked as 'selected: true'
     );
@@ -22,54 +21,75 @@ const SourceDocumentSelector = (props) => {
     };
 
     // Handle select/deselect all
-    const handleSelectAllChange = () => {
-        if (selectAll) {
-            setSelectedPDFs([]);  // Deselect all
-        } else {
-            setSelectedPDFs(pdfList.map((pdf) => pdf.id));  // Select all
-        }
-        setSelectAll(!selectAll);  // Toggle selectAll state
+    const handleSelectAll = () => {
+        setSelectedPDFs(pdfList.map((pdf) => pdf.id));
+    };
+    const handleSelectNone = () => {
+        setSelectedPDFs([]);
+    };
+    // Helper function to truncate text
+    const truncateText = (text, maxLength) => {
+        return text.length > maxLength ? `${text.slice(0, maxLength)}...` : text;
     };
 
     return (
-        <div className="mt-4">           
-            <p className="text-muted mb-4">Choose the documents you'd like to include.</p>
+        <div style={{ marginLeft: "10px", marginRight: "10px" }}>
+            <Row className="align-items-left" >
+                {/* First Column: Select Dropdown */}
+                <div style={{ height: "10px" }}></div>
+                <Col md={5} className="text-left" style={{ color: 'black' }}>
+                    Select:
+                </Col>
 
-            {/* Select All Checkbox */}
-            <Form.Check
-                type="checkbox"
-                label="Select All"
-                checked={selectAll}
-                onChange={handleSelectAllChange}
-                className="mb-4"
-                style={{ cursor: 'pointer' }}
-            />
+                {/* Second Column: All Button */}
+                <Col md={3} className="text-left" style={{ color: '#0070c0' }}>
+                    <span onClick={handleSelectAll}>All</span>
+                </Col>
 
-            {/* List of PDFs with individual checkboxes */}
+                {/* Third Column: None Button */}
+                <Col md={4} className="text-left" style={{ color: '#0070c0' }}>
+                    <span onClick={handleSelectNone}>None</span>
+                </Col>
+                <div style={{ height: "10px" }}></div>
+            </Row>
+            {/* List of PDFs */}
             <ListGroup variant="flush">
                 {pdfList.map((pdf) => (
                     <ListGroup.Item
                         key={pdf.id}
-                        className={`d-flex justify-content-between align-items-center border-0 p-2 mb-3 rounded-3 shadow-lg ${selectedPDFs.includes(pdf.id) ? 'bg-light-blue text-white' : 'bg-white'}`}
-                        style={{
-                            // Remove fixed height, allowing the container to grow based on content
-                            padding: '10px 15px',
-                            lineHeight: '1.5',  // Control the line height for better readability
-                            wordWrap: 'break-word',  // Ensure long names wrap correctly
+                        className="mb-2"
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.transform = 'scale(1.02)';
+                            e.currentTarget.style.boxShadow = '0px 6px 10px rgba(0, 0, 0, 0.15)';
                         }}
-                    >
-                        <Form.Check
-                            type="checkbox"
-                            label={
-                                <span className="text-truncate d-block" style={{ maxWidth: '300px', whiteSpace: 'normal' }}>
-                                    {pdf.source_name}
-                                </span>
-                            }
-                            checked={selectedPDFs.includes(pdf.id)}
-                            onChange={() => handleCheckboxChange(pdf.id)}
-                            className="fs-6"
-                            style={{ cursor: 'pointer' }}
-                        />
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.transform = 'scale(1)';
+                            e.currentTarget.style.boxShadow = '0px 4px 6px rgba(0, 0, 0, 0.1)';
+                        }} >
+                        {/* Checkbox with Tooltip */}
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={<Tooltip>{pdf.source_name}</Tooltip>}
+                        >
+                            <Form.Check
+                                type="checkbox"
+                                label={
+                                    <OverlayTrigger
+                                        placement="top"
+                                        overlay={<Tooltip>{pdf.source_name}</Tooltip>}
+                                    >
+                                        <span
+                                            className="text-truncate "
+                                        >
+                                            {truncateText(pdf.source_name, 15)}
+                                        </span>
+                                    </OverlayTrigger>
+                                }
+                                checked={selectedPDFs.includes(pdf.id)}
+                                onChange={() => handleCheckboxChange(pdf.id)}
+                                style={{ cursor: 'pointer' }}
+                            />
+                        </OverlayTrigger>
                     </ListGroup.Item>
                 ))}
             </ListGroup>

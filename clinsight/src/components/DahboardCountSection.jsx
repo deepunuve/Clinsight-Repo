@@ -2,7 +2,7 @@
 import React from 'react';
 import { Col, Row, Card } from 'react-bootstrap';
 
-const DahboardCountSection = ({ dashData }) => {
+const DahboardCountSection = ({ dashData, onClick }) => {
     // Define an array of border classes
     const borderClasses = [
         'card-border-left-lightblue',
@@ -20,7 +20,7 @@ const DahboardCountSection = ({ dashData }) => {
 
                     return (
                         <Col key={index} md={3} lg={3}>
-                            <Card className={`shadow-lg rounded ${borderClass}`}>
+                            <Card className={`shadow-lg rounded ${borderClass}`} onClick={() => onClick(item.name)} >
                                 <Card.Body>
                                     <Row className="align-items-center">
                                         {/* Left section with full-height border */}

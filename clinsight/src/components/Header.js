@@ -1,14 +1,16 @@
 import React from 'react';
 import { useAuth } from '../providers/AuthProvider';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Container, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt, faTachometerAlt, faDatabase, faCog, faUserCircle, faUsers } from '@fortawesome/free-solid-svg-icons';
 import '../styles/header.css';
 
-const Header = () => {
+const Header = ({ title }) => {
+  
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
 
   // Handle Logout
   const handleLogout = () => {
@@ -20,8 +22,24 @@ const Header = () => {
   // Helper function to determine if a menu item is active
   const isActive = (path) => window.location.pathname === path;
 
+  // Map routes to titles
+  const getTitle = (path) => {
+    const titles = {
+      '/dashboard': 'Multi-Tenant Project Workspace',
+      '/adminDashboard': 'Multi-Tenant Project Workspace',
+      '/sources': 'Sources',
+      '/synthetic': 'Synthetic Data',
+      '/users': 'User Management',
+      '/profile': 'User Profile',
+    };
+    if (path.startsWith('/study')) return 'Dashboard';
+    return titles[path] || 'Multi-Tenant Project Workspace'; // Default title
+  };
+
+  const pageTitle = getTitle(location.pathname); // Get title dynamically
+
   return (
-    <div className='header-container'>
+    <div className="header-container">
       <Navbar bg="white" variant="light" expand="lg" sticky="top" className="navbar">
         <Navbar.Brand href="/dashboard">
           <div className="custom-font">
@@ -30,7 +48,7 @@ const Header = () => {
               alt="Icon"
               style={{ marginRight: '8px', width: '46px', height: '46px' }}
             />
-            Multi-Tenant Project Workspace
+            {title ? `${pageTitle} - ${title}` : pageTitle}
           </div>
         </Navbar.Brand>
 
@@ -88,7 +106,8 @@ const Header = () => {
                       src={userImage}
                       alt="User Avatar"
                       className="rounded-circle user-avatar"
-                      width="30" height="30"
+                      width="30"
+                      height="30"
                     />
                     <span className="ms-2 text-dark">{user.username}</span>
                   </span>

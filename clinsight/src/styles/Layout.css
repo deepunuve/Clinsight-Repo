@@ -46,6 +46,7 @@ html,
     flex-direction: column;
   }
 }
+
 .content-area {
   flex-grow: 1;
   /* This ensures the main content area expands to take available space */
@@ -57,11 +58,11 @@ html,
 .divider {
   width: 2px;
   /* Adjust the width as needed */
-  height: 30px;
+  height: 50px;
   /* Adjust the height to match the button's height */
   background-color: #ddd;
   /* Light gray color */
-  margin: 0 10px;
+  margin: 0 0;
   /* Space around the divider */
 }
 
@@ -139,7 +140,7 @@ footer {
 }
 
 .dashboard-container {
-  padding: 20px;
+  padding: 10px;
   /* Reduced padding around the content */
   /* Remove any extra margins */
   display: flex;
@@ -147,7 +148,7 @@ footer {
   min-height: 100vh;
   background-color: #ffffff !important;
   border: 2px solid #d3d6db;
-  margin: 2% 2% 2% 2% !important;
+  margin: 1% 1% 1% 1% !important;
 }
 
 .g-4>.col {
@@ -273,7 +274,7 @@ footer p {
 }
 
 .card-header {
-  padding: 1rem; 
+  padding: 1rem;
 }
 
 .card-body {
@@ -312,6 +313,7 @@ footer p {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+
   .m10LRT,
   .m10LR {
     margin-left: 0.5rem;

@@ -86,7 +86,9 @@
     transition: background-color 0.3s ease;
     background: #ffffff;
 }
-
+.me-2{
+    color: #0056b3;
+}
 .card-footer .badge:hover {
     background-color: #0056b3;
 }
