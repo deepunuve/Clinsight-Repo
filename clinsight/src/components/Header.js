@@ -1,4 +1,3 @@
-// src/components/Header.js
 import React from 'react';
 import { useAuth } from '../providers/AuthProvider';
 import { useNavigate } from 'react-router-dom';
@@ -18,45 +17,64 @@ const Header = () => {
 
   const userImage = '/images/user.jpg';
 
+  // Helper function to determine if a menu item is active
+  const isActive = (path) => window.location.pathname === path;
+
   return (
     <div className='header-container'>
       <Navbar bg="white" variant="light" expand="lg" sticky="top" className="navbar">
         <Navbar.Brand href="/dashboard">
-          <img
-            src="/images/logo.png"
-            alt="Logo"
-            className="navbar-logo"
-          />
+          <div className="custom-font">
+            <img
+              src="/Images/logo-icon.png"
+              alt="Icon"
+              style={{ marginRight: '8px', width: '46px', height: '46px' }}
+            />
+            Multi-Tenant Project Workspace
+          </div>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
-          {/* ms-auto ensures the nav items are pushed to the right */}
           <Nav className="ms-auto d-flex align-items-center">
             {user?.role === 'admin' && (
-              <Nav.Link href="/adminDashboard">
+              <Nav.Link
+                href="/adminDashboard"
+                className={isActive('/adminDashboard') ? 'nav-link-active' : 'nav-link-inactive'}
+              >
                 <FontAwesomeIcon icon={faTachometerAlt} className="icon-spacing" />
                 Dashboard
               </Nav.Link>
             )}
             {user?.role === 'user' && (
-              <Nav.Link href="/dashboard">
+              <Nav.Link
+                href="/dashboard"
+                className={isActive('/dashboard') ? 'nav-link-active' : 'nav-link-inactive'}
+              >
                 <FontAwesomeIcon icon={faTachometerAlt} className="icon-spacing" />
                 Dashboard
               </Nav.Link>
             )}
-            <Nav.Link href="/sources">
+            <Nav.Link
+              href="/sources"
+              className={isActive('/sources') ? 'nav-link-active' : 'nav-link-inactive'}
+            >
               <FontAwesomeIcon icon={faDatabase} className="icon-spacing" />
               Sources
             </Nav.Link>
-            <Nav.Link href="/synthetic">
+            <Nav.Link
+              href="/synthetic"
+              className={isActive('/synthetic') ? 'nav-link-active' : 'nav-link-inactive'}
+            >
               <FontAwesomeIcon icon={faCog} className="icon-spacing" />
               Synthetic
             </Nav.Link>
 
-            {/* Conditionally render Users link for admin users only */}
             {user?.role === 'admin' && (
-              <Nav.Link href="/users">
+              <Nav.Link
+                href="/users"
+                className={isActive('/users') ? 'nav-link-active' : 'nav-link-inactive'}
+              >
                 <FontAwesomeIcon icon={faUsers} className="icon-spacing" />
                 Users
               </Nav.Link>
@@ -67,9 +85,9 @@ const Header = () => {
                 title={
                   <span className="d-flex align-items-center">
                     <img
-                      src={userImage} // User profile image
+                      src={userImage}
                       alt="User Avatar"
-                      className="rounded-circle user-avatar" // Make image round
+                      className="rounded-circle user-avatar"
                       width="30" height="30"
                     />
                     <span className="ms-2 text-dark">{user.username}</span>
@@ -89,7 +107,6 @@ const Header = () => {
             ) : (
               <Button variant="outline-primary" onClick={() => navigate('/')}>Login</Button>
             )}
-
           </Nav>
         </Navbar.Collapse>
       </Navbar>

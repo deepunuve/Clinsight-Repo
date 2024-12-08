@@ -6,7 +6,6 @@ export const login = async (username, password) => {
     try {
         // Fetch user data from the local JSON file
         const response = await validateUserSecret(username, password);
-
         // Find the user in the JSON data
         const user = response.find(user => user.username === username && user.password === password);
         if (user) {

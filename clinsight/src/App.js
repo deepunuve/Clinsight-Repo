@@ -1,6 +1,8 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/fonts.css';
 import ProtectedRoute from './components/ProtectedRoute';
 import { AuthProvider } from './providers/AuthProvider';
 import LoginPage from './pages/login/LoginPage';
@@ -9,13 +11,13 @@ import StudyDetailPage from './pages/dashboard/StudyDetailPage';  // Import the 
 import UnauthorizedPage from './pages/UnauthorizedPage';
 import GlobalStyle from './styles/GlobalStyles';
 import Layout from './components/Layout';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import UserProfilePage from './pages/UserProfilePage';
 import Sources from './pages/source/Sources';
 import NIH from './pages/source/NIH';
 import Pubmed from './pages/source/Pubmed';
 import AdminDashboardPage from './pages/dashboard/AdminDashboardPage';
 import AdminUserPage from './pages/User/AdminUserPage';
+import './App.css';
 
 function App() {
   return (

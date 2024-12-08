@@ -8,7 +8,7 @@ const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true); // Track if checking session data is still loading
+  const [loading, setLoading] = useState(false); // Track if checking session data is still loading
   const navigate = useNavigate();
 
   // Check if the user is already logged in via sessionStorage on first render

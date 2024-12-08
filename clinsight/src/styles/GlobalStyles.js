@@ -8,9 +8,16 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-
+  body, html, .container, .row, .col, .btn, .navbar-brand, .card-title {
+    font-family: 'Brava Sans', sans-serif !important;
+  }
+  
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Brava Sans', sans-serif !important;
+    font-weight: 100; /* Light weight */
+    letter-spacing: 0.05em; /* Adjust spacing as needed */
+    margin: 0;
+    padding: 0;
     background-color: #ffffff;
     color: #333;
   }  

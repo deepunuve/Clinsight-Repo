@@ -1,10 +1,14 @@
 [
   {
     "id": "1",
-    "title": "Interventional"
+    "title": "Intervention"
   },
   {
     "id": "2",
-    "title": "Observational"
+    "title": "invoices"
+  },
+  {
+    "id": "3",
+    "title": "observation"
   }
 ]

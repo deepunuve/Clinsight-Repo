@@ -7,6 +7,17 @@
   /* Ensures that the layout takes up at least full height of the screen */
 }
 
+body,
+html,
+.container,
+.row,
+.col,
+.btn,
+.navbar-brand,
+.card-title {
+  font-family: 'Brava Sans', sans-serif !important;
+}
+
 .card-hover-source:hover {
   border: 2px solid black;
   /* Highlight with a black border */
@@ -20,20 +31,48 @@
   justify-content: center;
 }
 
+.nav-link-active {
+  color: black !important;
+  /* Active link color */
+}
 
+.nav-link-inactive {
+  color: #0070c0 !important;
+  /* Inactive link color */
+}
 
 @media (max-width: 992px) {
   .login-container .row {
     flex-direction: column;
   }
 }
-
 .content-area {
   flex-grow: 1;
   /* This ensures the main content area expands to take available space */
   padding: 10px;
   /* Add padding around the content */
   background-color: #f8f9fa;
+}
+
+.divider {
+  width: 2px;
+  /* Adjust the width as needed */
+  height: 30px;
+  /* Adjust the height to match the button's height */
+  background-color: #ddd;
+  /* Light gray color */
+  margin: 0 10px;
+  /* Space around the divider */
+}
+
+.button-with-border:not(:last-child) {
+  margin-right: 10px;
+  /* Space between buttons */
+}
+
+.btn {
+  padding: 5px 10px;
+  /* Adjust padding as needed */
 }
 
 footer {
@@ -102,11 +141,13 @@ footer {
 .dashboard-container {
   padding: 20px;
   /* Reduced padding around the content */
-  margin: 0;
   /* Remove any extra margins */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #ffffff !important;
+  border: 2px solid #d3d6db;
+  margin: 2% 2% 2% 2% !important;
 }
 
 .g-4>.col {
@@ -201,5 +242,123 @@ footer p {
 @media (max-width: 768px) {
   footer {
     padding: 20px;
+  }
+}
+
+.dashboard-container {
+  padding: 1rem;
+}
+
+.m10LRT {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.m10LR {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Card styles */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  padding: 1rem; 
+}
+
+.card-body {
+  padding: 1rem;
+  flex: 1;
+}
+
+.card-footer {
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+}
+
+.card .divider {
+  height: 20px;
+  width: 2px;
+  background-color: #ccc;
+  margin: 0 0.5rem;
+}
+
+/* Header border styles */
+.border-div-intervention {
+  border-left: 4px solid #007bff;
+}
+
+.border-div-observation {
+  border-left: 4px solid #28a745;
+}
+
+.border-div-diagnostic {
+  border-left: 4px solid #ffc107;
+}
+
+.border-div-default {
+  border-left: 4px solid #6c757d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .m10LRT,
+  .m10LR {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .dashboard-container {
+    padding: 0.5rem;
+  }
+
+  .card {
+    min-height: 200px;
+  }
+
+  .card-body {
+    padding: 0.75rem;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .intervention-title {
+    font-size: 0.9rem;
+  }
+
+  .main-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    min-height: 180px;
+  }
+
+  .card-footer {
+    gap: 0.25rem;
+  }
+
+  .box {
+    flex-direction: column;
   }
 }
