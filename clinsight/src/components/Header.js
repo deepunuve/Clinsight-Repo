@@ -7,7 +7,7 @@ import { faSignOutAlt, faTachometerAlt, faDatabase, faCog, faUserCircle, faUsers
 import '../styles/header.css';
 
 const Header = ({ title }) => {
-  
+
   const { user, logout } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
@@ -44,7 +44,7 @@ const Header = ({ title }) => {
         <Navbar.Brand href="/dashboard">
           <div className="custom-font">
             <img
-              src="/Images/logo-icon.png"
+              src="/images/logo-icon.png"
               alt="Icon"
               style={{ marginRight: '8px', width: '46px', height: '46px' }}
             />
