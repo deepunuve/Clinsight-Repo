@@ -27,7 +27,10 @@ export const AuthProvider = ({ children }) => {
       setToken(data.token);
       sessionStorage.setItem('user', JSON.stringify(data.user));  // Save the full user object
       sessionStorage.setItem('token', data.token);
-      navigate('/dashboard');
+      if (data.user.role == "admin")
+        navigate('/adminDashboard');
+      else
+        navigate('/dashboard');
     } catch (error) {
       console.error('Login failed', error);
     }

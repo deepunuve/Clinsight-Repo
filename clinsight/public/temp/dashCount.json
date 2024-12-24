@@ -2,258 +2,74 @@
   "count": [
     {
       "name": "Disease",
-      "count": 157,
+      "count": 567,
       "break_down": [
         {
-          "name": "vulgaris",
-          "count": 12
-        },
-        {
-          "name": "acne",
-          "count": 7
-        },
-        {
-          "name": "inflammatory papule",
-          "count": 1
-        },
-        {
-          "name": "inflammatory lesion",
-          "count": 3
-        },
-        {
-          "name": "contact dermatitis",
-          "count": 1
-        },
-        {
-          "name": "breast cancer",
+          "name": "dermatology life quality index",
           "count": 2
         },
         {
-          "name": "galderma",
+          "name": "withdrawal",
           "count": 2
         },
         {
-          "name": "cassiopea s.p.a.",
-          "count": 2
-        },
-        {
-          "name": "acnegenic pathways",
-          "count": 1
-        },
-        {
-          "name": "acne lesion count",
-          "count": 1
-        },
-        {
-          "name": "acne severity score",
-          "count": 1
-        },
-        {
-          "name": "vulgaris face",
-          "count": 1
-        },
-        {
-          "name": "romania",
-          "count": 1
-        },
-        {
-          "name": "bulgaria",
-          "count": 1
-        },
-        {
-          "name": "georgia",
-          "count": 1
-        },
-        {
-          "name": "death",
-          "count": 1
-        },
-        {
-          "name": "moderate application site swelling",
-          "count": 1
-        },
-        {
-          "name": "moderate application site pruritus",
-          "count": 1
-        },
-        {
-          "name": "moderate application site erythema",
-          "count": 1
-        },
-        {
-          "name": "moderate application site pain",
-          "count": 1
-        },
-        {
-          "name": "moderate application site edema",
-          "count": 1
-        },
-        {
-          "name": "moderate application site hemorrhage",
-          "count": 1
-        },
-        {
-          "name": "moderate application site bruising",
-          "count": 1
-        },
-        {
-          "name": "moderate application site rash",
-          "count": 1
-        },
-        {
-          "name": "pruritus",
+          "name": "pain",
           "count": 5
         },
         {
-          "name": "erythema",
-          "count": 6
-        },
-        {
-          "name": "reduced libido",
-          "count": 1
-        },
-        {
-          "name": "rosacea",
-          "count": 1
-        },
-        {
-          "name": "atrophy",
-          "count": 1
-        },
-        {
-          "name": "androgenetic alopecia",
-          "count": 2
-        },
-        {
-          "name": "psoriasis",
-          "count": 3
-        },
-        {
-          "name": "atopic dermatitis",
-          "count": 3
-        },
-        {
-          "name": "eczema area and severity index",
-          "count": 1
-        },
-        {
-          "name": "reduction inﬂammatory lesion",
-          "count": 1
-        },
-        {
-          "name": "severe case acne",
-          "count": 1
-        },
-        {
-          "name": "acnegenic pathway",
-          "count": 1
-        },
-        {
-          "name": "inﬂammatory lesion count",
-          "count": 1
-        },
-        {
-          "name": "application site pain",
-          "count": 1
-        },
-        {
-          "name": "application site dryness",
-          "count": 1
-        },
-        {
-          "name": "application site hypersensitivity",
-          "count": 1
-        },
-        {
-          "name": "application site erythema",
-          "count": 1
-        },
-        {
-          "name": "severe headache",
-          "count": 1
-        },
-        {
-          "name": "headache",
-          "count": 3
-        },
-        {
-          "name": "severe hematoma",
-          "count": 1
-        },
-        {
-          "name": "severe pneumonia",
-          "count": 1
-        },
-        {
-          "name": "severe worsening erythema",
-          "count": 1
-        },
-        {
-          "name": "moderate pruritus",
-          "count": 1
-        },
-        {
-          "name": "severe pruritus",
-          "count": 1
-        },
-        {
-          "name": "worsening telangiectasia",
-          "count": 1
-        },
-        {
-          "name": "ilc psoriasis",
-          "count": 1
-        },
-        {
-          "name": "facial vulgaris",
+          "name": "pregnancy",
           "count": 4
         },
         {
-          "name": "bacterial infection",
-          "count": 1
-        },
-        {
-          "name": "epidemiology of vulgaris",
-          "count": 1
-        },
-        {
-          "name": "al",
-          "count": 1
-        },
-        {
-          "name": "breast and ovarian cancer",
-          "count": 1
-        },
-        {
-          "name": "aggressive forms of breast cancer",
-          "count": 1
-        },
-        {
-          "name": "moderate-to-severe facial and/or truncal vulgaris",
-          "count": 1
-        },
-        {
-          "name": "facial and/or truncal vulgaris",
+          "name": "cardiff disability index",
           "count": 2
         },
         {
-          "name": "related dermatitis",
-          "count": 1
+          "name": "non-inflammatory lesion",
+          "count": 9
         },
         {
-          "name": "acne vulgaris",
+          "name": "diagnosis",
+          "count": 6
+        },
+        {
+          "name": "facial vulgaris",
+          "count": 5
+        },
+        {
+          "name": "inflammatory lesion count",
           "count": 2
         },
         {
-          "name": "rheumatoid arthritis",
+          "name": "inflammatory lesion",
+          "count": 8
+        },
+        {
+          "name": "non-inflammatory lesion count",
+          "count": 2
+        },
+        {
+          "name": "nodulocystic lesion",
+          "count": 5
+        },
+        {
+          "name": "condition",
+          "count": 7
+        },
+        {
+          "name": "screen failure",
           "count": 1
         },
         {
-          "name": "stria rubrae",
-          "count": 1
+          "name": "vulgaris",
+          "count": 17
         },
         {
-          "name": "edema",
+          "name": "psoriasis",
+          "count": 7
+        },
+        {
+          "name": "facial skin disease",
           "count": 1
         },
         {
@@ -261,11 +77,763 @@
           "count": 1
         },
         {
-          "name": "hyperkalemia",
+          "name": "rosacea",
+          "count": 9
+        },
+        {
+          "name": "sunburn",
           "count": 3
         },
         {
-          "name": "burning pruritus",
+          "name": "squamous cell carcinoma",
+          "count": 2
+        },
+        {
+          "name": "eczema",
+          "count": 8
+        },
+        {
+          "name": "dermatomyositis",
+          "count": 1
+        },
+        {
+          "name": "lupus",
+          "count": 1
+        },
+        {
+          "name": "perioral dermatitis",
+          "count": 1
+        },
+        {
+          "name": "chronic active liver disease",
+          "count": 1
+        },
+        {
+          "name": "renal impairment",
+          "count": 1
+        },
+        {
+          "name": "heart disease",
+          "count": 1
+        },
+        {
+          "name": "severe respiratory disease",
+          "count": 1
+        },
+        {
+          "name": "rheumatoid arthritis",
+          "count": 1
+        },
+        {
+          "name": "current malignancy",
+          "count": 1
+        },
+        {
+          "name": "immunocompromised condition",
+          "count": 1
+        },
+        {
+          "name": "disease",
+          "count": 4
+        },
+        {
+          "name": "non-inflammatory",
+          "count": 1
+        },
+        {
+          "name": "cadi score",
+          "count": 1
+        },
+        {
+          "name": "fitzpatrick skin assessment",
+          "count": 1
+        },
+        {
+          "name": "dlqi",
+          "count": 1
+        },
+        {
+          "name": "inflammatory",
+          "count": 3
+        },
+        {
+          "name": "comedo",
+          "count": 4
+        },
+        {
+          "name": "alcohol dependence",
+          "count": 1
+        },
+        {
+          "name": "safety report",
+          "count": 1
+        },
+        {
+          "name": "medical need",
+          "count": 1
+        },
+        {
+          "name": "tb",
+          "count": 1
+        },
+        {
+          "name": "inflammatory nodule",
+          "count": 1
+        },
+        {
+          "name": "cutaneous tolerance",
+          "count": 1
+        },
+        {
+          "name": "local cutaneous tolerance",
+          "count": 1
+        },
+        {
+          "name": "ongoing medical condition",
+          "count": 1
+        },
+        {
+          "name": "new medical event",
+          "count": 1
+        },
+        {
+          "name": "review",
+          "count": 1
+        },
+        {
+          "name": "missed",
+          "count": 1
+        },
+        {
+          "name": "desquamation",
+          "count": 2
+        },
+        {
+          "name": "erythem",
+          "count": 1
+        },
+        {
+          "name": "burning sensation",
+          "count": 2
+        },
+        {
+          "name": "pruritus",
+          "count": 6
+        },
+        {
+          "name": "irritation",
+          "count": 2
+        },
+        {
+          "name": "stinging",
+          "count": 6
+        },
+        {
+          "name": "medical condition",
+          "count": 2
+        },
+        {
+          "name": "serious event",
+          "count": 5
+        },
+        {
+          "name": "aes",
+          "count": 4
+        },
+        {
+          "name": "crf",
+          "count": 1
+        },
+        {
+          "name": "ae",
+          "count": 5
+        },
+        {
+          "name": "symptom",
+          "count": 2
+        },
+        {
+          "name": "discomfort",
+          "count": 2
+        },
+        {
+          "name": "medical intervention",
+          "count": 1
+        },
+        {
+          "name": "possibly related event",
+          "count": 1
+        },
+        {
+          "name": "probably related event",
+          "count": 1
+        },
+        {
+          "name": "hospitalization",
+          "count": 1
+        },
+        {
+          "name": "death",
+          "count": 6
+        },
+        {
+          "name": "congenital anomaly/birth defect",
+          "count": 3
+        },
+        {
+          "name": "allergic bronchospasm",
+          "count": 4
+        },
+        {
+          "name": "convulsion",
+          "count": 4
+        },
+        {
+          "name": "blood dyscrasia",
+          "count": 3
+        },
+        {
+          "name": "drug dependency",
+          "count": 4
+        },
+        {
+          "name": "congenital anomaly",
+          "count": 1
+        },
+        {
+          "name": "miscarried",
+          "count": 1
+        },
+        {
+          "name": "baseline inflammatory lesion count",
+          "count": 1
+        },
+        {
+          "name": "baseline non-inflammatory lesion count",
+          "count": 1
+        },
+        {
+          "name": "embarrassed",
+          "count": 1
+        },
+        {
+          "name": "depressed",
+          "count": 1
+        },
+        {
+          "name": "bothered",
+          "count": 1
+        },
+        {
+          "name": "bad",
+          "count": 1
+        },
+        {
+          "name": "worst",
+          "count": 1
+        },
+        {
+          "name": "major",
+          "count": 1
+        },
+        {
+          "name": "problem",
+          "count": 1
+        },
+        {
+          "name": "minor",
+          "count": 1
+        },
+        {
+          "name": "grade 3 4",
+          "count": 1
+        },
+        {
+          "name": "adverse event",
+          "count": 1
+        },
+        {
+          "name": "con junctivitis",
+          "count": 1
+        },
+        {
+          "name": "reason",
+          "count": 1
+        },
+        {
+          "name": "clinical diagnosis",
+          "count": 1
+        },
+        {
+          "name": "least moderate facial vulgaris",
+          "count": 2
+        },
+        {
+          "name": "event",
+          "count": 4
+        },
+        {
+          "name": "cystic polycystic ovarian syndrome",
+          "count": 2
+        },
+        {
+          "name": "steroid acneform eruption",
+          "count": 1
+        },
+        {
+          "name": "facial pustulosis",
+          "count": 1
+        },
+        {
+          "name": "plaque-type rosacea",
+          "count": 1
+        },
+        {
+          "name": "dermatitis",
+          "count": 5
+        },
+        {
+          "name": "atopic dermatitis",
+          "count": 2
+        },
+        {
+          "name": "demodicidosis",
+          "count": 1
+        },
+        {
+          "name": "facial keratosis pilaris",
+          "count": 1
+        },
+        {
+          "name": "lupus erythematous",
+          "count": 1
+        },
+        {
+          "name": "facial psoriasis",
+          "count": 1
+        },
+        {
+          "name": "steroid folliculitis",
+          "count": 3
+        },
+        {
+          "name": "bacterial folliculitis",
+          "count": 5
+        },
+        {
+          "name": "vul gari",
+          "count": 1
+        },
+        {
+          "name": "acneiform eruption",
+          "count": 2
+        },
+        {
+          "name": "systemic vulgaris",
+          "count": 2
+        },
+        {
+          "name": "rhinophyma",
+          "count": 1
+        },
+        {
+          "name": "rhynophyma",
+          "count": 1
+        },
+        {
+          "name": "telangiectasia",
+          "count": 2
+        },
+        {
+          "name": "study 1",
+          "count": 1
+        },
+        {
+          "name": "lesion",
+          "count": 5
+        },
+        {
+          "name": "application site reaction",
+          "count": 3
+        },
+        {
+          "name": "itching",
+          "count": 3
+        },
+        {
+          "name": "allergic contact dermatitis",
+          "count": 1
+        },
+        {
+          "name": "irae",
+          "count": 1
+        },
+        {
+          "name": "safety event",
+          "count": 1
+        },
+        {
+          "name": "safety analysis",
+          "count": 1
+        },
+        {
+          "name": "initial condition",
+          "count": 1
+        },
+        {
+          "name": "comedone",
+          "count": 1
+        },
+        {
+          "name": "cyst",
+          "count": 1
+        },
+        {
+          "name": "erythematous",
+          "count": 1
+        },
+        {
+          "name": "open comedo",
+          "count": 2
+        },
+        {
+          "name": "open comedone",
+          "count": 2
+        },
+        {
+          "name": "acne",
+          "count": 5
+        },
+        {
+          "name": "acneform eruption",
+          "count": 5
+        },
+        {
+          "name": "clostridium difficile colitis",
+          "count": 3
+        },
+        {
+          "name": "nodulocystic",
+          "count": 1
+        },
+        {
+          "name": "cne",
+          "count": 1
+        },
+        {
+          "name": "chloracne",
+          "count": 2
+        },
+        {
+          "name": "crohn's disease",
+          "count": 3
+        },
+        {
+          "name": "ulcerative colitis",
+          "count": 4
+        },
+        {
+          "name": "folliculitis",
+          "count": 4
+        },
+        {
+          "name": "local site reaction",
+          "count": 1
+        },
+        {
+          "name": "suspected reaction",
+          "count": 1
+        },
+        {
+          "name": "life-threatening ae",
+          "count": 1
+        },
+        {
+          "name": "drug abuse",
+          "count": 3
+        },
+        {
+          "name": "skin reaction",
+          "count": 2
+        },
+        {
+          "name": "cutaneous irritation",
+          "count": 3
+        },
+        {
+          "name": "burning",
+          "count": 5
+        },
+        {
+          "name": "scaling",
+          "count": 3
+        },
+        {
+          "name": "diarrhea",
+          "count": 4
+        },
+        {
+          "name": "colitis",
+          "count": 5
+        },
+        {
+          "name": "bloody diarrhea",
+          "count": 2
+        },
+        {
+          "name": "pseudo membranous colitis",
+          "count": 2
+        },
+        {
+          "name": "severe persistent diarrhea",
+          "count": 1
+        },
+        {
+          "name": "antibiotic associated colitis",
+          "count": 1
+        },
+        {
+          "name": "sae",
+          "count": 3
+        },
+        {
+          "name": "severe colitis",
+          "count": 4
+        },
+        {
+          "name": "life-threatening",
+          "count": 3
+        },
+        {
+          "name": "important medical event",
+          "count": 1
+        },
+        {
+          "name": "life threatening",
+          "count": 1
+        },
+        {
+          "name": "dm",
+          "count": 1
+        },
+        {
+          "name": "disorder",
+          "count": 1
+        },
+        {
+          "name": "acne vulgaris",
+          "count": 3
+        },
+        {
+          "name": "closed comedo",
+          "count": 1
+        },
+        {
+          "name": "non -inflammatory",
+          "count": 1
+        },
+        {
+          "name": "success",
+          "count": 1
+        },
+        {
+          "name": "incidence",
+          "count": 1
+        },
+        {
+          "name": "reaction",
+          "count": 4
+        },
+        {
+          "name": "fetal harm",
+          "count": 1
+        },
+        {
+          "name": "skin eczema",
+          "count": 1
+        },
+        {
+          "name": "cystic conglobata",
+          "count": 1
+        },
+        {
+          "name": "8.9.2",
+          "count": 1
+        },
+        {
+          "name": "peeling",
+          "count": 3
+        },
+        {
+          "name": "marked redness",
+          "count": 1
+        },
+        {
+          "name": "dry skin",
+          "count": 1
+        },
+        {
+          "name": "pseudomembranous colitis",
+          "count": 2
+        },
+        {
+          "name": "local skin reaction",
+          "count": 5
+        },
+        {
+          "name": "intercurrent illness",
+          "count": 1
+        },
+        {
+          "name": "skin erosion",
+          "count": 1
+        },
+        {
+          "name": "erythema",
+          "count": 7
+        },
+        {
+          "name": "dryness",
+          "count": 3
+        },
+        {
+          "name": "edema",
+          "count": 3
+        },
+        {
+          "name": "stomach pain",
+          "count": 1
+        },
+        {
+          "name": "allergic reaction",
+          "count": 3
+        },
+        {
+          "name": "severe swelling",
+          "count": 1
+        },
+        {
+          "name": "shortness of breath",
+          "count": 1
+        },
+        {
+          "name": "anaphylaxis",
+          "count": 4
+        },
+        {
+          "name": "medical history",
+          "count": 3
+        },
+        {
+          "name": "hipaa",
+          "count": 1
+        },
+        {
+          "name": "inclusion exclusion criterion",
+          "count": 1
+        },
+        {
+          "name": "closed comedone",
+          "count": 1
+        },
+        {
+          "name": "erythematous raised lesion",
+          "count": 2
+        },
+        {
+          "name": "iga severity grade",
+          "count": 1
+        },
+        {
+          "name": "hypersensit ivity",
+          "count": 1
+        },
+        {
+          "name": "allergy",
+          "count": 1
+        },
+        {
+          "name": "antibiotic-associated colitis",
+          "count": 3
+        },
+        {
+          "name": "global assessment",
+          "count": 1
+        },
+        {
+          "name": "severe incapacitating inability",
+          "count": 1
+        },
+        {
+          "name": "therapeutic failure",
+          "count": 1
+        },
+        {
+          "name": "side effect",
+          "count": 1
+        },
+        {
+          "name": "papules",
+          "count": 1
+        },
+        {
+          "name": "pustule",
+          "count": 1
+        },
+        {
+          "name": "vulgaris condition",
+          "count": 1
+        },
+        {
+          "name": "bact erial folliculitis",
+          "count": 1
+        },
+        {
+          "name": "abuse",
+          "count": 1
+        },
+        {
+          "name": "antiprur",
+          "count": 1
+        },
+        {
+          "name": "life-threatening event",
+          "count": 1
+        },
+        {
+          "name": "persistent significant disability/incapacity",
+          "count": 1
+        },
+        {
+          "name": "substantial disruption ability conduct normal life function",
+          "count": 1
+        },
+        {
+          "name": "unexpected event",
+          "count": 1
+        },
+        {
+          "name": "scaling/dryness",
+          "count": 2
+        },
+        {
+          "name": "progressive disease",
+          "count": 1
+        },
+        {
+          "name": "recovery",
+          "count": 1
+        },
+        {
+          "name": "safety population",
+          "count": 1
+        },
+        {
+          "name": "vehicle pivotal study",
+          "count": 1
+        },
+        {
+          "name": "extension study",
           "count": 1
         },
         {
@@ -273,7 +841,23 @@
           "count": 1
         },
         {
+          "name": "teaes",
+          "count": 2
+        },
+        {
+          "name": "lsrs",
+          "count": 2
+        },
+        {
+          "name": "stinging/burning",
+          "count": 2
+        },
+        {
           "name": "nasopharyngitis",
+          "count": 3
+        },
+        {
+          "name": "sinusitis",
           "count": 1
         },
         {
@@ -281,143 +865,107 @@
           "count": 1
         },
         {
-          "name": "sinusitis",
+          "name": "hormonal vulgaris",
           "count": 1
         },
         {
-          "name": "gastrointestinal disorders",
+          "name": "dermatol",
           "count": 1
         },
         {
-          "name": "diarrhea",
+          "name": "facial nodule",
+          "count": 2
+        },
+        {
+          "name": "nodulocystic skin pathology",
           "count": 1
         },
         {
-          "name": "nausea",
-          "count": 1
-        },
-        {
-          "name": "rash",
-          "count": 1
-        },
-        {
-          "name": "arthralgia",
-          "count": 1
-        },
-        {
-          "name": "myalgia",
-          "count": 1
-        },
-        {
-          "name": "dizziness",
-          "count": 1
-        },
-        {
-          "name": "anemia",
-          "count": 1
-        },
-        {
-          "name": "allergic contact dermatitis",
-          "count": 1
-        },
-        {
-          "name": "respiratory tract infection",
+          "name": "erythema/redness",
           "count": 1
         },
         {
           "name": "skin atrophy",
+          "count": 1
+        },
+        {
+          "name": "stria rubrae",
+          "count": 1
+        },
+        {
+          "name": "iga",
           "count": 2
         },
         {
-          "name": "telangiectasia",
+          "name": "hhn3",
           "count": 1
         },
         {
-          "name": "erythema scaling/dryness",
+          "name": "edvholqh",
           "count": 1
         },
         {
-          "name": "patient vulgaris",
+          "name": "noninflammatory lesion",
           "count": 1
         },
         {
-          "name": "topical systemic anti-acne preparation",
+          "name": "nilc",
           "count": 1
         },
         {
-          "name": "androgenic alopecia",
+          "name": "tlc",
           "count": 1
         },
         {
-          "name": "inflammatory lesion count",
+          "name": "headache",
           "count": 2
         },
         {
           "name": "oropharyngeal pain",
-          "count": 1
-        },
-        {
-          "name": "anti-acne medications",
-          "count": 1
-        },
-        {
-          "name": "epidemiology vulgaris",
-          "count": 1
-        },
-        {
-          "name": "plaque psoriasis",
           "count": 2
         },
         {
-          "name": "hhs",
+          "name": "primary",
           "count": 1
         },
         {
-          "name": "inflammatory papule pustule lesion count",
+          "name": "secondary",
           "count": 1
         },
         {
-          "name": "inflammation",
+          "name": "new safety concern",
+          "count": 1
+        },
+        {
+          "name": "anxiety",
           "count": 2
         },
         {
-          "name": "pain",
+          "name": "depression",
           "count": 1
         },
         {
-          "name": "ubject vulgaris",
+          "name": "low self-esteem",
           "count": 1
         },
         {
-          "name": "major depressive disorder",
+          "name": "adrenarche",
           "count": 1
         },
         {
-          "name": "anxiety disorders",
+          "name": "polycystic ovariansyndrome",
           "count": 1
         },
         {
-          "name": "rld",
-          "count": 2
-        },
-        {
-          "name": "acne lesions",
+          "name": "congenital adrenal hyperplasia",
           "count": 1
         },
         {
-          "name": "follicular hyperkeratinization",
+          "name": "adrenal ovarian tumors",
           "count": 1
         },
         {
-          "name": "polycystic ovarian syndrome",
-          "count": 1
-        },
-        {
-          "name": "facial lesions",
-          "count": 1
-        },
-        {
-          "name": "abnormal uterine bleeding",
+          "name": "renal disturbance",
           "count": 1
         },
         {
@@ -425,153 +973,1397 @@
           "count": 1
         },
         {
-          "name": "adrenal suppression",
+          "name": "abnormal uterine bleeding",
           "count": 1
         },
         {
-          "name": "hidradenitis suppurativa",
+          "name": "hyperkalemia",
+          "count": 1
+        },
+        {
+          "name": "hormonal pathogenesis",
+          "count": 1
+        },
+        {
+          "name": "systemic adverse effects",
+          "count": 1
+        },
+        {
+          "name": "inflammatory acne lesions",
+          "count": 1
+        },
+        {
+          "name": "elevated serum cortisol level",
+          "count": 1
+        },
+        {
+          "name": "abnormal hypothalamic-pituitary-adrenal hpa axis response",
+          "count": 1
+        },
+        {
+          "name": "perimenstrual",
+          "count": 1
+        },
+        {
+          "name": "wrinkle",
+          "count": 1
+        },
+        {
+          "name": "androgen-dependent skin disorder",
+          "count": 1
+        },
+        {
+          "name": "nonablative fractional scarring",
+          "count": 1
+        },
+        {
+          "name": "skin irritation",
+          "count": 1
+        },
+        {
+          "name": "polycystic ovary syndrome",
+          "count": 1
+        },
+        {
+          "name": "hormonal disorder",
+          "count": 1
+        },
+        {
+          "name": "infertility",
+          "count": 1
+        },
+        {
+          "name": "irregular period",
+          "count": 1
+        },
+        {
+          "name": "hormonal imbalance",
+          "count": 1
+        },
+        {
+          "name": "delayed even absent menstrual cycle",
+          "count": 1
+        },
+        {
+          "name": "cancer cyst",
+          "count": 1
+        },
+        {
+          "name": "normal cyst",
+          "count": 1
+        },
+        {
+          "name": "hamartoma tumor syndrome",
+          "count": 1
+        },
+        {
+          "name": "severe mental illness",
+          "count": 1
+        },
+        {
+          "name": "systemic inflammation",
+          "count": 1
+        },
+        {
+          "name": "dermatological disease",
+          "count": 1
+        },
+        {
+          "name": "keloid",
+          "count": 1
+        },
+        {
+          "name": "pyoderma gangrenosum",
+          "count": 1
+        },
+        {
+          "name": "herpes zoster",
+          "count": 1
+        },
+        {
+          "name": "sapho syndrome",
+          "count": 1
+        },
+        {
+          "name": "bone metastasis",
+          "count": 1
+        },
+        {
+          "name": "skin fragility",
+          "count": 1
+        },
+        {
+          "name": "blistering",
+          "count": 1
+        },
+        {
+          "name": "homelessness",
+          "count": 1
+        },
+        {
+          "name": "domestic sexual abuse",
+          "count": 1
+        },
+        {
+          "name": "parasitic infestation",
+          "count": 1
+        },
+        {
+          "name": "improve care access efficiency",
+          "count": 1
+        },
+        {
+          "name": "significant improvement outcome",
+          "count": 1
+        },
+        {
+          "name": "enhance access care",
+          "count": 1
+        },
+        {
+          "name": "digital divide",
+          "count": 1
+        },
+        {
+          "name": "disparity",
+          "count": 1
+        },
+        {
+          "name": "inclusivity",
+          "count": 1
+        },
+        {
+          "name": "avoid marginalization",
+          "count": 1
+        },
+        {
+          "name": "non-lesional erythema",
+          "count": 1
+        },
+        {
+          "name": "event application site reaction",
+          "count": 1
+        },
+        {
+          "name": "safety",
+          "count": 1
+        },
+        {
+          "name": "unresolved previously reported serious event",
+          "count": 1
+        },
+        {
+          "name": "burning/stinging",
+          "count": 1
+        },
+        {
+          "name": "erosion",
+          "count": 1
+        },
+        {
+          "name": "scaling/peeling",
+          "count": 1
+        },
+        {
+          "name": "facial nodulocystic lesion",
+          "count": 1
+        },
+        {
+          "name": "conglobata",
+          "count": 1
+        },
+        {
+          "name": "regional enteritis",
+          "count": 1
+        },
+        {
+          "name": "inflammatory bowel disease",
+          "count": 1
+        },
+        {
+          "name": "facial skin condition",
+          "count": 1
+        },
+        {
+          "name": "vulgaris diagnosis",
+          "count": 1
+        },
+        {
+          "name": "blackhead",
+          "count": 1
+        },
+        {
+          "name": "rash",
+          "count": 1
+        },
+        {
+          "name": "application site pruritus",
+          "count": 1
+        },
+        {
+          "name": "application site burning sensation",
+          "count": 1
+        },
+        {
+          "name": "contact dermatitis",
+          "count": 1
+        },
+        {
+          "name": "clostridium difficile",
+          "count": 1
+        },
+        {
+          "name": "severe aes interrupt",
+          "count": 1
+        },
+        {
+          "name": "new serious event",
+          "count": 1
+        },
+        {
+          "name": "n vulgaris",
+          "count": 1
+        },
+        {
+          "name": "active vehicle control",
+          "count": 1
+        },
+        {
+          "name": "therapeutic response",
+          "count": 1
+        },
+        {
+          "name": "erythematous raised firm deep-seated lesion",
+          "count": 1
+        },
+        {
+          "name": "iga severity",
+          "count": 1
+        },
+        {
+          "name": "current disease",
           "count": 1
         }
       ]
     },
     {
       "name": "Chemical",
-      "count": 84,
+      "count": 678,
       "break_down": [
         {
-          "name": "dihydrotestosterone",
-          "count": 4
+          "name": "study product",
+          "count": 2
         },
         {
-          "name": "lipid synthesis",
+          "name": "iga",
           "count": 1
         },
         {
-          "name": "drug",
+          "name": "urine",
+          "count": 1
+        },
+        {
+          "name": "product",
+          "count": 7
+        },
+        {
+          "name": "study drug",
+          "count": 6
+        },
+        {
+          "name": "hormonal contraceptive",
+          "count": 4
+        },
+        {
+          "name": "lotion",
+          "count": 5
+        },
+        {
+          "name": "luke warm tap water",
+          "count": 1
+        },
+        {
+          "name": "vehicle lotion",
+          "count": 1
+        },
+        {
+          "name": "reference control product",
+          "count": 1
+        },
+        {
+          "name": "cleanser",
           "count": 3
         },
         {
-          "name": "cortexolone 17a-propionate",
+          "name": "spermicide",
+          "count": 6
+        },
+        {
+          "name": "hormonal method",
+          "count": 1
+        },
+        {
+          "name": "product a",
+          "count": 1
+        },
+        {
+          "name": "antifungal",
+          "count": 1
+        },
+        {
+          "name": "topical facial medication",
+          "count": 1
+        },
+        {
+          "name": "α- hydroxy/glycolic acid",
           "count": 2
         },
         {
-          "name": "lipid inflammatory cytokine production",
-          "count": 2
+          "name": "salicylate",
+          "count": 1
+        },
+        {
+          "name": "resorcinol",
+          "count": 1
+        },
+        {
+          "name": "azelaic acid",
+          "count": 4
         },
         {
           "name": "benzoyl peroxide",
+          "count": 7
+        },
+        {
+          "name": "topical antibiotic",
+          "count": 2
+        },
+        {
+          "name": "anti-inflammatory",
+          "count": 1
+        },
+        {
+          "name": "steroid",
+          "count": 5
+        },
+        {
+          "name": "product b",
+          "count": 1
+        },
+        {
+          "name": "systemic antibiotic",
+          "count": 4
+        },
+        {
+          "name": "phenothiazine",
+          "count": 2
+        },
+        {
+          "name": "systemic retinoid",
+          "count": 1
+        },
+        {
+          "name": "vitamin",
           "count": 8
         },
         {
-          "name": "topical retinoids",
+          "name": "tazarotene",
+          "count": 3
+        },
+        {
+          "name": "cream",
+          "count": 5
+        },
+        {
+          "name": "trolamine",
+          "count": 1
+        },
+        {
+          "name": "butylated hydroxytoluene",
+          "count": 1
+        },
+        {
+          "name": "tazarotenic acid",
           "count": 2
+        },
+        {
+          "name": "purified water",
+          "count": 2
+        },
+        {
+          "name": "trolamin e",
+          "count": 1
+        },
+        {
+          "name": "medium-chain triglyceride",
+          "count": 1
+        },
+        {
+          "name": "butylated hydroxy toluene",
+          "count": 1
+        },
+        {
+          "name": "edetate disodium",
+          "count": 2
+        },
+        {
+          "name": "methylparaben",
+          "count": 2
+        },
+        {
+          "name": "propylparaben",
+          "count": 1
+        },
+        {
+          "name": "carbomer",
+          "count": 1
+        },
+        {
+          "name": "glycerin",
+          "count": 2
+        },
+        {
+          "name": "succinate",
+          "count": 1
+        },
+        {
+          "name": "polyethylene glycol",
+          "count": 1
+        },
+        {
+          "name": "vitamin e",
+          "count": 1
+        },
+        {
+          "name": "gluconolactone",
+          "count": 1
+        },
+        {
+          "name": "cetyl alcohol",
+          "count": 1
+        },
+        {
+          "name": "stearyl alcohol",
+          "count": 1
+        },
+        {
+          "name": "sodium lauryl sulphate",
+          "count": 1
+        },
+        {
+          "name": "tazorac",
+          "count": 2
+        },
+        {
+          "name": "concomitant medication",
+          "count": 8
+        },
+        {
+          "name": "dfd-03",
+          "count": 1
+        },
+        {
+          "name": "vehicle",
+          "count": 7
         },
         {
           "name": "oral antibiotic",
           "count": 1
         },
         {
-          "name": "antibiotic resistance",
+          "name": "topical benzoyl peroxide",
           "count": 1
         },
         {
-          "name": "norethindrone",
+          "name": "topical salicylic acid",
+          "count": 1
+        },
+        {
+          "name": "topical adapalene",
+          "count": 1
+        },
+        {
+          "name": "topical azelaic acid",
+          "count": 1
+        },
+        {
+          "name": "topical dapsone",
+          "count": 1
+        },
+        {
+          "name": "negative",
+          "count": 1
+        },
+        {
+          "name": "α-hydroxy/glycolic acid",
+          "count": 2
+        },
+        {
+          "name": "medication",
+          "count": 8
+        },
+        {
+          "name": "facial wash",
+          "count": 1
+        },
+        {
+          "name": "sunscreen",
+          "count": 5
+        },
+        {
+          "name": "make-up",
+          "count": 3
+        },
+        {
+          "name": "lotion protocol",
+          "count": 1
+        },
+        {
+          "name": "dfd-03-cd-006",
+          "count": 1
+        },
+        {
+          "name": "application",
+          "count": 3
+        },
+        {
+          "name": "tazarotene cream 0.1",
+          "count": 2
+        },
+        {
+          "name": "dose",
+          "count": 3
+        },
+        {
+          "name": "relationship study product",
+          "count": 1
+        },
+        {
+          "name": "new intervention",
+          "count": 1
+        },
+        {
+          "name": "best proven intervention",
+          "count": 1
+        },
+        {
+          "name": "adapalene benzoyl peroxide topical gel 0.3/2.5",
+          "count": 1
+        },
+        {
+          "name": "iga score",
+          "count": 4
+        },
+        {
+          "name": "study medication",
+          "count": 5
+        },
+        {
+          "name": "hand soap",
+          "count": 1
+        },
+        {
+          "name": "epiduo forte",
+          "count": 1
+        },
+        {
+          "name": "reserve sample",
+          "count": 2
+        },
+        {
+          "name": "alternate supplemental therapy",
+          "count": 1
+        },
+        {
+          "name": "mild cleanser",
+          "count": 1
+        },
+        {
+          "name": "facial lotion",
+          "count": 2
+        },
+        {
+          "name": "hormonal contraception",
+          "count": 4
+        },
+        {
+          "name": "systemic anti-inflammatory agent",
+          "count": 3
+        },
+        {
+          "name": "acetaminophen",
+          "count": 6
+        },
+        {
+          "name": "low dose aspirin",
+          "count": 1
+        },
+        {
+          "name": "alcohol",
+          "count": 3
+        },
+        {
+          "name": "drug",
+          "count": 6
+        },
+        {
+          "name": "test product",
+          "count": 4
+        },
+        {
+          "name": "reference product",
+          "count": 3
+        },
+        {
+          "name": "amount",
+          "count": 2
+        },
+        {
+          "name": "epiduo",
+          "count": 1
+        },
+        {
+          "name": "ada palene benzoyl peroxide gel 0.3/2.5",
+          "count": 1
+        },
+        {
+          "name": "antipruritic",
+          "count": 5
+        },
+        {
+          "name": "antihistamine",
+          "count": 6
+        },
+        {
+          "name": "niacin",
+          "count": 1
+        },
+        {
+          "name": "vitamin b3",
+          "count": 1
+        },
+        {
+          "name": "niacinamide",
+          "count": 1
+        },
+        {
+          "name": "multivitamin",
+          "count": 6
+        },
+        {
+          "name": "adapalene",
+          "count": 1
+        },
+        {
+          "name": "salicylic acid",
+          "count": 5
+        },
+        {
+          "name": "accutane",
+          "count": 5
+        },
+        {
+          "name": "aspirin",
+          "count": 7
+        },
+        {
+          "name": "lithium",
+          "count": 3
+        },
+        {
+          "name": "vitamin b12",
+          "count": 3
+        },
+        {
+          "name": "hormonal oral implanted topical contraceptive",
           "count": 1
         },
         {
           "name": "spironolactone",
-          "count": 4
+          "count": 9
         },
         {
-          "name": "proinﬂammatory cytokine",
-          "count": 1
-        },
-        {
-          "name": "costeroid antibiotic",
-          "count": 1
-        },
-        {
-          "name": "metoprolol",
-          "count": 1
-        },
-        {
-          "name": "timolol",
-          "count": 1
-        },
-        {
-          "name": "phentolamine",
-          "count": 1
-        },
-        {
-          "name": "diltiazem",
-          "count": 1
-        },
-        {
-          "name": "verapamil",
-          "count": 1
-        },
-        {
-          "name": "first-in-class therapeutic agent",
-          "count": 1
-        },
-        {
-          "name": "alternative antibiotic",
-          "count": 1
-        },
-        {
-          "name": "retinoids",
-          "count": 2
-        },
-        {
-          "name": "cortexolone-17α-propionate",
-          "count": 1
-        },
-        {
-          "name": "related compound",
-          "count": 1
-        },
-        {
-          "name": "cortexolone 17-alpha propionate",
-          "count": 1
-        },
-        {
-          "name": "j drug dermatol",
-          "count": 1
-        },
-        {
-          "name": "sebum inﬂammatory cytokine production",
-          "count": 1
-        },
-        {
-          "name": "first-in-class molecule",
-          "count": 1
-        },
-        {
-          "name": "drug dermatology",
-          "count": 1
-        },
-        {
-          "name": "immune response inhibitors",
-          "count": 1
-        },
-        {
-          "name": "cortexolone 17α-propionate",
+          "name": "systemic steroid",
           "count": 3
         },
         {
-          "name": "methotrexate",
+          "name": "systemic e.g. oral injectable antibiotics",
+          "count": 1
+        },
+        {
+          "name": "immunosuppressive agent",
+          "count": 1
+        },
+        {
+          "name": "intranasal inhaled",
+          "count": 1
+        },
+        {
+          "name": "sulfur",
+          "count": 3
+        },
+        {
+          "name": "triclosan",
+          "count": 4
+        },
+        {
+          "name": "nsaid",
+          "count": 5
+        },
+        {
+          "name": "ibuprofen",
+          "count": 1
+        },
+        {
+          "name": "tetracycline derivative",
+          "count": 1
+        },
+        {
+          "name": "bactrim",
           "count": 2
         },
         {
-          "name": "journal drug dermatology",
+          "name": "erythromycin derivative",
           "count": 1
         },
         {
-          "name": "tetracyclines",
+          "name": "medicine",
+          "count": 2
+        },
+        {
+          "name": "tinted moisturizers",
           "count": 1
         },
         {
-          "name": "potassium level",
+          "name": "foundation",
+          "count": 1
+        },
+        {
+          "name": "cosmetic",
+          "count": 1
+        },
+        {
+          "name": "fabric",
+          "count": 1
+        },
+        {
+          "name": "non-medicated mild cleanser",
+          "count": 3
+        },
+        {
+          "name": "non-medicated mild cleanser facial lotion sunscreen",
+          "count": 2
+        },
+        {
+          "name": "urine pregnancy test",
+          "count": 4
+        },
+        {
+          "name": "adapalene benzoyl peroxide gel 0.3/2.5",
+          "count": 1
+        },
+        {
+          "name": "adapalene benzoyl peroxide gel 0.3 2.5",
+          "count": 1
+        },
+        {
+          "name": "moisturizer",
+          "count": 4
+        },
+        {
+          "name": "uv light source",
+          "count": 1
+        },
+        {
+          "name": "contraceptive",
+          "count": 4
+        },
+        {
+          "name": "acanya",
+          "count": 3
+        },
+        {
+          "name": "clindamycin phosphate benzoyl peroxide gel",
+          "count": 2
+        },
+        {
+          "name": "clindamycin phosphate benzoyl peroxide gel 1.2 /2.5",
+          "count": 1
+        },
+        {
+          "name": "vehicle gel",
+          "count": 2
+        },
+        {
+          "name": "ingredients",
+          "count": 1
+        },
+        {
+          "name": "clindamycin phosphate",
+          "count": 3
+        },
+        {
+          "name": "depo-provera",
+          "count": 3
+        },
+        {
+          "name": "white",
+          "count": 1
+        },
+        {
+          "name": "exudate",
+          "count": 2
+        },
+        {
+          "name": "erythromycin",
+          "count": 4
+        },
+        {
+          "name": "tetracycline",
+          "count": 2
+        },
+        {
+          "name": "doxycycline",
+          "count": 1
+        },
+        {
+          "name": "minocycline",
+          "count": 2
+        },
+        {
+          "name": "mirena",
+          "count": 5
+        },
+        {
+          "name": "oral contraceptive",
+          "count": 7
+        },
+        {
+          "name": "contraceptive patch",
+          "count": 3
+        },
+        {
+          "name": "bacterial",
+          "count": 1
+        },
+        {
+          "name": "estrogen",
+          "count": 2
+        },
+        {
+          "name": "androgen",
+          "count": 5
+        },
+        {
+          "name": "therapeutic vitamin",
+          "count": 2
+        },
+        {
+          "name": "ral",
+          "count": 1
+        },
+        {
+          "name": "clindamycin",
+          "count": 5
+        },
+        {
+          "name": "sample",
+          "count": 1
+        },
+        {
+          "name": "prior medication",
+          "count": 2
+        },
+        {
+          "name": "acceptable form birth control",
+          "count": 1
+        },
+        {
+          "name": "contraceptive implant",
+          "count": 3
+        },
+        {
+          "name": "vaginal contraceptive",
+          "count": 5
+        },
+        {
+          "name": "contraceptive injection",
+          "count": 4
+        },
+        {
+          "name": "acanya gel",
+          "count": 1
+        },
+        {
+          "name": "mitt",
+          "count": 1
+        },
+        {
+          "name": "sodium hydroxide",
+          "count": 1
+        },
+        {
+          "name": "carbomer homopolymer c",
+          "count": 1
+        },
+        {
+          "name": "dimethicone",
+          "count": 1
+        },
+        {
+          "name": "disodium lauryl sulfosuccinate",
+          "count": 1
+        },
+        {
+          "name": "titanium dioxide",
+          "count": 1
+        },
+        {
+          "name": "poloxamer 182",
+          "count": 1
+        },
+        {
+          "name": "clindamycin 1 benzoyl peroxide 5 topical gel",
+          "count": 2
+        },
+        {
+          "name": "toxin",
+          "count": 1
+        },
+        {
+          "name": "opiate",
+          "count": 1
+        },
+        {
+          "name": "ip",
+          "count": 2
+        },
+        {
+          "name": "antibacterial drug",
+          "count": 3
+        },
+        {
+          "name": "fluid electrolyte protein supplementation",
+          "count": 2
+        },
+        {
+          "name": "environmental toxic factor",
+          "count": 1
+        },
+        {
+          "name": "clindamycin 1",
+          "count": 1
+        },
+        {
+          "name": "benzoyl peroxide 5",
+          "count": 1
+        },
+        {
+          "name": "trial medication",
+          "count": 1
+        },
+        {
+          "name": "bandage",
+          "count": 1
+        },
+        {
+          "name": "closed dressing",
+          "count": 1
+        },
+        {
+          "name": "u e moisturizer",
+          "count": 1
+        },
+        {
+          "name": "medicated moisturizers",
+          "count": 2
+        },
+        {
+          "name": "medicated product",
+          "count": 1
+        },
+        {
+          "name": "paba",
+          "count": 1
+        },
+        {
+          "name": "facial cleanser",
+          "count": 1
+        },
+        {
+          "name": "tazarotene cream",
+          "count": 1
+        },
+        {
+          "name": "retinoid",
+          "count": 2
+        },
+        {
+          "name": "tazora c cream 0.1",
+          "count": 1
+        },
+        {
+          "name": "cream vehicle placebo",
+          "count": 1
+        },
+        {
+          "name": "topical medicated product",
+          "count": 1
+        },
+        {
+          "name": "human chorionic gonadotropin hcg",
+          "count": 1
+        },
+        {
+          "name": "dep o-provera",
+          "count": 1
+        },
+        {
+          "name": "hormonal iud",
+          "count": 2
+        },
+        {
+          "name": "topical steroid",
+          "count": 3
+        },
+        {
+          "name": "topical anti-inflammatory agent",
+          "count": 1
+        },
+        {
+          "name": "new concomitant medication",
+          "count": 1
+        },
+        {
+          "name": "fluoroquinolones",
+          "count": 1
+        },
+        {
+          "name": "sulfonamide",
+          "count": 1
+        },
+        {
+          "name": "cetaphil daily facial cleanser",
+          "count": 1
+        },
+        {
+          "name": "cetaphil daily facial moisturizer",
+          "count": 1
+        },
+        {
+          "name": "tazorac cream 0.1",
+          "count": 1
+        },
+        {
+          "name": "contrast",
+          "count": 1
+        },
+        {
+          "name": "tazorac cream",
+          "count": 1
+        },
+        {
+          "name": "topica l gel",
+          "count": 1
+        },
+        {
+          "name": "clindamycin 1 benzoyl peroxide 5 topica l gel",
+          "count": 1
+        },
+        {
+          "name": "2 5-gram jar",
+          "count": 1
+        },
+        {
+          "name": "vehicle control",
+          "count": 1
+        },
+        {
+          "name": "benzaclin",
+          "count": 1
+        },
+        {
+          "name": "clindamyc 1 benzoyl peroxide 5 topical gel",
+          "count": 1
+        },
+        {
+          "name": "trial-provided moisturizer",
+          "count": 1
+        },
+        {
+          "name": "facial moisturizer",
+          "count": 2
+        },
+        {
+          "name": "white exudate",
+          "count": 1
+        },
+        {
+          "name": "pu",
+          "count": 2
+        },
+        {
+          "name": "black sebum",
+          "count": 2
+        },
+        {
+          "name": "clindamyc",
+          "count": 2
+        },
+        {
+          "name": "birth control",
+          "count": 2
+        },
+        {
+          "name": "intrauterine device",
+          "count": 2
+        },
+        {
+          "name": "implan",
+          "count": 2
+        },
+        {
+          "name": "patch",
+          "count": 2
+        },
+        {
+          "name": "condom",
+          "count": 3
+        },
+        {
+          "name": "penicillin",
+          "count": 2
+        },
+        {
+          "name": "lincomycin",
+          "count": 2
+        },
+        {
+          "name": "antibiotic",
+          "count": 3
+        },
+        {
+          "name": "anti-inflammatories",
+          "count": 1
+        },
+        {
+          "name": "cryodestruction",
+          "count": 2
+        },
+        {
+          "name": "chemodes truction",
+          "count": 2
+        },
+        {
+          "name": "dermabrasion",
+          "count": 2
+        },
+        {
+          "name": "photodynamic therapy",
+          "count": 2
+        },
+        {
+          "name": "facial astringent",
+          "count": 1
+        },
+        {
+          "name": "abrasive",
+          "count": 1
+        },
+        {
+          "name": "otc medication",
+          "count": 1
+        },
+        {
+          "name": "lesion count",
+          "count": 1
+        },
+        {
+          "name": "medications",
+          "count": 2
+        },
+        {
+          "name": "reference active gel",
+          "count": 1
+        },
+        {
+          "name": "therapeutic administration",
+          "count": 1
+        },
+        {
+          "name": "reference",
+          "count": 1
+        },
+        {
+          "name": "sun protection product",
+          "count": 1
+        },
+        {
+          "name": "investigational product",
+          "count": 2
+        },
+        {
+          "name": "diphenoxylate",
+          "count": 1
+        },
+        {
+          "name": "atropine",
+          "count": 1
+        },
+        {
+          "name": "trial gel",
+          "count": 1
+        },
+        {
+          "name": "clindamycin phosphate benzoyl peroxide topical gel 1.2/2.5",
+          "count": 1
+        },
+        {
+          "name": "acanya topical gel",
+          "count": 1
+        },
+        {
+          "name": "clindamycin phosphate benzoyl peroxide gel 1.2/2.5",
+          "count": 2
+        },
+        {
+          "name": "active vehicle control",
+          "count": 1
+        },
+        {
+          "name": "sebum production",
+          "count": 1
+        },
+        {
+          "name": "systemic drug therapy",
+          "count": 1
+        },
+        {
+          "name": "implanon",
+          "count": 1
+        },
+        {
+          "name": "nuva ring",
+          "count": 1
+        },
+        {
+          "name": "simple therapeutic measure",
+          "count": 1
+        },
+        {
+          "name": "uva/b",
+          "count": 1
+        },
+        {
+          "name": "implanon ™",
+          "count": 1
+        },
+        {
+          "name": "nuva -ring",
+          "count": 1
+        },
+        {
+          "name": "multivita min",
+          "count": 1
+        },
+        {
+          "name": "medicated",
+          "count": 1
+        },
+        {
+          "name": "clindamycin/benzoyl peroxide",
+          "count": 2
+        },
+        {
+          "name": "immunosuppressive",
+          "count": 1
+        },
+        {
+          "name": "agent",
+          "count": 1
+        },
+        {
+          "name": "topical anti-acne medication",
+          "count": 1
+        },
+        {
+          "name": "nzoyl peroxide",
+          "count": 1
+        },
+        {
+          "name": "intralesional steroid",
+          "count": 2
+        },
+        {
+          "name": "pironolactone",
+          "count": 1
+        },
+        {
+          "name": "water",
+          "count": 1
+        },
+        {
+          "name": "pea",
+          "count": 1
+        },
+        {
+          "name": "moisturizers",
+          "count": 1
+        },
+        {
+          "name": "provided moisturizer",
+          "count": 1
+        },
+        {
+          "name": "make-up cream",
+          "count": 2
+        },
+        {
+          "name": "powder",
+          "count": 2
+        },
+        {
+          "name": "topical product",
+          "count": 1
+        },
+        {
+          "name": "clascoterone",
+          "count": 4
+        },
+        {
+          "name": "cortexolone 17-alpha propionate",
+          "count": 2
+        },
+        {
+          "name": "dht",
+          "count": 3
+        },
+        {
+          "name": "vehicle cream",
+          "count": 2
+        },
+        {
+          "name": "androgen receptor inhibitor",
+          "count": 2
+        },
+        {
+          "name": "cortexolone",
+          "count": 2
+        },
+        {
+          "name": "truncal iga score",
+          "count": 1
+        },
+        {
+          "name": "cream 1",
+          "count": 1
+        },
+        {
+          "name": "test article",
+          "count": 1
+        },
+        {
+          "name": "teae",
           "count": 1
         },
         {
@@ -579,161 +2371,143 @@
           "count": 1
         },
         {
+          "name": "cb-03-01 cream",
+          "count": 2
+        },
+        {
           "name": "cortexolone 17alpha-propionate",
           "count": 1
         },
         {
-          "name": "corticosteroid",
-          "count": 1
-        },
-        {
-          "name": "antibiotic",
-          "count": 1
-        },
-        {
-          "name": "inhibits",
-          "count": 1
-        },
-        {
-          "name": "spironolactone 5 cream",
-          "count": 1
-        },
-        {
-          "name": "minoxidil",
-          "count": 1
-        },
-        {
-          "name": "topical cortexolone 17-alpha propionate",
-          "count": 1
-        },
-        {
-          "name": "inhibitor",
-          "count": 1
-        },
-        {
-          "name": "clindamycin benzoyl peroxide topical gel",
-          "count": 2
-        },
-        {
-          "name": "clindamycin benzoyl peroxide gel",
-          "count": 1
-        },
-        {
-          "name": "clindamycin",
-          "count": 4
-        },
-        {
-          "name": "adapalene benzoyl peroxide topical gel 0.3 /2.5",
-          "count": 1
-        },
-        {
-          "name": "adapalene",
-          "count": 1
-        },
-        {
-          "name": "clindamycin 1 benzoyl peroxide 5 topical gel",
-          "count": 1
-        },
-        {
-          "name": "clindamycin benzoyl peroxide gel 1.2 /2.5",
-          "count": 1
-        },
-        {
-          "name": "tolmar ’ clindamycin benzoyl peroxide gel 1.2 /2.5",
-          "count": 1
-        },
-        {
-          "name": "adapalene gel 0.3",
-          "count": 1
-        },
-        {
-          "name": "androgen inhibitor",
-          "count": 1
-        },
-        {
           "name": "lipid",
-          "count": 1
-        },
-        {
-          "name": "inactive metabolite",
-          "count": 1
-        },
-        {
-          "name": "investigational drug",
-          "count": 1
-        },
-        {
-          "name": "cortisol level",
-          "count": 1
-        },
-        {
-          "name": "therapeutic agent",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "name": "Protein",
-      "count": 21,
-      "break_down": [
-        {
-          "name": "androgen-regulated gene",
-          "count": 1
-        },
-        {
-          "name": "aga",
-          "count": 1
-        },
-        {
-          "name": "androgen production",
-          "count": 1
-        },
-        {
-          "name": "androgen",
-          "count": 1
-        },
-        {
-          "name": "androgen-responsive gene",
           "count": 2
         },
         {
-          "name": "nilc",
+          "name": "0.1",
+          "count": 1
+        },
+        {
+          "name": "0.5",
+          "count": 1
+        },
+        {
+          "name": "1",
+          "count": 1
+        },
+        {
+          "name": "topical cream",
+          "count": 3
+        },
+        {
+          "name": "clascoterone cream",
           "count": 2
         },
         {
-          "name": "jacad",
+          "name": "testosterone",
           "count": 1
         },
         {
-          "name": "inflammatory cytokines",
+          "name": "anti-acne preparation",
+          "count": 1
+        },
+        {
+          "name": "cortexolone 17 α-propionate",
+          "count": 1
+        },
+        {
+          "name": "cyproterone acetate",
+          "count": 1
+        },
+        {
+          "name": "flutamide",
+          "count": 1
+        },
+        {
+          "name": "1 cream",
           "count": 2
         },
         {
-          "name": "ilcs",
+          "name": "low-dose glucocorticoid",
           "count": 1
         },
         {
-          "name": "alphabiocom llc",
+          "name": "cocs",
           "count": 1
         },
         {
-          "name": "rybavin",
+          "name": "topical 1",
+          "count": 1
+        },
+        {
+          "name": "hormonal",
           "count": 2
         },
         {
-          "name": "herpes simplex virus type 1",
+          "name": "serum",
           "count": 1
         },
         {
-          "name": "herpes simplex virus type 2",
+          "name": "insulin-like growth factor 1",
+          "count": 1
+        },
+        {
+          "name": "dehydroepiandrosterone sulfate",
+          "count": 1
+        },
+        {
+          "name": "dihydrotestosterone",
+          "count": 2
+        },
+        {
+          "name": "winlevi",
+          "count": 1
+        },
+        {
+          "name": "cb-03-01",
+          "count": 3
+        },
+        {
+          "name": "cortexolone 17α propionate",
+          "count": 1
+        },
+        {
+          "name": "topical anti-androgen",
+          "count": 1
+        },
+        {
+          "name": "cortexolone 17-alpha-propionate",
+          "count": 1
+        },
+        {
+          "name": "cortodoxone",
+          "count": 1
+        },
+        {
+          "name": "propionates",
           "count": 1
         },
         {
           "name": "tretinoin",
+          "count": 2
+        },
+        {
+          "name": "cortexolone17alpha-propionate",
           "count": 1
         },
         {
-          "name": "androgen excess",
+          "name": "retinoin",
+          "count": 1
+        },
+        {
+          "name": "combined oral contraceptive",
+          "count": 1
+        },
+        {
+          "name": "topical therapy",
+          "count": 1
+        },
+        {
+          "name": "hormonal factor",
           "count": 1
         },
         {
@@ -741,169 +2515,405 @@
           "count": 1
         },
         {
-          "name": "covid-19 infection",
+          "name": "tretinoin cream",
+          "count": 1
+        },
+        {
+          "name": "0.1 0.5 1 cream",
+          "count": 1
+        },
+        {
+          "name": "topicalclascoterone",
+          "count": 1
+        },
+        {
+          "name": "cannabinoids",
+          "count": 1
+        },
+        {
+          "name": "lymecycline",
+          "count": 1
+        },
+        {
+          "name": "asc-j9 cream",
+          "count": 1
+        },
+        {
+          "name": "1064-nm",
+          "count": 1
+        },
+        {
+          "name": "topical retinoid formulation",
+          "count": 1
+        },
+        {
+          "name": "cyclodextrin",
+          "count": 1
+        },
+        {
+          "name": "polymer",
+          "count": 1
+        },
+        {
+          "name": "glucosamine",
+          "count": 1
+        },
+        {
+          "name": "trehalose",
+          "count": 1
+        },
+        {
+          "name": "ectoine",
+          "count": 1
+        },
+        {
+          "name": "sucralfate",
+          "count": 1
+        },
+        {
+          "name": "omega-9",
+          "count": 1
+        },
+        {
+          "name": "4-t-butylcyclohexanol",
+          "count": 1
+        },
+        {
+          "name": "ethanolic",
+          "count": 1
+        },
+        {
+          "name": "bark extract",
+          "count": 1
+        },
+        {
+          "name": "il-37",
+          "count": 1
+        },
+        {
+          "name": "mtor inhibitor",
+          "count": 1
+        },
+        {
+          "name": "oral medicine",
+          "count": 1
+        },
+        {
+          "name": "topical probiotic",
+          "count": 1
+        },
+        {
+          "name": "compound 1",
+          "count": 1
+        },
+        {
+          "name": "compound 4",
+          "count": 1
+        },
+        {
+          "name": "oleanane",
+          "count": 1
+        },
+        {
+          "name": "nor-ursane",
+          "count": 1
+        },
+        {
+          "name": "uvb",
+          "count": 1
+        },
+        {
+          "name": "ldh",
+          "count": 1
+        },
+        {
+          "name": "isotretinoin",
+          "count": 1
+        },
+        {
+          "name": "viable solution",
+          "count": 1
+        },
+        {
+          "name": "promising tool",
+          "count": 1
+        },
+        {
+          "name": "warm water",
+          "count": 1
+        },
+        {
+          "name": "soap water",
+          "count": 1
+        },
+        {
+          "name": "medicated cleanser",
+          "count": 1
+        },
+        {
+          "name": "ointment",
+          "count": 1
+        },
+        {
+          "name": "propionibacterium cnes",
+          "count": 1
+        },
+        {
+          "name": "grad e",
+          "count": 1
+        },
+        {
+          "name": "sunscreen product",
+          "count": 1
+        },
+        {
+          "name": "neuromuscular blocking agent",
+          "count": 1
+        },
+        {
+          "name": "topical",
+          "count": 1
+        },
+        {
+          "name": "anti-neoplastic agent",
+          "count": 1
+        },
+        {
+          "name": "corticosteroids",
+          "count": 1
+        },
+        {
+          "name": "tanning booth",
+          "count": 1
+        },
+        {
+          "name": "sun lamp",
+          "count": 1
+        },
+        {
+          "name": "trimethoprim",
+          "count": 1
+        },
+        {
+          "name": "alcohol based toner",
+          "count": 1
+        },
+        {
+          "name": "astringent",
+          "count": 1
+        },
+        {
+          "name": "medicated topical preparation",
+          "count": 1
+        },
+        {
+          "name": "prescription otc product",
+          "count": 1
+        },
+        {
+          "name": "clindamycin phosphate benzoyl peroxide topical gel",
+          "count": 1
+        },
+        {
+          "name": "onexton™ topical gel",
+          "count": 1
+        },
+        {
+          "name": "clindamycin phosphate benzoyl peroxide topical gel 1.2 /3.75",
+          "count": 1
+        },
+        {
+          "name": "onexton ™ topical gel",
+          "count": 1
+        },
+        {
+          "name": "spf 15",
+          "count": 1
+        },
+        {
+          "name": "dual moisture lotion",
+          "count": 1
+        },
+        {
+          "name": "gentle cleansing wash",
+          "count": 1
+        },
+        {
+          "name": "duac",
+          "count": 1
+        },
+        {
+          "name": "clindamycin 1 benzoyl peroxide 5",
+          "count": 1
+        },
+        {
+          "name": "depot-provera",
+          "count": 1
+        },
+        {
+          "name": "anti-inflammator agent",
+          "count": 1
+        },
+        {
+          "name": "cetaphil cleanser",
+          "count": 1
+        },
+        {
+          "name": "cetaphil moisturizer",
+          "count": 1
+        },
+        {
+          "name": "oral therapeutic vitamin",
+          "count": 1
+        },
+        {
+          "name": "immunosuppressive drug",
+          "count": 1
+        },
+        {
+          "name": "surgery",
+          "count": 1
+        },
+        {
+          "name": "x -ray therapy",
+          "count": 1
+        },
+        {
+          "name": "daily facial moisturizer spf 15",
+          "count": 1
+        },
+        {
+          "name": "daily facial cleanser",
           "count": 1
         }
       ]
     },
     {
-      "name": "Genetic",
-      "count": 73,
+      "name": "Protein",
+      "count": 35,
       "break_down": [
         {
-          "name": "androgen receptor inhibitor",
-          "count": 3
-        },
-        {
-          "name": "her2/neu",
+          "name": "essure",
           "count": 1
         },
         {
-          "name": "oral androgen receptor inhibitor",
+          "name": "tazorac cream",
           "count": 1
         },
         {
-          "name": "topical androgen receptor inhibitor",
-          "count": 2
+          "name": "fabior",
+          "count": 1
         },
         {
-          "name": "androgen receptor",
-          "count": 7
+          "name": "protein",
+          "count": 1
         },
         {
-          "name": "iga score",
-          "count": 6
+          "name": "dispense",
+          "count": 1
         },
         {
-          "name": "fig 1",
+          "name": "intervention",
+          "count": 1
+        },
+        {
+          "name": "best proven one",
+          "count": 1
+        },
+        {
+          "name": "placebo intervention",
+          "count": 1
+        },
+        {
+          "name": "clbg 1210",
+          "count": 1
+        },
+        {
+          "name": "proportion subject response",
+          "count": 1
+        },
+        {
+          "name": "test reference product",
           "count": 1
         },
         {
           "name": "iga",
-          "count": 17
+          "count": 3
         },
         {
-          "name": "itt",
-          "count": 4
+          "name": "androgen receptor",
+          "count": 3
         },
         {
-          "name": "oral androgen receptor inhibitors",
+          "name": "rosette",
           "count": 1
         },
         {
-          "name": "dihydrotestosterone-androgen receptor complex",
+          "name": "sebocytes",
           "count": 1
         },
         {
-          "name": "novel androgen receptor inhibitor",
+          "name": "clascoterone-treated patient",
           "count": 1
         },
         {
-          "name": "dht-androgen receptor complex",
+          "name": "vehicle-treated patient",
           "count": 1
         },
         {
-          "name": "stein gold",
+          "name": "devroxwh",
           "count": 1
         },
         {
-          "name": "iga assessment",
+          "name": "odvfrwhurqh",
           "count": 1
         },
         {
-          "name": "veh",
+          "name": "1 qd",
           "count": 1
         },
         {
-          "name": "iga score 0",
+          "name": "0.5 bid",
           "count": 1
         },
         {
-          "name": "o-f-apob receptor",
-          "count": 1
-        },
-        {
-          "name": "ral androgen receptor",
-          "count": 1
-        },
-        {
-          "name": "calcineurin inhibitor",
-          "count": 1
-        },
-        {
-          "name": "androgen receptor signaling pathway",
-          "count": 2
-        },
-        {
-          "name": "dehydrogenase activity",
-          "count": 1
-        },
-        {
-          "name": "ilcs",
-          "count": 1
-        },
-        {
-          "name": "cfb",
-          "count": 1
-        },
-        {
-          "name": "correlation serum level insulin-like growth factor 1",
-          "count": 1
-        },
-        {
-          "name": "androgen receptor antagonist",
-          "count": 1
-        },
-        {
-          "name": "iga test",
-          "count": 1
-        },
-        {
-          "name": "rld",
-          "count": 1
-        },
-        {
-          "name": "retinoic acid receptor",
-          "count": 1
-        },
-        {
-          "name": "retinoid x receptor",
-          "count": 1
-        },
-        {
-          "name": "ind androgen receptor ligand",
-          "count": 1
-        },
-        {
-          "name": "il1b",
-          "count": 1
-        },
-        {
-          "name": "il6",
-          "count": 1
-        },
-        {
-          "name": "il8",
-          "count": 1
-        },
-        {
-          "name": "tnfalpha",
-          "count": 1
-        },
-        {
-          "name": "mmp1",
-          "count": 1
-        },
-        {
-          "name": "mmp13",
-          "count": 1
-        },
-        {
-          "name": "mmp3",
+          "name": "1 bid",
           "count": 1
         },
         {
           "name": "esterases",
+          "count": 1
+        },
+        {
+          "name": "p. bacteria",
+          "count": 1
+        },
+        {
+          "name": "p. bacterium",
+          "count": 1
+        },
+        {
+          "name": "anti-p.acnes antibody",
+          "count": 1
+        },
+        {
+          "name": "device",
+          "count": 1
+        },
+        {
+          "name": "diffractive lens array",
+          "count": 1
+        },
+        {
+          "name": "pulsed dye",
+          "count": 1
+        },
+        {
+          "name": "teledermatology",
+          "count": 1
+        },
+        {
+          "name": "stool culture",
           "count": 1
         }
       ]
@@ -911,15 +2921,36 @@
   ],
   "documents": [
     {
-      "name": "GandW.pdf",
+      "name": "doc_DRREDDY1_pdf",
       "properties": [
         {
           "name": "Disease",
-          "count": 5
+          "count": 85
         },
         {
           "name": "Chemical",
+          "count": 74
+        },
+        {
+          "name": "Protein",
+          "count": 8
+        },
+        {
+          "name": "Genetic",
           "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_PRGO2_pdf",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 43
+        },
+        {
+          "name": "Chemical",
+          "count": 67
         },
         {
           "name": "Protein",
@@ -932,53 +2963,683 @@
       ]
     },
     {
-      "name": "JAAD.pdf",
+      "name": "doc_TARO_pdf",
       "properties": [
         {
           "name": "Disease",
-          "count": 26
+          "count": 56
         },
         {
           "name": "Chemical",
-          "count": 5
+          "count": 61
         },
         {
           "name": "Protein",
-          "count": 2
+          "count": 1
         },
         {
           "name": "Genetic",
-          "count": 11
+          "count": 0
         }
       ]
     },
     {
-      "name": "JAMAD.pdf",
+      "name": "doc_TOLMAR_pdf",
       "properties": [
         {
           "name": "Disease",
+          "count": 37
+        },
+        {
+          "name": "Chemical",
+          "count": 83
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_GandW_pdf",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 43
+        },
+        {
+          "name": "Chemical",
+          "count": 56
+        },
+        {
+          "name": "Protein",
+          "count": 3
+        },
+        {
+          "name": "Genetic",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "doc_TOLMAR1_pdf",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 56
+        },
+        {
+          "name": "Chemical",
+          "count": 69
+        },
+        {
+          "name": "Protein",
+          "count": 1
+        },
+        {
+          "name": "Genetic",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "doc_PRGO_pdf",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 50
+        },
+        {
+          "name": "Chemical",
+          "count": 70
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_JDD1_pdf",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 21
+        },
+        {
+          "name": "Chemical",
           "count": 27
         },
         {
-          "name": "Chemical",
-          "count": 24
-        },
-        {
           "name": "Protein",
-          "count": 5
+          "count": 3
         },
         {
           "name": "Genetic",
-          "count": 8
+          "count": 0
         }
       ]
     },
     {
-      "name": "JDD.pdf",
+      "name": "doc_JDD2_pdf",
       "properties": [
         {
           "name": "Disease",
+          "count": 29
+        },
+        {
+          "name": "Chemical",
+          "count": 29
+        },
+        {
+          "name": "Protein",
+          "count": 6
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_JDD3_pdf",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 4
+        },
+        {
+          "name": "Chemical",
+          "count": 13
+        },
+        {
+          "name": "Protein",
+          "count": 3
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_UCALGARY_pdf",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 22
+        },
+        {
+          "name": "Chemical",
+          "count": 19
+        },
+        {
+          "name": "Protein",
+          "count": 2
+        },
+        {
+          "name": "Genetic",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "doc_NCT00988026",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 0
+        },
+        {
+          "name": "Chemical",
+          "count": 2
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_NCT03122457",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 1
+        },
+        {
+          "name": "Chemical",
+          "count": 1
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_NCT01929057",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 0
+        },
+        {
+          "name": "Chemical",
+          "count": 0
+        },
+        {
+          "name": "Protein",
+          "count": 3
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_NCT01017120",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 1
+        },
+        {
+          "name": "Chemical",
+          "count": 1
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_NCT05517720",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 1
+        },
+        {
+          "name": "Chemical",
+          "count": 0
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_NCT01631474",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 2
+        },
+        {
+          "name": "Chemical",
+          "count": 1
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_NCT06202274",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 0
+        },
+        {
+          "name": "Chemical",
+          "count": 0
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_NCT01289574",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 0
+        },
+        {
+          "name": "Chemical",
+          "count": 1
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_NCT01160757",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 1
+        },
+        {
+          "name": "Chemical",
+          "count": 0
+        },
+        {
+          "name": "Protein",
+          "count": 1
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_NCT03850925",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 1
+        },
+        {
+          "name": "Chemical",
+          "count": 1
+        },
+        {
+          "name": "Protein",
+          "count": 1
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39184919",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 1
+        },
+        {
+          "name": "Chemical",
           "count": 12
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39184770",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 1
+        },
+        {
+          "name": "Chemical",
+          "count": 0
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39184705",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 0
+        },
+        {
+          "name": "Chemical",
+          "count": 0
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39182678",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 0
+        },
+        {
+          "name": "Chemical",
+          "count": 0
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39180584",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 0
+        },
+        {
+          "name": "Chemical",
+          "count": 0
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39180560",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 1
+        },
+        {
+          "name": "Chemical",
+          "count": 1
+        },
+        {
+          "name": "Protein",
+          "count": 1
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39179105",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 0
+        },
+        {
+          "name": "Chemical",
+          "count": 0
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39177615",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 8
+        },
+        {
+          "name": "Chemical",
+          "count": 0
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39175550",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 0
+        },
+        {
+          "name": "Chemical",
+          "count": 1
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39166269",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 1
+        },
+        {
+          "name": "Chemical",
+          "count": 1
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "doc_39165893",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 1
+        },
+        {
+          "name": "Chemical",
+          "count": 2
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39165891",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 2
+        },
+        {
+          "name": "Chemical",
+          "count": 1
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39164814",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 4
+        },
+        {
+          "name": "Chemical",
+          "count": 1
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39163914",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 0
         },
         {
           "name": "Chemical",
@@ -986,90 +3647,6 @@
         },
         {
           "name": "Protein",
-          "count": 3
-        },
-        {
-          "name": "Genetic",
-          "count": 8
-        }
-      ]
-    },
-    {
-      "name": "JDD1.pdf",
-      "properties": [
-        {
-          "name": "Disease",
-          "count": 32
-        },
-        {
-          "name": "Chemical",
-          "count": 8
-        },
-        {
-          "name": "Protein",
-          "count": 0
-        },
-        {
-          "name": "Genetic",
-          "count": 10
-        }
-      ]
-    },
-    {
-      "name": "JDD2.pdf",
-      "properties": [
-        {
-          "name": "Disease",
-          "count": 17
-        },
-        {
-          "name": "Chemical",
-          "count": 9
-        },
-        {
-          "name": "Protein",
-          "count": 2
-        },
-        {
-          "name": "Genetic",
-          "count": 12
-        }
-      ]
-    },
-    {
-      "name": "JDD3.pdf",
-      "properties": [
-        {
-          "name": "Disease",
-          "count": 4
-        },
-        {
-          "name": "Chemical",
-          "count": 2
-        },
-        {
-          "name": "Protein",
-          "count": 0
-        },
-        {
-          "name": "Genetic",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "name": "PRGO.pdf",
-      "properties": [
-        {
-          "name": "Disease",
-          "count": 1
-        },
-        {
-          "name": "Chemical",
-          "count": 4
-        },
-        {
-          "name": "Protein",
           "count": 0
         },
         {
@@ -1079,28 +3656,7 @@
       ]
     },
     {
-      "name": "PRGO1.pdf",
-      "properties": [
-        {
-          "name": "Disease",
-          "count": 5
-        },
-        {
-          "name": "Chemical",
-          "count": 6
-        },
-        {
-          "name": "Protein",
-          "count": 0
-        },
-        {
-          "name": "Genetic",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "name": "PRGO2.pdf",
+      "name": "doc_39162381",
       "properties": [
         {
           "name": "Disease",
@@ -1108,11 +3664,11 @@
         },
         {
           "name": "Chemical",
-          "count": 3
+          "count": 0
         },
         {
           "name": "Protein",
-          "count": 1
+          "count": 0
         },
         {
           "name": "Genetic",
@@ -1121,28 +3677,7 @@
       ]
     },
     {
-      "name": "TARO.pdf",
-      "properties": [
-        {
-          "name": "Disease",
-          "count": 2
-        },
-        {
-          "name": "Chemical",
-          "count": 2
-        },
-        {
-          "name": "Protein",
-          "count": 3
-        },
-        {
-          "name": "Genetic",
-          "count": 0
-        }
-      ]
-    },
-    {
-      "name": "TOLMAR.pdf",
+      "name": "doc_39161490",
       "properties": [
         {
           "name": "Disease",
@@ -1150,27 +3685,6 @@
         },
         {
           "name": "Chemical",
-          "count": 1
-        },
-        {
-          "name": "Protein",
-          "count": 0
-        },
-        {
-          "name": "Genetic",
-          "count": 2
-        }
-      ]
-    },
-    {
-      "name": "TOLMAR1.pdf",
-      "properties": [
-        {
-          "name": "Disease",
-          "count": 4
-        },
-        {
-          "name": "Chemical",
           "count": 0
         },
         {
@@ -1179,58 +3693,16 @@
         },
         {
           "name": "Genetic",
-          "count": 2
+          "count": 0
         }
       ]
     },
     {
-      "name": "TOLMAR2.pdf",
+      "name": "doc_39159340",
       "properties": [
         {
           "name": "Disease",
           "count": 2
-        },
-        {
-          "name": "Chemical",
-          "count": 2
-        },
-        {
-          "name": "Protein",
-          "count": 0
-        },
-        {
-          "name": "Genetic",
-          "count": 2
-        }
-      ]
-    },
-    {
-      "name": "TOLMAR3.pdf",
-      "properties": [
-        {
-          "name": "Disease",
-          "count": 1
-        },
-        {
-          "name": "Chemical",
-          "count": 0
-        },
-        {
-          "name": "Protein",
-          "count": 0
-        },
-        {
-          "name": "Genetic",
-          "count": 3
-        }
-      ]
-    },
-    {
-      "name": "TOLMAR4.pdf",
-      "properties": [
-        {
-          "name": "Disease",
-          "count": 1
         },
         {
           "name": "Chemical",
@@ -1242,169 +3714,256 @@
         },
         {
           "name": "Genetic",
-          "count": 1
+          "count": 0
         }
       ]
     },
     {
-      "name": "UCALGARY.pdf",
+      "name": "doc_39159339",
       "properties": [
         {
           "name": "Disease",
-          "count": 12
+          "count": 0
         },
         {
           "name": "Chemical",
+          "count": 0
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39158749",
+      "properties": [
+        {
+          "name": "Disease",
           "count": 11
         },
         {
+          "name": "Chemical",
+          "count": 2
+        },
+        {
           "name": "Protein",
-          "count": 5
+          "count": 1
         },
         {
           "name": "Genetic",
-          "count": 12
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_39156816",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 1
+        },
+        {
+          "name": "Chemical",
+          "count": 0
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_DRREDDY_pdf",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 6
+        },
+        {
+          "name": "Chemical",
+          "count": 1
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_TOLMAR2_pdf",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 2
+        },
+        {
+          "name": "Chemical",
+          "count": 5
+        },
+        {
+          "name": "Protein",
+          "count": 0
+        },
+        {
+          "name": "Genetic",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "name": "doc_PRGO1_pdf",
+      "properties": [
+        {
+          "name": "Disease",
+          "count": 67
+        },
+        {
+          "name": "Chemical",
+          "count": 69
+        },
+        {
+          "name": "Protein",
+          "count": 1
+        },
+        {
+          "name": "Genetic",
+          "count": 0
         }
       ]
     }
   ],
   "chartDataDisease": {
     "overview": {
-      "vulgaris": 12,
-      "acne": 7,
-      "erythema": 6,
-      "pruritus": 5,
-      "facial-vulgaris": 4
+      "vulgaris": 17,
+      "non-inflammatory-lesion": 9,
+      "rosacea": 9,
+      "inflammatory-lesion": 8,
+      "eczema": 8
     },
     "ranges": {},
     "labels_Disease": [
       "vulgaris",
-      "acne",
-      "erythema",
-      "pruritus",
-      "facial vulgaris"
+      "non-inflammatory lesion",
+      "rosacea",
+      "inflammatory lesion",
+      "eczema"
     ],
     "series_Disease": [
       {
         "name": "Disease",
         "type": "column",
         "data": [
-          12,
-          7,
-          6,
-          5,
-          4
+          17,
+          9,
+          9,
+          8,
+          8
         ]
       }
     ]
   },
   "chartDataChemical": {
     "overview": {
-      "benzoyl-peroxide": 8,
-      "dihydrotestosterone": 4,
-      "spironolactone": 4,
-      "clindamycin": 4,
-      "drug": 3
+      "spironolactone": 9,
+      "vitamin": 8,
+      "concomitant-medication": 8,
+      "medication": 8,
+      "product": 7
     },
     "ranges": {},
     "labels_Chemical": [
-      "benzoyl peroxide",
-      "dihydrotestosterone",
       "spironolactone",
-      "clindamycin",
-      "drug"
+      "vitamin",
+      "concomitant medication",
+      "medication",
+      "product"
     ],
     "series_Chemical": [
       {
         "name": "Chemical",
         "type": "column",
         "data": [
+          9,
           8,
-          4,
-          4,
-          4,
-          3
+          8,
+          8,
+          7
         ]
       }
     ]
   },
   "chartDataProtein": {
     "overview": {
-      "androgen-responsive-gene": 2,
-      "nilc": 2,
-      "inflammatory-cytokines": 2,
-      "rybavin": 2,
-      "androgen-regulated-gene": 1
+      "iga": 3,
+      "androgen-receptor": 3,
+      "essure": 1,
+      "tazorac-cream": 1,
+      "fabior": 1
     },
     "ranges": {},
     "labels_Protein": [
-      "androgen-responsive gene",
-      "nilc",
-      "inflammatory cytokines",
-      "rybavin",
-      "androgen-regulated gene"
+      "iga",
+      "androgen receptor",
+      "essure",
+      "tazorac cream",
+      "fabior"
     ],
     "series_Protein": [
       {
         "name": "Protein",
         "type": "column",
         "data": [
-          2,
-          2,
-          2,
-          2,
+          3,
+          3,
+          1,
+          1,
           1
         ]
       }
     ]
   },
   "chartDataGenetic": {
-    "overview": {
-      "iga": 17,
-      "androgen-receptor": 7,
-      "iga-score": 6,
-      "itt": 4,
-      "androgen-receptor-inhibitor": 3
-    },
+    "overview": {},
     "ranges": {},
-    "labels_Genetic": [
-      "iga",
-      "androgen receptor",
-      "iga score",
-      "itt",
-      "androgen receptor inhibitor"
-    ],
+    "labels_Genetic": [],
     "series_Genetic": [
       {
         "name": "Genetic",
         "type": "column",
-        "data": [
-          17,
-          7,
-          6,
-          4,
-          3
-        ]
+        "data": []
       }
     ]
   },
-  "Total_count": 50,
+  "Total_count": 98,
   "Type": [
     {
-      "name": "Internal_docs",
+      "name": "Internal",
       "count": 12
     },
     {
-      "name": "External_docs",
-      "count": 8
+      "name": "External",
+      "count": 4
     },
     {
-      "name": "Pubmed_docs",
-      "count": 20
+      "name": "clinical trials",
+      "count": 60
     },
     {
-      "name": "Clinical_trials_docs",
-      "count": 10
+      "name": "pubmed",
+      "count": 22
     }
   ]
 }
