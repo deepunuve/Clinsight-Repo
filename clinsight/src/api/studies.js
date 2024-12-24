@@ -40,7 +40,7 @@ export const fetchStudyDetails = async (studyId) => {
 export const getDashboardData = async (studyId) => {
   try {
     // Make an actual API call to a mock file
-    const response = await axios.get('http://184.105.215.253:9004/dash_board_data?study_id=' + studyId);
+    const response = await axios.post('http://184.105.215.253:9004/dash_board_data?study_id=' + studyId);
     //const response = await axios.get('/temp/dashCount.json'); // Replace with your actual mock file location or endpoint.
     console.log(response)
     return response.data; // Axios automatically parses the JSON response, so we return the `data` property.
