@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom'; // To access route parameters
 import { Card, Row, Col, Spinner, Alert } from 'react-bootstrap';  // Importing bootstrap components
-import { getMockDashboard, getMockStudyDetails } from '../../api/studies';  // Import API function
+import { getDashboardData, fetchStudyDetails } from '../../api/studies';  // Import API function
 import './DashboardPage.css';
 import DahboardCountSection from '../../components/DahboardCountSection';
 import GraphCard from '../../components/GraphCard';
@@ -27,9 +27,9 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
     const fetchData = async () => {
       try {
         // Assuming you have an API that fetches the study data based on `studyId`
-        const response = await getMockStudyDetails(studyId);
+        const response = await fetchStudyDetails(studyId);
         setStudyData(response);  // Set the study data
-        const responseDash = await getMockDashboard(studyId);
+        const responseDash = await getDashboardData(studyId);
         setDashData(responseDash);  // Set the study data
         setLoading(false);  // Set loading to false when data is fetched
       } catch (err) {
@@ -133,7 +133,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
           </span>
         </Col>
         <Col xs={12} md={2} >
-          <div style={{ height: "820px", background: "#ddd" }}>
+          <div className="documentSelector" style={{ height: "820px", background: "#ddd", overflowY: "auto" }}>
             <SourceDocumentSelector pdfList={studyData.source} />
           </div>
         </Col>

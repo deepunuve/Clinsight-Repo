@@ -9,6 +9,14 @@
   },
   {
     "id": "3",
-    "title": "observation"
+    "title": "Intervention"
+  },
+  {
+    "id": "4",
+    "title": "Observational"
+  },
+  {
+    "id": "5",
+    "title": "test"
   }
 ]

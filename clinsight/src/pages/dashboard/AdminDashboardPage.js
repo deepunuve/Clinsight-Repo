@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import { getMockStudies, fetchStudyTypes } from '../../api/studies';
+import { fetchStudies, fetchStudyTypes } from '../../api/studies';
 import './DashboardPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt, faTachometerAlt, faDatabase, faCog, faUserCircle, faUsers } from '@fortawesome/free-solid-svg-icons';
@@ -24,7 +24,7 @@ const DashboardPage = () => {
 
     const loadStudies = async () => {
       try {
-        const data = await getMockStudies();
+        const data = await fetchStudies();
         setStudies(data);
       } catch (error) {
         console.error('Error fetching studies:', error);

@@ -135,6 +135,31 @@ footer {
   opacity: 0.6;
 }
 
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  /* Makes the scrollbar thinner */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Light gray background for the track */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Gray thumb */
+  border-radius: 3px;
+}
+
+/* Hover effect for the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Darker gray when hovered */
+}
+
 .card-footer small {
   font-size: 0.8rem;
 }
