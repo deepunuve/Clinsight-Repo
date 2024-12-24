@@ -133,7 +133,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
           </span>
         </Col>
         <Col xs={12} md={2} >
-          <div className="documentSelector" style={{ height: "820px", background: "#ddd", overflowY: "auto" }}>
+          <div style={{ height: "700px", background: "#ddd", overflowY: "auto", overflowX: "hidden" }}>
             <SourceDocumentSelector pdfList={studyData.source} />
           </div>
         </Col>

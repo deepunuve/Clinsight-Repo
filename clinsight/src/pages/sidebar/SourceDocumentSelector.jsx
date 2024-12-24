@@ -33,7 +33,7 @@ const SourceDocumentSelector = (props) => {
     };
 
     return (
-        <div style={{ marginLeft: "10px", marginRight: "10px" }}>
+        <div className="documentSelector" >
             <Row className="align-items-left" >
                 {/* First Column: Select Dropdown */}
                 <div style={{ height: "10px" }}></div>

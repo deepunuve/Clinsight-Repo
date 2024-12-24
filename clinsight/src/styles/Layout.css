@@ -141,6 +141,12 @@ footer {
   /* Makes the scrollbar thinner */
 }
 
+.documentSelector {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
 /* Style the scrollbar track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
