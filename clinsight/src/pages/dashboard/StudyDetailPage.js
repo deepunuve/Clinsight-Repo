@@ -13,42 +13,202 @@ import Chatbot from '../chat/Chatbot';
 import SourceDocumentSelector from '../sidebar/SourceDocumentSelector';
 
 const StudyDetailPage = ({ updateHeaderTitle }) => {
-  const { studyId } = useParams();  // Access the studyId from the URL
-  const [studyData, setStudyData] = useState([]);  // State to store the study data
-  const [dashData, setDashData] = useState([]);  // State to store the study data
-  const [loading, setLoading] = useState(true);  // Loading state
-  const [error, setError] = useState(null);  // Error state
-  const [activeMenu, setActiveMenu] = useState('Dashboard'); // State to track active menu
+  const { studyId } = useParams();
+  const [studyData, setStudyData] = useState([]);
+  const [dashData, setDashData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [activeMenu, setActiveMenu] = useState('Dashboard');
   const [selectedCardText, setSelectedCardText] = useState('');
+  const [activeCard, setActiveCard] = useState([]);
+  const [activeECard, setActiveECard] = useState([]);
+  const [selectedEntity, setSelectedEntity] = useState([]);
+  const [selectedDoc, setselectedDoc] = useState([]);
 
-  // Simulating fetching data based on studyId
+  const [selectedEntityId, setSelectedEntityId] = useState([]);
+  const [selectedDocId, setselectedDocId] = useState([]);
+
   useEffect(() => {
-    // Replace this with your actual data fetching logic
     const fetchData = async () => {
       try {
-        // Assuming you have an API that fetches the study data based on `studyId`
-        const response = await fetchStudyDetails(studyId);
-        setStudyData(response);  // Set the study data
-        const responseDash = await getDashboardData(studyId);
-        setDashData(responseDash);  // Set the study data
-        setLoading(false);  // Set loading to false when data is fetched
+
+
+        let inputStudyDetails = {
+          study_id: studyId,
+          doc_type: [],
+          entity_type: []
+        };
+        const response = await fetchStudyDetails(inputStudyDetails);
+        setStudyData(response);
+        const responseDash = await getDashboardData(inputStudyDetails);
+        setDashData(responseDash);
+        const allEntityTypes = responseDash.entity.map(item => item.name);
+        const allDocuments = responseDash.Type.map(doc => doc.name); // Assuming `source` contains the document names
+
+        setActiveCard(allDocuments); // Set all entities as active
+        setActiveECard(allEntityTypes); // Set all entities as active
+        setLoading(false);
       } catch (err) {
-        setError('Failed to fetch study details.');  // Set error if the request fails
-        setLoading(false);  // Stop loading
+        setError('Failed to fetch study details.');
+        setLoading(false);
       }
     };
 
     fetchData();
-  }, []);  // Re-run this effect if the studyId changes
+  }, [studyId]);
 
   useEffect(() => {
-    // Update the header title dynamically when a card is clicked
     if (selectedCardText) {
       updateHeaderTitle(`${selectedCardText}`);
     } else {
       updateHeaderTitle();
     }
   }, [selectedCardText, studyData.title, updateHeaderTitle]);
+
+  const handleDocumentClick = async (text, docId) => {
+    try {
+      // Toggle entity selection logic
+      let updatedDocTypes = [...selectedDoc];
+
+      if (updatedDocTypes.includes(docId)) {
+        // If docId is already selected, remove it
+        updatedDocTypes = updatedDocTypes.filter(item => item !== docId);
+      } else {
+        // If docId is not selected, add it
+        updatedDocTypes.push(docId);
+      }
+
+      // Update selectedDoc with the docId only for API call
+      setselectedDoc(updatedDocTypes);
+
+      // Update the text displayed for the selected documents
+      const updatedSelectedCardText = updatedDocTypes
+        .map(id => {
+          const doc = dashData.Type.find(item => item.id === id); // Find the document by id
+          return doc ? doc.name : ''; // Get the name of the document from the id
+        })
+        .join(" & "); // Combine names with '&' separator
+
+      // Update the text shown on the UI
+      setSelectedCardText(updatedSelectedCardText);
+
+      // Handle active card toggling
+      let updatedActiveCards = [...activeCard];
+
+      // Ensure activeECard is initialized as an array
+      if (!updatedActiveCards) updatedActiveCards = [];
+
+      if (updatedActiveCards.includes(text)) {
+        // If the card is already active, deactivate it
+        updatedActiveCards = updatedActiveCards.filter(item => item !== text);
+      } else {
+        // If the card is inactive, activate it
+        updatedActiveCards.push(text);
+      }
+
+      setActiveCard(updatedActiveCards); // Update active cards state
+
+      // Define the input for the API call
+      const inputStudyDetails = {
+        study_id: studyId,
+        doc_type: updatedDocTypes,  // Send docId in the API call
+        entity_type: selectedEntity  // Send all selected entities
+      };
+
+      // Call the API to fetch the updated data
+      const updatedStudyData = await fetchStudyDetails(inputStudyDetails); // API call for study details
+      const updatedDashData = await getDashboardData(inputStudyDetails);   // API call for dashboard data
+
+      // Update state with the new data
+      setStudyData(updatedStudyData);
+      setDashData(updatedDashData);
+
+    } catch (error) {
+      console.error("Error updating data:", error);
+      setError("Failed to update data. Please try again."); // Display an error message
+    }
+  };
+
+
+  const handleEntityClick = async (text, entityId) => {
+    try {
+      // Toggle entity selection logic
+      let updatedEntityTypes = [...selectedEntity];
+
+      if (updatedEntityTypes.includes(entityId)) {
+        // If entity is already selected, remove it
+        updatedEntityTypes = updatedEntityTypes.filter(item => item !== entityId);
+      } else {
+        // If entity is not selected, add it
+        updatedEntityTypes.push(entityId);
+      }
+
+      setSelectedEntity(updatedEntityTypes);
+
+      const updatedSelectedCardText = [
+        // Map over updatedEntityTypes and get corresponding names
+        ...selectedDoc.map(id => {
+          const doc = dashData.Type.find(item => item.id === id); // Find the document by id
+          return doc ? doc.name : ''; // Get the name of the document from the id
+        }),
+        ...updatedEntityTypes.map(id => {
+          const doc = dashData.entity.find(item => item.id === id); // Find the document by id
+          return doc ? doc.name : ''; // Get the name of the document from the id
+        })
+      ]
+        .filter(Boolean) // Remove any empty strings or undefined values
+        .join(" & "); // Combine names with '&' separator
+
+      setSelectedCardText(updatedSelectedCardText);
+
+      // Handle active card toggling
+      let updatedActiveCards = [...activeECard];
+
+      // Ensure activeECard is initialized as an array
+      if (!updatedActiveCards) updatedActiveCards = [];
+
+      if (updatedActiveCards.includes(text)) {
+        // If the card is already active, deactivate it
+        updatedActiveCards = updatedActiveCards.filter(item => item !== text);
+      } else {
+        // If the card is inactive, activate it
+        updatedActiveCards.push(text);
+      }
+
+      setActiveECard(updatedActiveCards); // Update active cards state
+
+      // Define the input for the API call
+      const inputStudyDetails = {
+        study_id: studyId,
+        doc_type: selectedDoc,  // Assuming you have a specific doc_type to pass based on the doc type card
+        entity_type: updatedEntityTypes  // Pass all selected entities
+      };
+
+      // Call the API to fetch the updated data
+      const updatedStudyData = await fetchStudyDetails(inputStudyDetails); // API call for study details
+      const updatedDashData = await getDashboardData(inputStudyDetails);   // API call for dashboard data
+
+      // Update state with the new data
+      setStudyData(updatedStudyData);
+      setDashData(updatedDashData);
+
+    } catch (error) {
+      console.error("Error updating data:", error);
+      setError("Failed to update data. Please try again."); // Display an error message
+    }
+  };
+
+  // Menu click handler
+  const handleMenuClick = (menu) => {
+    if (menu === "Dashboard") {
+      // let newSelectedCardText = [...selectedDoc, ...selectedEntity].join(" & ");
+      // setSelectedCardText(newSelectedCardText);
+    } else
+      setSelectedCardText(menu);
+    setActiveMenu(menu);  // Set the active menu when clicked
+  };
+
+
   if (loading) {
     return (
       <div className="text-center mt-4">
@@ -65,13 +225,10 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
       </div>
     );
   }
-  const handleCardClick = (text) => {
-    setSelectedCardText(text);
-  };
-  // Menu click handler
-  const handleMenuClick = (menu) => {
-    setSelectedCardText();
-    setActiveMenu(menu);  // Set the active menu when clicked
+  const input = {
+    study_id: studyId,
+    doc_type: selectedDoc,
+    entity_type: selectedEntity
   };
   return (
     <div className="dashboard-container">
@@ -81,7 +238,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
           <div className="mb-3" >
             <Row className="align-items-center ">
               <Col className="me-4" xs="auto">
-                <p className="text-dark mb-0">Date created: 12/12/2024</p>
+                <p className="text-dark mb-0">Date created: {studyData.study_date}</p>
               </Col>
               <Col xs="auto">
                 <p className="text-dark mb-0">No of Documents: {dashData.Total_count}</p>
@@ -102,7 +259,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
           <span className="px-3">|</span>
           <span
             className="px-3"
-            onClick={() => handleMenuClick('Doc Graph')}
+            onClick={() => handleMenuClick('Document Graph')}
             style={{ cursor: 'pointer', color: activeMenu === 'Doc Graph' ? '#000' : '#0070c0', }}
           >
             Doc Graph
@@ -141,28 +298,31 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
           <div className="mb-3">
             <Row className="g-4">
               {dashData.Type.map((item, index) => {
-                // Define an array of border classes
                 const borderClasses = [
                   'card-border-left-green',
                   'card-border-left-blue',
                   'card-border-left-orange',
                   'card-border-left-purple'
                 ];
-
-                // Cycle through the border classes based on index
                 const borderClass = borderClasses[index % borderClasses.length];
 
+                // Determine if the card should be styled as active or inactive
+                const isActive = selectedDoc.length === 0 || selectedDoc.includes(item.id);
                 return (
                   <Col key={index} md={3} lg={3}>
-                    <Card className={`shadow-lg rounded ${borderClass}`} onClick={() => handleCardClick(item.name)}>
+                    <Card
+                      className={`shadow-lg rounded ${borderClass} ${isActive ? 'active-card' : 'inactive-card'}`}
+                      onClick={() => handleDocumentClick(item.name, item.id)}
+                      style={{
+                        opacity: isActive ? 1 : 0.2, // All cards visible when activeCard is null
+                        transition: 'opacity 0.3s ease-in-out' // Smooth transition
+                      }}
+                    >
                       <Card.Body>
-                        <Row className="align-items-center" >
-                          {/* Left section with full-height border */}
+                        <Row className="align-items-center">
                           <Col xs="auto" className="d-flex align-items-center">
                             <Card.Title className="h6 mb-0">{item.name}</Card.Title>
                           </Col>
-
-                          {/* Right section for the count */}
                           <Col xs="auto" className="ms-auto text-end">
                             <Card.Text className="fs-2 fw-bold mb-0">
                               {item.count}
@@ -174,6 +334,8 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
                   </Col>
                 );
               })}
+
+
             </Row>
           </div>
 
@@ -184,23 +346,64 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
           <div className="dashContent">
             {activeMenu === 'Dashboard' && (
               <>
-                <DahboardCountSection dashData={dashData.count} onClick={handleCardClick} />
+                <div className="mb-4">
+                  <Row className="g-4">
+                    {dashData.entity.map((item, index) => {
+                      const borderClasses = [
+                        'card-border-left-green',
+                        'card-border-left-blue',
+                        'card-border-left-orange',
+                        'card-border-left-purple'
+                      ];
+                      const borderClass = borderClasses[index % borderClasses.length];
+
+                      // Determine if the card should be styled as active or inactive
+                      const isActive = selectedEntity.length === 0 || selectedEntity.includes(item.id);
+
+                      return (
+                        <Col key={index} md={3} lg={3}>
+                          <Card
+                            className={`shadow-lg rounded ${borderClass} ${isActive ? 'active-card' : 'inactive-card'}`}
+                            onClick={() => handleEntityClick(item.name, item.id)} // Pass entity value
+                            style={{
+                              opacity: isActive ? 1 : 0.2, // Set opacity for inactive cards
+                              transition: 'opacity 0.3s ease-in-out' // Smooth transition for opacity change
+                            }}
+                          >
+                            <Card.Body>
+                              <Row className="align-items-center">
+                                <Col xs="auto" className="d-flex align-items-center">
+                                  <Card.Title className="h6 mb-0">{item.name}</Card.Title>
+                                </Col>
+                                <Col xs="auto" className="ms-auto text-end">
+                                  <Card.Text className="fs-2 fw-bold mb-0">
+                                    {item.count}
+                                  </Card.Text>
+                                </Col>
+                              </Row>
+                            </Card.Body>
+                          </Card>
+                        </Col>
+                      );
+                    })}
+                  </Row>
+                </div>
                 <GraphCard dashData={dashData} />
               </>
             )}
 
             {activeMenu === 'Chat' && (
               <div className="chat-content">
-                <Chatbot />
+                <Chatbot studyId={studyId} />
               </div>
             )}
 
-            {activeMenu === 'Doc Graph' && (
+            {activeMenu === 'Document Graph' && (
               <div className="DocGraph-content">
                 <div className="mb-3">
                   <Row className="g-3">
                     <Col md={12} sm={12}>
-                      <DocumentGraph />
+                      <DocumentGraph payload={input} />
                     </Col>
                   </Row>
                 </div>
@@ -208,7 +411,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
             )}
             {activeMenu === 'PICO' && (
               <div className="pico-content">
-                <Pico />
+                <Pico payload={input} />
               </div>
             )}
 
@@ -217,7 +420,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
                 <div className="mb-3">
                   <Row className="g-3">
                     <Col md={12} sm={12}>
-                      <ResultGraph />
+                      <ResultGraph payload={input} />
                     </Col>
                   </Row>
                 </div>

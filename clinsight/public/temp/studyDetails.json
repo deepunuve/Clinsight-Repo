@@ -1,125 +1,312 @@
 {
   "id": 24579,
   "title": "Acne Phase III AI Analysis Package",
-  "brief_summary": "Acne is a common skin condition that occurs when hair follicles become clogged with oil and dead skin cells. It typically appears on the face, neck, chest, back, and shoulders. There are various types of acne, including whiteheads, blackheads, papules, pustules, nodules, and cysts. Acne can range from mild to severe and can cause emotional distress and scarring if not properly treated.",
+  "brief_summary": "This study is about Acne Vulgaris. It includes various Researches and medications related to acne.",
   "study_type": "Intervention",
   "study_status": "Completed",
-  "detailed_description": "medications, diet, stress, and skincare products. Hormonal fluctuations, particularly during puberty, menstruation, pregnancy, and menopause, often play a significant role in acne development.",
-  "conditions": "Acne is a multifactorial skin condition characterized by the formation of various types of lesions, including pimples, blackheads, whiteheads, papules, pustules, nodules, and cysts. It primarily occurs when hair follicles become clogged with oil and dead skin cells, leading to inflammation and the growth of bacteria.",
-  "primary_outcome_measures": "The primary outcome measure for assessing the effectiveness of treatments for acne typically revolves around the reduction in acne lesions and the improvement in overall acne severity. Several standardized scales and assessment tools are commonly used in clinical trials and research studies to evaluate acne treatment outcomes. One of the most widely used measures is the \\\\\\\\\\\\\\\"Investigator's Global Assessment (IGA)\\\\\\\\\\\\\\\" scale, which assesses acne severity based on the overall appearance of lesions and the extent of involvement. The scale usually ranges from 0 to 4 or 0 to 5, with lower scores indicating clearer skin and higher scores indicating more severe acne.",
+  "study_date":"12/12/2024",
+  "detailed_description": "Studies on acne focus on its causes, prevalence, and treatment options, exploring factors like hormonal changes, bacterial infections, and genetic predispositions. ",
+  "conditions": "Research on acne medications includes topical treatments like benzoyl peroxide and retinoids, oral antibiotics, and hormonal therapies, with newer studies investigating the efficacy of emerging treatments such as biologics and light-based therapies to manage acne and reduce scarring.",
+  "primary_outcome_measures": "Medication for Acne vulgaris is included",
   "source": [
     {
       "id": 1,
-      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/JDD1.pdf",
-      "source_name": "JDD1.pdf",
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/AAD.pdf",
+      "source_name": "AAD.pdf",
       "selected": true
     },
     {
       "id": 2,
-      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/JDD2.pdf",
-      "source_name": "JDD2.pdf",
-      "selected": true
-    },
-    {
-      "id": 3,
-      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/JDD3.pdf",
-      "source_name": "JDD3.pdf",
-      "selected": true
-    },
-    {
-      "id": 4,
-      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/UCALGARY.pdf",
-      "source_name": "UCALGARY.pdf",
-      "selected": true
-    },
-    {
-      "id": 5,
       "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/DRREDDY.pdf",
       "source_name": "DRREDDY.pdf",
       "selected": true
     },
     {
-      "id": 6,
+      "id": 3,
       "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/DRREDDY1.pdf",
       "source_name": "DRREDDY1.pdf",
       "selected": true
     },
     {
-      "id": 7,
+      "id": 4,
       "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/GandW.pdf",
       "source_name": "GandW.pdf",
       "selected": true
     },
     {
+      "id": 5,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/JAAD.pdf",
+      "source_name": "JAAD.pdf",
+      "selected": true
+    },
+    {
+      "id": 6,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/JAMAD.pdf",
+      "source_name": "JAMAD.pdf",
+      "selected": true
+    },
+    {
+      "id": 7,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/JDD.pdf",
+      "source_name": "JDD.pdf",
+      "selected": true
+    },
+    {
       "id": 8,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/JDD1.pdf",
+      "source_name": "JDD1.pdf",
+      "selected": true
+    },
+    {
+      "id": 9,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/JDD2.pdf",
+      "source_name": "JDD2.pdf",
+      "selected": true
+    },
+    {
+      "id": 10,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/JDD3.pdf",
+      "source_name": "JDD3.pdf",
+      "selected": true
+    },
+    {
+      "id": 11,
       "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/PRGO.pdf",
       "source_name": "PRGO.pdf",
       "selected": true
     },
     {
-      "id": 9,
+      "id": 12,
       "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/PRGO1.pdf",
       "source_name": "PRGO1.pdf",
       "selected": true
     },
     {
-      "id": 10,
+      "id": 13,
       "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/PRGO2.pdf",
       "source_name": "PRGO2.pdf",
       "selected": true
     },
     {
-      "id": 11,
+      "id": 14,
       "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/TARO.pdf",
       "source_name": "TARO.pdf",
       "selected": true
     },
     {
-      "id": 12,
+      "id": 15,
       "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/TOLMAR.pdf",
       "source_name": "TOLMAR.pdf",
       "selected": true
     },
     {
-      "id": 13,
+      "id": 16,
       "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/TOLMAR1.pdf",
       "source_name": "TOLMAR1.pdf",
       "selected": true
     },
     {
-      "id": 14,
+      "id": 17,
       "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/TOLMAR2.pdf",
       "source_name": "TOLMAR2.pdf",
       "selected": true
     },
     {
-      "id": 15,
+      "id": 18,
       "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/TOLMAR3.pdf",
       "source_name": "TOLMAR3.pdf",
       "selected": true
     },
     {
-      "id": 16,
+      "id": 19,
       "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/TOLMAR4.pdf",
       "source_name": "TOLMAR4.pdf",
       "selected": true
     },
     {
-      "id": 17,
-      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/UCALGARY.pdf",
+      "id": 20,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/UCALGARY.pdf",
       "source_name": "UCALGARY.pdf",
       "selected": true
     },
     {
-      "id": 18,
-      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39541630",
-      "source_name": "39541630",
+      "id": 21,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/clinical_trials.json/NCT00988026",
+      "source_name": "NCT00988026",
       "selected": true
     },
     {
-      "id": 19,
-      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39541587",
-      "source_name": "39541587",
+      "id": 22,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/clinical_trials.json/NCT03122457",
+      "source_name": "NCT03122457",
+      "selected": true
+    },
+    {
+      "id": 23,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/clinical_trials.json/NCT01929057",
+      "source_name": "NCT01929057",
+      "selected": true
+    },
+    {
+      "id": 24,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/clinical_trials.json/NCT01017120",
+      "source_name": "NCT01017120",
+      "selected": true
+    },
+    {
+      "id": 25,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/clinical_trials.json/NCT05517720",
+      "source_name": "NCT05517720",
+      "selected": true
+    },
+    {
+      "id": 26,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/clinical_trials.json/NCT01631474",
+      "source_name": "NCT01631474",
+      "selected": true
+    },
+    {
+      "id": 27,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/clinical_trials.json/NCT06202274",
+      "source_name": "NCT06202274",
+      "selected": true
+    },
+    {
+      "id": 28,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/clinical_trials.json/NCT01289574",
+      "source_name": "NCT01289574",
+      "selected": true
+    },
+    {
+      "id": 29,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/clinical_trials.json/NCT01160757",
+      "source_name": "NCT01160757",
+      "selected": true
+    },
+    {
+      "id": 30,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/clinical_trials.json/NCT03850925",
+      "source_name": "NCT03850925",
+      "selected": true
+    },
+    {
+      "id": 31,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39184919",
+      "source_name": "39184919",
+      "selected": true
+    },
+    {
+      "id": 32,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39184770",
+      "source_name": "39184770",
+      "selected": true
+    },
+    {
+      "id": 33,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39184705",
+      "source_name": "39184705",
+      "selected": true
+    },
+    {
+      "id": 34,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39182678",
+      "source_name": "39182678",
+      "selected": true
+    },
+    {
+      "id": 35,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39180584",
+      "source_name": "39180584",
+      "selected": true
+    },
+    {
+      "id": 36,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39180560",
+      "source_name": "39180560",
+      "selected": true
+    },
+    {
+      "id": 37,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39179105",
+      "source_name": "39179105",
+      "selected": true
+    },
+    {
+      "id": 38,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39177615",
+      "source_name": "39177615",
+      "selected": true
+    },
+    {
+      "id": 39,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39175550",
+      "source_name": "39175550",
+      "selected": true
+    },
+    {
+      "id": 40,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39166269",
+      "source_name": "39166269",
+      "selected": true
+    },
+    {
+      "id": 41,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39165893",
+      "source_name": "39165893",
+      "selected": true
+    },
+    {
+      "id": 42,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39165891",
+      "source_name": "39165891",
+      "selected": true
+    },
+    {
+      "id": 43,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39164814",
+      "source_name": "39164814",
+      "selected": true
+    },
+    {
+      "id": 44,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39163914",
+      "source_name": "39163914",
+      "selected": true
+    },
+    {
+      "id": 45,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39162381",
+      "source_name": "39162381",
+      "selected": true
+    },
+    {
+      "id": 46,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39161490",
+      "source_name": "39161490",
+      "selected": true
+    },
+    {
+      "id": 47,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39159340",
+      "source_name": "39159340",
+      "selected": true
+    },
+    {
+      "id": 48,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39159339",
+      "source_name": "39159339",
+      "selected": true
+    },
+    {
+      "id": 49,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39158749",
+      "source_name": "39158749",
+      "selected": true
+    },
+    {
+      "id": 50,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/pubmed.json/39156816",
+      "source_name": "39156816",
       "selected": true
     }
   ]

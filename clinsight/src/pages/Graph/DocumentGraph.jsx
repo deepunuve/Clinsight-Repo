@@ -33,10 +33,8 @@ class DocumentGraph extends Component {
         // if (data) {
         //     this.getGraphDataDetails(data.id);
         // }
-        const data = {
-            id: 1
-        }
-        this.getGraphDataDetails(data.id);
+
+        this.getGraphDataDetails(this.props.payload);
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -45,10 +43,10 @@ class DocumentGraph extends Component {
         }
     }
 
-    getGraphDataDetails = async (id) => {
+    getGraphDataDetails = async (payload) => {
         this.setState({ isLoading: true });
         try {
-            const response = await getGraphDocData(id);
+            const response = await getGraphDocData(payload);
             this.setState({ elements: response }, this.applyLayout); // Ensure layout is applied on data load
         } catch (error) {
             console.error('Error fetching graph data:', error);
@@ -221,8 +219,7 @@ class DocumentGraph extends Component {
                                                 <ForceGraph3D
                                                     ref={this.fgRef}
                                                     graphData={elements}
-                                                    nodeAutoColorBy="id"
-                                                    width="100%"  // Ensure full width
+                                                    nodeAutoColorBy="id"                                                   
                                                     height={500} // Ensure full height inside parent
                                                     linkWidth={1}
                                                     linkLabel="label"

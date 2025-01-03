@@ -117,15 +117,15 @@ const DashboardPage = () => {
                   <div className="d-flex justify-content-between">
                     <div className="box flex-fill mx-1 d-flex align-items-center justify-content-center">
                       <FontAwesomeIcon icon={faTachometerAlt} className="icon-spacing" />
-                      <div className="ms-2">30</div>
+                      <div className="ms-2">{study.count[0].count}</div>
                     </div>
                     <div className="box flex-fill mx-1 d-flex align-items-center justify-content-center">
                       <FontAwesomeIcon icon={faCog} className="icon-spacing" />
-                      <div className="ms-2">200</div>
+                      <div className="ms-2">{study.count[1].count}</div>
                     </div>
                     <div className="box flex-fill mx-1 d-flex align-items-center justify-content-center">
                       <FontAwesomeIcon icon={faDatabase} className="icon-spacing" />
-                      <div className="ms-2">47</div>
+                      <div className="ms-2">{study.count[2].count}</div>
                     </div>
                   </div>
                 </div>

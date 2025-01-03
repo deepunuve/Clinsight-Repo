@@ -1,0 +1,25 @@
+{
+  "id": 24579,
+  "title": "Acne Phase III AI Analysis Package",
+  "brief_summary": "This study is about Acne Vulgaris. It includes various Researches and medications related to acne.",
+  "study_type": "Intervention",
+  "study_status": "Completed",
+  "study_date":"12/12/2024",
+  "detailed_description": "Studies on acne focus on its causes, prevalence, and treatment options, exploring factors like hormonal changes, bacterial infections, and genetic predispositions. ",
+  "conditions": "Research on acne medications includes topical treatments like benzoyl peroxide and retinoids, oral antibiotics, and hormonal therapies, with newer studies investigating the efficacy of emerging treatments such as biologics and light-based therapies to manage acne and reduce scarring.",
+  "primary_outcome_measures": "Medication for Acne vulgaris is included",
+  "source": [
+    {
+      "id": 1,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/External/AAD.pdf",
+      "source_name": "AAD.pdf",
+      "selected": true
+    },
+    {
+      "id": 2,
+      "key": "Dermatology/Derm_Raw/Acne Phase III AI Analysis Package/Internal/DRREDDY.pdf",
+      "source_name": "DRREDDY.pdf",
+      "selected": true
+    }
+  ]
+}

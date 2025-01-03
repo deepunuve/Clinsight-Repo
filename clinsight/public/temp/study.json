@@ -1,37 +1,237 @@
 [
-    {
-      "id": 24579,
-      "title": "Acne Phase III AI Analysis Package",
-      "brief_summary": "Acne is a common skin condition that occurs when hair follicles become clogged with oil and dead skin cells. It typically appears on the face, neck, chest, back, and shoulders. There are various types of acne, including whiteheads, blackheads, papules, pustules, nodules, and cysts. Acne can range from mild to severe and can cause emotional distress and scarring if not properly treated.",
-      "study_status": "Completed",
-      "study_type": "Intervention"
-    },
-    {
-      "id": 24580,
-      "title": "invoices",
-      "brief_summary": "invoices",
-      "study_status": "invoices",
-      "study_type": "invoices"
-    },
-    {
-      "id": 24581,
-      "title": "RetroNectin",
-      "brief_summary": "Studies related to RectoNectin",
-      "study_status": "Completed",
-      "study_type": "Intervention"
-    },
-    {
-      "id": 24583,
-      "title": "Testing",
-      "brief_summary": "Development Work Space",
-      "study_status": "Recruiting",
-      "study_type": "Observational"
-    },
-    {
-      "id": 24582,
-      "title": "test",
-      "brief_summary": "test related to RectoNectin",
-      "study_status": "test",
-      "study_type": "test"
-    }
-  ]
+  {
+    "id": 24579,
+    "title": "Acne Phase III AI Analysis Package",
+    "brief_summary": "This study is about Acne Vulgaris. It includes various Researches and medications related to acne.",
+    "study_status": "Completed",
+    "study_type": "Intervention",
+    "count": [
+      {
+        "name": "total_document_count",
+        "count": 98
+      },
+      {
+        "name": "Internal",
+        "count": 12
+      },
+      {
+        "name": "External",
+        "count": 4
+      },
+      {
+        "name": "pubmed",
+        "count": 22
+      },
+      {
+        "name": "clinical_trials",
+        "count": 60
+      },
+      {
+        "name": "Disease",
+        "count": 149
+      },
+      {
+        "name": "Chemical",
+        "count": 150
+      },
+      {
+        "name": "Protein",
+        "count": 10
+      },
+      {
+        "name": "Genetic",
+        "count": null
+      }
+    ],
+    "isFavorite": true,
+    "isStar": true
+  },
+  {
+    "id": 24580,
+    "title": "invoices",
+    "brief_summary": "invoices",
+    "study_status": "invoices",
+    "study_type": "invoices",
+    "count": [
+      {
+        "name": "total_document_count",
+        "count": 15
+      },
+      {
+        "name": "Internal",
+        "count": 1
+      },
+      {
+        "name": "External",
+        "count": 0
+      },
+      {
+        "name": "pubmed",
+        "count": 0
+      },
+      {
+        "name": "clinical_trials",
+        "count": 0
+      },
+      {
+        "name": "Disease",
+        "count": null
+      },
+      {
+        "name": "Chemical",
+        "count": null
+      },
+      {
+        "name": "Protein",
+        "count": null
+      },
+      {
+        "name": "Genetic",
+        "count": null
+      }
+    ],
+    "isFavorite": true,
+    "isStar": true
+  },
+  {
+    "id": 24581,
+    "title": "RetroNectin",
+    "brief_summary": "Studies related to RectoNectin",
+    "study_status": "Completed",
+    "study_type": "Intervention",
+    "count": [
+      {
+        "name": "total_document_count",
+        "count": 189
+      },
+      {
+        "name": "Internal",
+        "count": 0
+      },
+      {
+        "name": "External",
+        "count": 102
+      },
+      {
+        "name": "pubmed",
+        "count": 87
+      },
+      {
+        "name": "clinical_trials",
+        "count": 0
+      },
+      {
+        "name": "Disease",
+        "count": null
+      },
+      {
+        "name": "Chemical",
+        "count": null
+      },
+      {
+        "name": "Protein",
+        "count": null
+      },
+      {
+        "name": "Genetic",
+        "count": null
+      }
+    ],
+    "isFavorite": true,
+    "isStar": true
+  },
+  {
+    "id": 24590,
+    "title": "Single_Document_24590",
+    "brief_summary": "string",
+    "study_status": "string",
+    "study_type": "string",
+    "count": [
+      {
+        "name": "total_document_count",
+        "count": 53
+      },
+      {
+        "name": "Internal",
+        "count": 1
+      },
+      {
+        "name": "External",
+        "count": 0
+      },
+      {
+        "name": "pubmed",
+        "count": 2
+      },
+      {
+        "name": "clinical_trials",
+        "count": 50
+      },
+      {
+        "name": "Disease",
+        "count": 72
+      },
+      {
+        "name": "Chemical",
+        "count": 81
+      },
+      {
+        "name": "Protein",
+        "count": 55
+      },
+      {
+        "name": "Genetic",
+        "count": null
+      }
+    ],
+    "isFavorite": true,
+    "isStar": true
+  },
+  {
+    "id": 1,
+    "title": "string",
+    "brief_summary": "string",
+    "study_status": "string",
+    "study_type": "string",
+    "count": [
+      {
+        "name": "total_document_count",
+        "count": null
+      },
+      {
+        "name": "Internal",
+        "count": null
+      },
+      {
+        "name": "External",
+        "count": null
+      },
+      {
+        "name": "pubmed",
+        "count": null
+      },
+      {
+        "name": "clinical_trials",
+        "count": null
+      },
+      {
+        "name": "Disease",
+        "count": null
+      },
+      {
+        "name": "Chemical",
+        "count": null
+      },
+      {
+        "name": "Protein",
+        "count": null
+      },
+      {
+        "name": "Genetic",
+        "count": null
+      }
+    ],
+    "isFavorite": true,
+    "isStar": true
+  }
+]

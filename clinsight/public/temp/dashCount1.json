@@ -2,17 +2,17 @@
   "entity": [
     {
       "name": "Chemical",
-      "count": 150,
+      "count": 12,
       "id": 1
     },
     {
       "name": "Disease",
-      "count": 149,
+      "count": 12,
       "id": 0
     },
     {
       "name": "Protein",
-      "count": 10,
+      "count": 1,
       "id": 2
     }
   ],
@@ -122,22 +122,22 @@
   "Type": [
     {
       "name": "Internal",
-      "count": 12,
+      "count": 1,
       "id": 0
     },
     {
       "name": "External",
-      "count": 4,
+      "count": 1,
       "id": 1
     },
     {
       "name": "clinical trials",
-      "count": 60,
+      "count": 1,
       "id": 3
     },
     {
       "name": "pubmed",
-      "count": 22,
+      "count": 1,
       "id": 2
     }
   ]

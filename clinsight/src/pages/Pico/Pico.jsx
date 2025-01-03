@@ -12,8 +12,19 @@ function Pico(props) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // const response = await axios.get('http://184.105.215.253:9004/pico?study_id=' + props.id);
-                const response = await axios.get('/temp/pico.json');
+                const sid = props.payload.study_id ? parseInt(props.payload.study_id, 10) : NaN; // Default to NaN if `studyId` is falsy
+
+                // Log for debugging
+                console.log('Converted study_id:', sid);
+
+                const input = {
+                    study_id: sid, // Use a default value (0) or handle error if `sid` is NaN
+                    doc_type: props.payload.doc_type,
+                    entity_type: props.payload.entity_type
+                };
+                const response = await axios.get('/api2/pico?study_id=24579');
+                //const response = await axios.post('/api2/pico_nl', input);
+                //const response = await axios.get('/temp/pico.json');
                 setData(Object.entries(response.data)); // Convert data to array of entries
             } catch (error) {
                 setError(error.message || 'An error occurred');
