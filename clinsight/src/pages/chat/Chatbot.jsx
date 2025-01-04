@@ -1,36 +1,32 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Button, Form, InputGroup, Row, Col, Card, Spinner } from 'react-bootstrap'; // Import Spinner for loader
-import { getChatHistory, getChatResponse } from '../../api/chat';
+import { Button, Form, InputGroup, Row, Col, Card, Spinner, Modal } from 'react-bootstrap'; // Import Modal
+import { getChatHistory, getChatResponse, getSummary } from '../../api/chat';
+import axios from 'axios';
+import { Document, Page, pdfjs } from 'react-pdf'; // Use pdfjs from react-pdf
+import { getDocument, GlobalWorkerOptions } from "pdfjs-dist";
+import PdfViewerTest from './SourceViewer';
+import SourceViewer from './SourceViewer';
 
 const Chatbot = (props) => {
     const [messages, setMessages] = useState([]);
     const [userMessage, setUserMessage] = useState('');
     const [loading, setLoading] = useState(false);  // State for loading status
+    const [showModal, setShowModal] = useState(false); // State to control the modal visibility
     const chatEndRef = useRef(null); // Reference for scrolling
+    const [pdfData, setPdfData] = useState(null);
+
 
     useEffect(() => {
+
         const fetchHistory = async () => {
             try {
+                setLoading(true);
                 const history = await getChatHistory(props.studyId);
 
                 // Format each message by combining date and time, then converting to Date object
                 const formattedHistory = history.flatMap((msg) => {
                     const fullDateTime = `${msg.date} ${msg.time}`; // Combine date and time
                     const timestamp = new Date(fullDateTime);  // Convert to Date object
-
-                    // Check if msg.answer contains the word "summarize"
-                    let formattedAnswer = msg.answer;
-                    if (msg.question.toLowerCase().includes("summarize")) {
-                        // Process the answer using fetchData if it contains "summarize"
-                        const ranges = [
-                            { start_index: 10, end_index: 18, color: "yellow" },
-                            { start_index: 30, end_index: 40, color: "green" }
-                        ]; // Example ranges, modify based on your needs
-                        formattedAnswer = fetchData(msg.answer, ranges);
-                        console.log(formattedAnswer);
-                        console.log("ccc");
-                    }
-
                     return [
                         {
                             sender: "user",
@@ -39,7 +35,7 @@ const Chatbot = (props) => {
                         },
                         {
                             sender: "bot",
-                            text: formattedAnswer, // Use formatted answer if contains "summarize"
+                            text: msg.answer, // Use formatted answer if contains "summarize"
                             timestamp: timestamp
                         }
                     ];
@@ -55,6 +51,9 @@ const Chatbot = (props) => {
             } catch (error) {
                 console.error("Error fetching chat history:", error);
                 setMessages([{ sender: "bot", text: "Error loading chat history.", timestamp: new Date() }]);
+            } finally {
+                // Set loading to false once the response is received
+                setLoading(false);
             }
         };
 
@@ -67,30 +66,48 @@ const Chatbot = (props) => {
         const newMessage = { sender: "user", text: userMessage, timestamp: new Date() };
         setMessages([...messages, newMessage]);
         setUserMessage('');
-
-        // Set loading to true while waiting for the chatbot's response
         setLoading(true);
 
-        try {
-            let input = {
-                study_id: props.studyId,
-                node: [],
-                query: userMessage
-            };
+        if (userMessage.toLowerCase().includes("summarize")) {
+            try {
 
-            const response = await getChatResponse(input);
-            const botMessage = { sender: "bot", text: response.answer, timestamp: response.date + ' ' + response.time };
+                const response = await getSummary(props.studyId);
+                const dataCluster = fetchData(response.answer, response.matrix);
+                const botMessage = { sender: "bot", text: dataCluster, timestamp: response.date + ' ' + response.time };
 
-            setMessages((prevMessages) => [...prevMessages, botMessage]);
-        } catch (error) {
-            console.error("Error fetching chatbot response:", error);
-            setMessages((prevMessages) => [
-                ...prevMessages,
-                { sender: "bot", text: "Oops! Something went wrong.", timestamp: new Date() },
-            ]);
-        } finally {
-            // Set loading to false once the response is received
-            setLoading(false);
+                setMessages((prevMessages) => [...prevMessages, botMessage]);
+
+            } catch (error) {
+                console.error("Error fetching chatbot response:", error);
+                setMessages((prevMessages) => [
+                    ...prevMessages,
+                    { sender: "bot", text: "Oops! Something went wrong.", timestamp: new Date() },
+                ]);
+            } finally {
+                // Set loading to false once the response is received
+                setLoading(false);
+            }
+        }
+        else {
+            try {
+                let input = {
+                    study_id: props.studyId,
+                    node: [],
+                    query: userMessage
+                };
+                const response = await getChatResponse(input);
+                const botMessage = { sender: "bot", text: formatResponseWithLink(response.answer, response.source), timestamp: response.date + ' ' + response.time };
+                setMessages((prevMessages) => [...prevMessages, botMessage]);
+            } catch (error) {
+                console.error("Error fetching chatbot response:", error);
+                setMessages((prevMessages) => [
+                    ...prevMessages,
+                    { sender: "bot", text: "Oops! Something went wrong.", timestamp: new Date() },
+                ]);
+            } finally {
+                // Set loading to false once the response is received
+                setLoading(false);
+            }
         }
     };
 
@@ -128,7 +145,33 @@ const Chatbot = (props) => {
         );
         return parts.join(''); // Return the JSX elements created
     };
-    
+
+    const formatResponseWithLink = (text, source) => {
+        // Check if source is provided, format it as a clickable link
+        if (source) {
+            const [_, fileName, pageNumber] = source.match(/The file name is (\S+) and the page number is (\d+)/);
+            return (
+                <>
+                    {text} <br />
+                    <a href="#" onClick={(e) => handleFileClick(fileName)}>View File ({fileName}, Page: {pageNumber})</a>
+                </>
+            );
+        }
+        return text;
+    };
+
+    const handleFileClick = async (url) => {
+        const response = await axios.get('/api1/return_source_pdfs/?pdf_filename=Dermatology%2FDerm_Raw%2FRetroNectin%2FExternal%2FASGT.pdf');
+        setPdfData(response.data);
+        setShowModal(true);
+
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false); // Close the modal
+        setPdfData(null);
+    };
+
     return (
         <div className="mb-3">
             <Row className="g-3">
@@ -149,7 +192,7 @@ const Chatbot = (props) => {
                                             <div className={`p-2 rounded ${msg.sender === "bot" ? "bg-light text-dark" : "bg-primary text-white"}`} style={{ maxWidth: "60%" }}>
                                                 {/* Render HTML content if it's a bot response */}
                                                 {msg.sender === "bot" ? (
-                                                    <div dangerouslySetInnerHTML={{ __html: msg.text }} />
+                                                    <div>{msg.text}</div>
                                                 ) : (
                                                     msg.text
                                                 )}
@@ -188,6 +231,20 @@ const Chatbot = (props) => {
                     </Card>
                 </Col>
             </Row>
+
+            {/* Modal for displaying file */}
+            <Modal show={showModal} onHide={handleCloseModal} size="lg">
+                <Modal.Header closeButton>
+                </Modal.Header>
+                <Modal.Body>
+                    <SourceViewer pdfData={pdfData} />
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleCloseModal}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     );
 };

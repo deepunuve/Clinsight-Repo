@@ -129,69 +129,8 @@ class ResultGraph extends Component {
 
     getGraphDataDetails = async (payload) => {
         try {
-            // if (this.props.data) {
-            //     const updatedItems = this.props.data.source
-            //         .filter((source) => source.selected)
-            //         .map((source) => source.source_name);
-
-            const requestData = {
-                "id": 24579,
-                "doc": [
-                  "AAD.pdf",
-                  "JAAD.pdf",
-                  "JAMAD.pdf",
-                  "JDD.pdf",
-                  "JDD1.pdf",
-                  "JDD2.pdf",
-                  "JDD3.pdf",
-                  "UCALGARY.pdf",
-                  "DRREDDY.pdf",
-                  "DRREDDY1.pdf",
-                  "GandW.pdf",
-                  "PRGO.pdf",
-                  "PRGO1.pdf",
-                  "PRGO2.pdf",
-                  "TARO.pdf",
-                  "TOLMAR.pdf",
-                  "TOLMAR1.pdf",
-                  "TOLMAR2.pdf",
-                  "TOLMAR3.pdf",
-                  "TOLMAR4.pdf",
-                  "NCT00988026",
-                  "NCT03122457",
-                  "NCT01929057",
-                  "NCT01017120",
-                  "NCT05517720",
-                  "NCT01631474",
-                  "NCT06202274",
-                  "NCT01289574",
-                  "NCT01160757",
-                  "NCT03850925",
-                  "39184919",
-                  "39184770",
-                  "39184705",
-                  "39182678",
-                  "39180584",
-                  "39180560",
-                  "39179105",
-                  "39177615",
-                  "39175550",
-                  "39166269",
-                  "39165893",
-                  "39165891",
-                  "39164814",
-                  "39163914",
-                  "39162381",
-                  "39161490",
-                  "39159340",
-                  "39159339",
-                  "39158749",
-                  "39156816"
-                ]
-              };
-
-            // const response = await getGraphData(postData);
-            const response = await getGraphData(requestData);
+            
+            const response = await getGraphData(payload);
             this.setState({ elements: response, isLoading: false });
             // }
         } catch (error) {
@@ -331,8 +270,8 @@ class ResultGraph extends Component {
                                                     height={700}
                                                     linkWidth={1}
                                                     linkLabel="label"
-                                                    cooldownTicks={10}
-                                                    cooldownTime={150000}
+                                                    // cooldownTicks={10}
+                                                    // cooldownTime={150000}
                                                     linkDirectionalParticles={(link) => (link.showParticles ? 4 : 0)} // Conditional particles
                                                     linkDirectionalParticleSpeed={0.005}  // Slow down the particles
                                                     linkDirectionalParticleColor={() => 'red'}

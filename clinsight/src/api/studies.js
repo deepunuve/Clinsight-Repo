@@ -53,37 +53,21 @@ export const fetchStudyDetails = async (payload) => {
 
 export const getDashboardData = async (payload) => {
   try {
-    // Make an actual API call to a mock file
-
-    const sid = parseInt(payload.study_id, 10); // Ensure studyId is a number
-
-    if (isNaN(sid)) {
-      console.error("Invalid studyId:", payload.study_id);
-      return; // Handle invalid studyId
-    }
-
-    const input = {
-      study_id: sid,   // Study ID as an integer
-      doc_type: payload.doc_type,
-      entity_type: payload.entity_type
-    };
-
-    console.log("Sending data:", input); // For debugging
-    // Log for debugging
-
-    // const response = await axios.post('/api2/dash_board_data_nl', input, {
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    // });// Replace with your actual API endpoint.
-    // return response.data;
-    if (payload.doc_type.length === 0) {
-      const response = await axios.get('/temp/dashCount.json');
-      return response.data;
-    } else {
-      const response = await axios.get('/temp/dashCount1.json');
-      return response.data;
-    }
+    console.log(payload);
+    const response = await axios.post('/api2/dash_board_data_nl/', payload, {
+      headers: {
+        'accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+    });// Replace with your actual API endpoint.
+    return response.data;
+    // if (payload.doc_type.length === 0) {
+    //   const response = await axios.get('/temp/dashCount.json');
+    //   return response.data;
+    // } else {
+    //   const response = await axios.get('/temp/dashCount1.json');
+    //   return response.data;
+    // }
     // Axios automatically parses the JSON response, so we return the `data` property.
   } catch (error) {
     console.error('Error fetching mock studies:', error);

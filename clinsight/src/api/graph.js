@@ -4,14 +4,12 @@ export const getGraphDocData = async (payload) => {
   try {
     // Make an actual API call using Axios
     console.log(payload);
-    // const response = await axios.post('http://184.105.215.253:9004/document_graph_nl/', payload, {
-    //   headers: {
-    //     'accept': 'application/json',
-    //     'Content-Type': 'application/json',
-    //   },
-    // });
-    const response = await axios.get('/api2/document_graph?study_id=' + payload.study_id);
-    //const response = await axios.get('/temp/graphHome.json'); // Replace with your actual API endpoint.
+    const response = await axios.post('/api2/document_graph_nl/', payload, {
+      headers: {
+        'accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+    });
     return response.data;  // Axios automatically parses the JSON response, so we return the `data` property.
   } catch (error) {
     console.error('Error fetching studies:', error);
@@ -22,7 +20,7 @@ export const getGraphDocData = async (payload) => {
 export const getGraphData = async (payload) => {
   try {
     // Make an actual API call using Axios
-    const response = await axios.post('/api2/multiple_graph', payload, {
+    const response = await axios.post('/api2/multiple_graph_nl/', payload, {
       headers: {
         'accept': 'application/json',
         'Content-Type': 'application/json',

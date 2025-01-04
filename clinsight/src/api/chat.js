@@ -13,6 +13,19 @@ export const getChatHistory = async (id) => {
     return []; // Return an empty array in case of an error
   }
 };
+
+export const getSummary = async (id) => {
+  try {
+    // Make an actual API call using Axios
+    const response = await axios.post('/api1/summarize/?study_id=' + id);
+
+    // const response = await axios.get('/temp/chat.json'); // Replace with your actual API endpoint.
+    return response.data;  // Axios automatically parses the JSON response, so we return the `data` property.
+  } catch (error) {
+    console.error('Error fetching studies:', error);
+    return []; // Return an empty array in case of an error
+  }
+};
 export const getChatResponse = async (payload) => {
   try {
     // Make an actual API call using Axios

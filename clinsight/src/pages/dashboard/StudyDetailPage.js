@@ -1,16 +1,20 @@
 // src/pages/StudyDetailPage.js
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom'; // To access route parameters
-import { Card, Row, Col, Spinner, Alert } from 'react-bootstrap';  // Importing bootstrap components
+import { Tabs, Tab, Container, Card, Row, Col, Spinner, Alert } from 'react-bootstrap';  // Importing bootstrap components
 import { getDashboardData, fetchStudyDetails } from '../../api/studies';  // Import API function
 import './DashboardPage.css';
-import DahboardCountSection from '../../components/DahboardCountSection';
 import GraphCard from '../../components/GraphCard';
 import DocumentGraph from '../Graph/DocumentGraph';
 import ResultGraph from '../Graph/ResultGraph';
 import Pico from '../Pico/Pico';
 import Chatbot from '../chat/Chatbot';
 import SourceDocumentSelector from '../sidebar/SourceDocumentSelector';
+import Summary from '../chat/Summary';
+import PdfViewer from '../chat/PdfViewer';
+import Topic from '../chat/Topic';
+import NetworkMeasure from '../chat/NetworkMeasure';
+import PdfViewerTest from '../chat/SourceViewer';
 
 const StudyDetailPage = ({ updateHeaderTitle }) => {
   const { studyId } = useParams();
@@ -24,9 +28,14 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
   const [activeECard, setActiveECard] = useState([]);
   const [selectedEntity, setSelectedEntity] = useState([]);
   const [selectedDoc, setselectedDoc] = useState([]);
+  const [selectedPDFs, setSelectedPDFs] = useState([]);
+  const [activeTab, setActiveTab] = useState("tab1");
+  const pdfUrlTopic = '/temp/Protocol_template.pdf';
 
-  const [selectedEntityId, setSelectedEntityId] = useState([]);
-  const [selectedDocId, setselectedDocId] = useState([]);
+  const handleTabSelect = (tab) => {
+    setActiveTab(tab);
+  };
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,6 +49,10 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
         };
         const response = await fetchStudyDetails(inputStudyDetails);
         setStudyData(response);
+        const extractedSourceNames = response.source.map(pdf => pdf.source_name);
+        // Update the state with the list of source names
+        setSelectedPDFs(extractedSourceNames);
+
         const responseDash = await getDashboardData(inputStudyDetails);
         setDashData(responseDash);
         const allEntityTypes = responseDash.entity.map(item => item.name);
@@ -198,11 +211,23 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
     }
   };
 
+  const handleSelectionChange = (updatedSelection) => {
+    alert(updatedSelection.length);
+    setSelectedPDFs(updatedSelection);  // Update the selected PDFs list in the parent state
+    console.log('Updated Selected PDFs:', updatedSelection);  // You can handle this data however needed
+  };
   // Menu click handler
   const handleMenuClick = (menu) => {
     if (menu === "Dashboard") {
-      // let newSelectedCardText = [...selectedDoc, ...selectedEntity].join(" & ");
-      // setSelectedCardText(newSelectedCardText);
+      let newSelectedCardText = '';
+      // Check if selectedDoc and selectedEntity are not empty
+      if (selectedDoc.length > 0 || selectedEntity.length > 0) {
+        // Join both arrays only if they are not empty
+        newSelectedCardText = [...selectedDoc, ...selectedEntity].join(" & ");
+      } else {
+        newSelectedCardText = "Dashboard";
+      }
+      setSelectedCardText(newSelectedCardText);
     } else
       setSelectedCardText(menu);
     setActiveMenu(menu);  // Set the active menu when clicked
@@ -226,10 +251,16 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
     );
   }
   const input = {
-    study_id: studyId,
-    doc_type: selectedDoc,
-    entity_type: selectedEntity
+    "study_id": studyId,
+    "doc_type": selectedDoc,
+    "entity_type": selectedEntity
   };
+  const requestGraphData = {
+    "study_id": studyId,
+    "doc": selectedPDFs,
+    "entity_type": selectedEntity
+  };
+
   return (
     <div className="dashboard-container">
       <Row >
@@ -291,7 +322,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
         </Col>
         <Col xs={12} md={2} >
           <div style={{ height: "700px", background: "#ddd", overflowY: "auto", overflowX: "hidden" }}>
-            <SourceDocumentSelector pdfList={studyData.source} />
+            <SourceDocumentSelector pdfList={studyData.source} onSelectionChange={handleSelectionChange} />
           </div>
         </Col>
         <Col xs={12} md={10}>
@@ -392,11 +423,76 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
               </>
             )}
 
-            {activeMenu === 'Chat' && (
+            {/* {activeMenu === 'Chat' && (
               <div className="chat-content">
                 <Chatbot studyId={studyId} />
               </div>
+            )} */}
+            {activeMenu === 'Chat' && (
+              <div className="chat-content">
+                <Container>
+                  <Row>
+                    <Col>
+                      <Tabs
+                        activeKey={activeTab}
+                        onSelect={handleTabSelect}
+                        className="mb-3"
+                        id="top-tabs"
+                      >
+                        <Tab eventKey="tab1" title="Chat Bot">
+                        </Tab>
+                        <Tab eventKey="tab2" title="Summary">
+                        </Tab>
+                        <Tab eventKey="tab3" title="Extract">
+                        </Tab>
+                        <Tab eventKey="tab4" title="Topic Visualization" />
+                        <Tab eventKey="tab5" title="Network  Measures" />
+                      </Tabs>
+
+                      {/* Main Content */}
+                      <div>
+                        {activeTab === "tab1" &&
+                          <div style={{ height: '600px', overflowY: 'scroll', overflowX: "hidden" }}>
+                            <Chatbot studyId={studyId} />
+                          </div>}
+                        {activeTab === "tab2" &&
+                          <div style={{ height: '600px', overflowY: 'scroll', overflowX: "hidden" }}>
+                            <Summary studyId={studyId} />
+                          </div>
+                        }
+                        {activeTab === "tab3" &&
+                          <div style={{ height: '600px', overflowY: 'scroll', overflowX: "hidden" }}>
+                            <PdfViewer pdfUrl={pdfUrlTopic}></PdfViewer>
+                          </div>}
+                        {activeTab === "tab4" &&
+                          <div style={{ height: '600px', overflowY: 'scroll', overflowX: "hidden" }}>
+                            <Topic />
+                          </div>}
+                        {activeTab === "tab5" &&
+                          <div style={{ height: '600px', overflowY: 'scroll', overflowX: "hidden" }}>
+                            <NetworkMeasure studyId={studyId} />
+                          </div>}
+                      </div>
+
+                      {/* Bottom Tab Navigation */}
+                      <Tabs
+                        activeKey={activeTab}
+                        onSelect={handleTabSelect}
+                        className="mt-3"
+                        id="bottom-tabs"
+                      >
+                        <Tab eventKey="tab1" title="Chat Bot" />
+                        <Tab eventKey="tab2" title="Summary" />
+                        <Tab eventKey="tab3" title="Extract" />
+                        <Tab eventKey="tab4" title="Topic Visualization" />
+                        <Tab eventKey="tab5" title="Network  Measures" />
+                      </Tabs>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
             )}
+
 
             {activeMenu === 'Document Graph' && (
               <div className="DocGraph-content">
@@ -420,7 +516,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
                 <div className="mb-3">
                   <Row className="g-3">
                     <Col md={12} sm={12}>
-                      <ResultGraph payload={input} />
+                      <ResultGraph payload={requestGraphData} />
                     </Col>
                   </Row>
                 </div>
