@@ -57,7 +57,7 @@ export const getDashboardData = async (payload) => {
   try {
     console.log(payload);
     //const response = await axios.post('/api2/dash_board_data_nl/', payload, {
-    const response = await axios.post('http://184.105.215.253:9003/dash_board_data_nl/', payload, {
+    const response = await axios.post('http://184.105.215.253:9004/dash_board_data_nl/', payload, {
       headers: {
         'accept': 'application/json',
         'Content-Type': 'application/json',
