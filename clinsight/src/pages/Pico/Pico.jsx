@@ -13,7 +13,8 @@ function Pico(props) {
         const fetchData = async () => {
             try {
 
-                const response = await axios.post('/api2/pico_nl/', props.payload);
+                const response = await axios.post('http://184.105.215.253:9004/pico_nl/', props.payload);
+                //const response = await axios.post('/api2/pico_nl/', props.payload);
                 //const response = await axios.get('/temp/pico.json');
                 setData(Object.entries(response.data)); // Convert data to array of entries
             } catch (error) {

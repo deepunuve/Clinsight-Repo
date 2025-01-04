@@ -37,7 +37,7 @@ function NetworkMeasure(props) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('/api1/network-measures2/?study_id=' + props.studyId);
+                const response = await axios.get('http://184.105.215.253:9003/network-measures2/?study_id=' + props.studyId);
                 setData(response.data);
 
                 // Find the min and max values in the dataset

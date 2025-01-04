@@ -161,7 +161,7 @@ const Chatbot = (props) => {
     };
 
     const handleFileClick = async (url) => {
-        const response = await axios.get('/api1/return_source_pdfs/?pdf_filename=Dermatology%2FDerm_Raw%2FRetroNectin%2FExternal%2FASGT.pdf');
+        const response = await axios.get('http://184.105.215.253:9003/return_source_pdfs/?pdf_filename=Dermatology%2FDerm_Raw%2FRetroNectin%2FExternal%2FASGT.pdf');
         setPdfData(response.data);
         setShowModal(true);
 

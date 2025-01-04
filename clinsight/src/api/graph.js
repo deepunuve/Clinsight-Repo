@@ -4,7 +4,8 @@ export const getGraphDocData = async (payload) => {
   try {
     // Make an actual API call using Axios
     console.log(payload);
-    const response = await axios.post('/api2/document_graph_nl/', payload, {
+    //const response = await axios.post('/api2/document_graph_nl/', payload, {
+    const response = await axios.post('http://184.105.215.253:9004/document_graph_nl/', payload, {
       headers: {
         'accept': 'application/json',
         'Content-Type': 'application/json',
@@ -20,7 +21,8 @@ export const getGraphDocData = async (payload) => {
 export const getGraphData = async (payload) => {
   try {
     // Make an actual API call using Axios
-    const response = await axios.post('/api2/multiple_graph_nl/', payload, {
+    //const response = await axios.post('/api2/multiple_graph_nl/', payload, {
+    const response = await axios.post('http://184.105.215.253:9004/multiple_graph_nl/', payload, {
       headers: {
         'accept': 'application/json',
         'Content-Type': 'application/json',
