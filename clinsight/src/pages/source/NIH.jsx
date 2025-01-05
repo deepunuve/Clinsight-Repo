@@ -40,8 +40,12 @@ const NIH = () => {
         setResult(null);  // Reset result while fetching new data
 
         try {
+            let input = {
+                "Condition": condition,
+                "count_to_fetch": 50
+            }
             // Replace the URL with the actual API endpoint you're calling
-            const response = await fetchNIHResult(condition);
+            const response = await fetchNIHResult(input);
             setResult(response);  // Store the result from the API
         } catch (error) {
             setError('Error fetching data from the API');

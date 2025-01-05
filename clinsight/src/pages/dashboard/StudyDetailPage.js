@@ -212,9 +212,9 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
   };
 
   const handleSelectionChange = (updatedSelection) => {
-    alert(updatedSelection.length);
-    setSelectedPDFs(updatedSelection);  // Update the selected PDFs list in the parent state
-    console.log('Updated Selected PDFs:', updatedSelection);  // You can handle this data however needed
+    const selectedNames = updatedSelection.map(pdf => pdf.name);
+    setSelectedPDFs(selectedNames);  // Update the selected PDFs list in the parent state
+    console.log('Updated Selected PDFs:', selectedNames);  // You can handle this data however needed
   };
   // Menu click handler
   const handleMenuClick = (menu) => {
@@ -223,7 +223,19 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
       // Check if selectedDoc and selectedEntity are not empty
       if (selectedDoc.length > 0 || selectedEntity.length > 0) {
         // Join both arrays only if they are not empty
-        newSelectedCardText = [...selectedDoc, ...selectedEntity].join(" & ");
+        newSelectedCardText = [
+          // Map over updatedEntityTypes and get corresponding names
+          ...selectedDoc.map(id => {
+            const doc = dashData.Type.find(item => item.id === id); // Find the document by id
+            return doc ? doc.name : ''; // Get the name of the document from the id
+          }),
+          ...selectedEntity.map(id => {
+            const doc = dashData.entity.find(item => item.id === id); // Find the document by id
+            return doc ? doc.name : ''; // Get the name of the document from the id
+          })
+        ]
+          .filter(Boolean) // Remove any empty strings or undefined values
+          .join(" & ");
       } else {
         newSelectedCardText = "Dashboard";
       }

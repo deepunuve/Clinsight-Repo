@@ -3,40 +3,47 @@ import { Form, ListGroup, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Row, Col } from 'react-bootstrap';
 
 const SourceDocumentSelector = (props) => {
-    const { pdfList, onSelectionChange } = props;  // onSelectionChange is the callback function from the parent
+    const { pdfList, onSelectionChange } = props; // Callback function from the parent
 
     // Initialize selectedPDFs based on the initial pdfList where selected: true
     const [selectedPDFs, setSelectedPDFs] = useState(
-        pdfList.filter(pdf => pdf.selected).map(pdf => pdf.id)  // Select PDFs that are marked 'selected'
+        pdfList.filter(pdf => pdf.selected).map(pdf => ({ id: pdf.id, name: pdf.source_name }))
     );
     const [selectAll, setSelectAll] = useState(pdfList.every(pdf => pdf.selected));
 
-    // Whenever the pdfList changes, we sync the selectedPDFs with the current state of pdfList
+    // Sync selectedPDFs with pdfList whenever pdfList changes
     useEffect(() => {
-        setSelectedPDFs(pdfList.filter(pdf => pdf.selected).map(pdf => pdf.id));
+        setSelectedPDFs(
+            pdfList.filter(pdf => pdf.selected).map(pdf => ({ id: pdf.id, name: pdf.source_name }))
+        );
     }, [pdfList]);
 
     // Handle individual checkbox change
     const handleCheckboxChange = (id) => {
         setSelectedPDFs((prevSelected) => {
-            const updatedSelection = prevSelected.includes(id)
-                ? prevSelected.filter((pdfId) => pdfId !== id)  // Remove from selected
-                : [...prevSelected, id];  // Add to selected
-            onSelectionChange(updatedSelection, pdfList);  // Notify parent with updated selection
+            const isAlreadySelected = prevSelected.some(pdf => pdf.id === id);
+
+            // Add or remove the selected PDF
+            const updatedSelection = isAlreadySelected
+                ? prevSelected.filter((pdf) => pdf.id !== id)
+                : [...prevSelected, { id, name: pdfList.find(pdf => pdf.id === id).source_name }];
+
+            onSelectionChange(updatedSelection); // Notify parent with updated selection
             return updatedSelection;
         });
     };
 
-    // Handle select/deselect all
+    // Handle select all
     const handleSelectAll = () => {
-        const allSelected = pdfList.map((pdf) => pdf.id);
+        const allSelected = pdfList.map((pdf) => ({ id: pdf.id, name: pdf.source_name }));
         setSelectedPDFs(allSelected);
-        onSelectionChange(allSelected, pdfList);  // Notify parent with all selected PDFs
+        onSelectionChange(allSelected); // Notify parent with all selected PDFs
     };
 
+    // Handle select none
     const handleSelectNone = () => {
         setSelectedPDFs([]);
-        onSelectionChange([], pdfList);  // Notify parent with an empty selection
+        onSelectionChange([]); // Notify parent with an empty selection
     };
 
     // Helper function to truncate text
@@ -47,18 +54,13 @@ const SourceDocumentSelector = (props) => {
     return (
         <div className="documentSelector">
             <Row className="align-items-left">
-                {/* First Column: Select Dropdown */}
                 <div style={{ height: "10px" }}></div>
                 <Col md={5} className="text-left" style={{ color: 'black' }}>
                     Select:
                 </Col>
-
-                {/* Second Column: All Button */}
                 <Col md={3} className="text-left" style={{ color: '#0070c0' }}>
                     <span onClick={handleSelectAll}>All</span>
                 </Col>
-
-                {/* Third Column: None Button */}
                 <Col md={4} className="text-left" style={{ color: '#0070c0' }}>
                     <span onClick={handleSelectNone}>None</span>
                 </Col>
@@ -79,7 +81,6 @@ const SourceDocumentSelector = (props) => {
                             e.currentTarget.style.transform = 'scale(1)';
                             e.currentTarget.style.boxShadow = '0px 4px 6px rgba(0, 0, 0, 0.1)';
                         }}>
-                        {/* Checkbox with Tooltip */}
                         <OverlayTrigger
                             placement="top"
                             overlay={<Tooltip>{pdf.source_name}</Tooltip>}
@@ -94,7 +95,7 @@ const SourceDocumentSelector = (props) => {
                                         <span className="text-truncate">{truncateText(pdf.source_name, 15)}</span>
                                     </OverlayTrigger>
                                 }
-                                checked={selectedPDFs.includes(pdf.id)}
+                                checked={selectedPDFs.some(selected => selected.id === pdf.id)}
                                 onChange={() => handleCheckboxChange(pdf.id)}
                                 style={{ cursor: 'pointer' }}
                             />

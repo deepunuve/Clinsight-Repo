@@ -11,7 +11,7 @@ const Sources = () => {
     ];
     const secondRowLogos = [
         { src: "/images/dash/NIH.png", alt: "NIH", disabled: false, link: '/nih' },
-        { src: "/images/dash/chembl.png", alt: "Chembl", disabled: false, link: '' },
+        { src: "/images/dash/chembl.png", alt: "Chembl", disabled: false, link: 'chemb' },
         { src: "/images/dash/pubmed.png", alt: "PubMed", disabled: false, link: '/pubmed' },
         { src: "/images/dash/drugbank.png", alt: "DrugBank", disabled: true, link: '' },
         { src: "/images/dash/Snomed.png", alt: "Snomed", disabled: true, link: '' },

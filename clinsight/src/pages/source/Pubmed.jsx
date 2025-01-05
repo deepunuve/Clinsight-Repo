@@ -40,8 +40,12 @@ const Pubmed = () => {
         setResult(null);  // Reset result while fetching new data
 
         try {
+            let payload = {
+                "Condition": condition,
+                "Max_papers": 100
+            }
             // Replace the URL with the actual API endpoint you're calling
-            const response = await fetchPubmedResult(condition);
+            const response = await fetchPubmedResult(payload);
             setResult(response);  // Store the result from the API
         } catch (error) {
             setError('Error fetching data from the API');

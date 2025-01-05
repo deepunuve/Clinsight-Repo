@@ -19,7 +19,7 @@ const NightingaleChart = (props) => {
         labels: labels, // Access the labels from props
         datasets: [
             {
-                label: '# of Votes',
+                label: 'Instance Count',
                 data: data, // Access the data from the series
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.5)',
@@ -42,6 +42,12 @@ const NightingaleChart = (props) => {
                 },
                 angleLines: {
                     display: false, // Optionally hide the angle lines (spokes)
+                },
+                ticks: {
+                    display: false, // Hides the scale values (ticks)
+                },
+                pointLabels: {
+                    display: false, // Hides the labels at each data point
                 },
             },
         },

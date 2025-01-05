@@ -18,6 +18,7 @@ import Pubmed from './pages/source/Pubmed';
 import AdminDashboardPage from './pages/dashboard/AdminDashboardPage';
 import AdminUserPage from './pages/User/AdminUserPage';
 import './App.css';
+import Chemb from './pages/source/Chemb';
 
 function App() {
   const [headerTitle, setHeaderTitle] = useState('Study Details');
@@ -106,6 +107,16 @@ function App() {
             <ProtectedRoute>
               <Layout>
                 <NIH />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/chemb"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <Chemb />
               </Layout>
             </ProtectedRoute>
           }
