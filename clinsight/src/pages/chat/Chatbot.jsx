@@ -213,11 +213,7 @@ const Chatbot = (props) => {
                                             <div className={`p-2 rounded ${msg.sender === "bot" ? "bg-light text-dark" : "bg-primary text-white"}`} style={{ maxWidth: "60%" }}>
                                                 {/* Render HTML content if it's a bot response */}
                                                 {msg.sender === "bot" ? (
-                                                    isSummary ? (
-                                                        <div dangerouslySetInnerHTML={{ __html: msg.text }}></div>
-                                                    ) : (
-                                                        <div>{msg.text}</div>
-                                                    )
+                                                    <div>{msg.text}</div>
                                                 ) : (
                                                     msg.text
                                                 )}
