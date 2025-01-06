@@ -159,7 +159,7 @@ const Chatbot = (props) => {
     };
     const formatResponseWithLink = (text, source) => {
         // Check if source is provided and valid
-        if (source && source.includes("Source not available for summary")) {
+        if (source && source === ("")) {
             const [_, fileName, pageNumber] = source.match(/The file name is (\S+) and the page number is (\d+)/);
             return (
                 <>
@@ -175,7 +175,7 @@ const Chatbot = (props) => {
         return (
             <>
                 {text} <br /><br />
-                <span style={{ color: "blue" }}>Source not available for summary</span>
+                <span style={{ color: "blue" }}>Source is not available</span>
             </>
         );
     };

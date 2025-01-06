@@ -28,18 +28,15 @@ class DocumentGraph extends Component {
     };
 
     componentDidMount() {
-        // const storedSessionData = sessionStorage.getItem('sessionData');
-        // const data = storedSessionData ? JSON.parse(storedSessionData) : null;
-        // if (data) {
-        //     this.getGraphDataDetails(data.id);
-        // }
-
         this.getGraphDataDetails(this.props.payload);
     }
 
     componentDidUpdate(prevProps, prevState) {
         if (this.state.layout !== prevState.layout) {
             this.applyLayout();
+        }
+        if (prevProps.payload !== this.props.payload) {
+            this.getGraphDataDetails(this.props.payload);
         }
     }
 
@@ -185,8 +182,7 @@ class DocumentGraph extends Component {
 
                     <div className="graph-container">
                         {this.state.isLoading && <div className="text-center mt-4">
-                            <Spinner animation="border" variant="primary" />
-                            <p>Loading study details...</p>
+                            <Spinner animation="border" variant="success" />
                         </div>}
                         <div className="mb-3">
                             <Row className="g-3">
@@ -219,7 +215,7 @@ class DocumentGraph extends Component {
                                                 <ForceGraph3D
                                                     ref={this.fgRef}
                                                     graphData={elements}
-                                                    nodeAutoColorBy="id"                                                   
+                                                    nodeAutoColorBy="id"
                                                     height={500} // Ensure full height inside parent
                                                     linkWidth={1}
                                                     linkLabel="label"

@@ -31,14 +31,6 @@ class ResultGraph extends Component {
         this.getGraphDataDetails(this.props.payload);
     }
 
-    // toggleFullScreen = () => {
-    //     this.setState((prevState) => ({
-    //         isFullScreen: !prevState.isFullScreen,
-    //         parentWidth: prevState.isFullScreen ? 600 : window.innerWidth,
-    //         parentHeight: prevState.isFullScreen ? 500 : window.innerHeight,
-    //     }));
-    // };
-
     handleNodeHover = (node) => {
         const { elements } = this.state;
         const hoveredNode = elements.nodes.find((n) => n.id === node.id);
@@ -129,12 +121,14 @@ class ResultGraph extends Component {
 
     getGraphDataDetails = async (payload) => {
         try {
-            
+            this.setState({ isLoading: true });
             const response = await getGraphData(payload);
             this.setState({ elements: response, isLoading: false });
             // }
         } catch (error) {
             console.error('Error fetching graph data:', error);
+            this.setState({ isLoading: false });
+        } finally {
             this.setState({ isLoading: false });
         }
     };
@@ -212,6 +206,9 @@ class ResultGraph extends Component {
         if (prevState.layout !== this.state.layout) {
             this.applyLayout();
         }
+        if (prevProps.payload !== this.props.payload) {
+            this.getGraphDataDetails(this.props.payload);
+        }
     }
 
     render() {
@@ -222,8 +219,7 @@ class ResultGraph extends Component {
 
                 {isLoading ? (
                     <div className="text-center">
-                        <Spinner animation="border" role="status" />
-                        <span>Loading...</span>
+                        <Spinner animation="border" variant="success" />
                     </div>
                 ) : (
                     elements && (

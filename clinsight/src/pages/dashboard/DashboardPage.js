@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { fetchStudies, fetchStudyTypes } from '../../api/studies';
 import './DashboardPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSignOutAlt, faTachometerAlt, faDatabase, faCog, faUserCircle, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faFileAlt, faDatabase, faCompressArrowsAlt, faUserCircle, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 import { faHeart, faStar } from '@fortawesome/free-regular-svg-icons';
 
@@ -83,17 +83,17 @@ const DashboardPage = () => {
                   <FontAwesomeIcon
                     icon={faHeart}
                     style={{ cursor: 'pointer', fontSize: '1rem' }}
-                    title="Edit"
+                    title="Favourites"
                   />
                   <FontAwesomeIcon
                     icon={faStar}
                     style={{ cursor: 'pointer', fontSize: '1rem' }}
-                    title="Delete"
+                    title="Important"
                   />
                   <FontAwesomeIcon
                     icon={faSyncAlt}
                     style={{ cursor: 'pointer', fontSize: '1rem' }}
-                    title="Share"
+                    title="Refresh"
                   />
                 </div>
 
@@ -115,16 +115,16 @@ const DashboardPage = () => {
                       : study.brief_summary}
                   </p>
                   <div className="d-flex justify-content-between">
-                    <div className="box flex-fill mx-1 d-flex align-items-center justify-content-center">
-                      <FontAwesomeIcon icon={faTachometerAlt} className="icon-spacing" />
+                    <div className="box flex-fill mx-1 d-flex align-items-center justify-content-center" title={study.count[0].name}>
+                      <FontAwesomeIcon icon={faFileAlt} className="icon-spacing" />
                       <div className="ms-2">{study.count[0].count}</div>
                     </div>
-                    <div className="box flex-fill mx-1 d-flex align-items-center justify-content-center">
-                      <FontAwesomeIcon icon={faCog} className="icon-spacing" />
+                    <div className="box flex-fill mx-1 d-flex align-items-center justify-content-center" title={study.count[1].name}>
+                      <FontAwesomeIcon icon={faCompressArrowsAlt} className="icon-spacing" />
                       <div className="ms-2">{study.count[1].count}</div>
                     </div>
-                    <div className="box flex-fill mx-1 d-flex align-items-center justify-content-center">
-                      <FontAwesomeIcon icon={faDatabase} className="icon-spacing" />
+                    <div className="box flex-fill mx-1 d-flex align-items-center justify-content-center" title={study.count[2].name}>
+                      <FontAwesomeIcon icon={faExternalLinkAlt} className="icon-spacing" />
                       <div className="ms-2">{study.count[2].count}</div>
                     </div>
                   </div>

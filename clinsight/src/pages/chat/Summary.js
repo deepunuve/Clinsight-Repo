@@ -67,8 +67,7 @@ function Summary(props) {
     if (isLoading) {
         return (
             <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-                <Spinner animation="border" role="status" />
-                <span>Loading...</span>
+                 <Spinner animation="border" variant="success" />
             </div>
         );
     }

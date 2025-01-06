@@ -9,6 +9,7 @@ function Pico(props) {
     const [page, setPage] = useState(1); // Starting from page 1
     const [rowsPerPage, setRowsPerPage] = useState(5); // Default rows per page
 
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -25,7 +26,7 @@ function Pico(props) {
         };
 
         fetchData();
-    }, []);
+    }, [props.payload]);
 
     const handlePageChange = (newPage) => {
         setPage(newPage);
@@ -43,8 +44,7 @@ function Pico(props) {
     if (isLoading) {
         return (
             <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-                <Spinner animation="border" role="status" />
-                <span>Loading...</span>
+                <Spinner animation="border" variant="success" />
             </div>
         );
     }
