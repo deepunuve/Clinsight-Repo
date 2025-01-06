@@ -249,8 +249,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
   if (loading) {
     return (
       <div className="text-center mt-4">
-        <Spinner animation="border" variant="primary" />
-        <p>Loading study details...</p>
+       <Spinner animation="border" variant="success" />
       </div>
     );
   }
@@ -276,62 +275,44 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
   return (
     <div className="dashboard-container">
       <Row >
-        <Col xs={12} md={5} className='card-border-left-blue' style={{ marginLeft: "12px", marginBottom: "6px" }}>
+        <Col xs={12} md={5} className="card-border-left-blue" style={{ marginLeft: "12px", marginBottom: "6px" }}>
           <h4 className="text-left text-uppercase">{studyData.title}</h4>
-          <div className="mb-3" >
-            <Row className="align-items-center ">
-              <Col className="me-4" xs="auto">
+          <div className="mb-3">
+            <Row className="align-items-center">
+              <Col xs={12} sm="auto" className="mb-2 mb-sm-0">
                 <p className="text-dark mb-0">Date created: {studyData.study_date}</p>
               </Col>
-              <Col xs="auto">
+              <Col xs={12} sm="auto">
                 <p className="text-dark mb-0">No of Documents: {dashData.Total_count}</p>
               </Col>
             </Row>
           </div>
         </Col>
-        <Col xs={12} md={6} className="text-end">
-          <span
-            className="px-3"
-            onClick={() => handleMenuClick('Dashboard')}
-            style={{
-              cursor: 'pointer', color: activeMenu === 'Dashboard' ? '#000' : '#0070c0',
-            }}
-          >
-            Dashboard
-          </span>
-          <span className="px-3">|</span>
-          <span
-            className="px-3"
-            onClick={() => handleMenuClick('Document Graph')}
-            style={{ cursor: 'pointer', color: activeMenu === 'Doc Graph' ? '#000' : '#0070c0', }}
-          >
-            Doc Graph
-          </span>
-          <span className="px-3">|</span>
-          <span
-            className="px-3"
-            onClick={() => handleMenuClick('PICO')}
-            style={{ cursor: 'pointer', color: activeMenu === 'PICO' ? '#000' : '#0070c0', }}
-          >
-            PICO
-          </span>
-          <span className="px-3">|</span>
-          <span
-            className="px-3"
-            onClick={() => handleMenuClick('Chat')}
-            style={{ cursor: 'pointer', color: activeMenu === 'Chat' ? '#000' : '#0070c0', }}
-          >
-            Chat
-          </span>
-          <span className="px-3">|</span>
-          <span
-            className="px-3"
-            onClick={() => handleMenuClick('Result Graph')}
-            style={{ cursor: 'pointer', color: activeMenu === 'Result Graph' ? '#000' : '#0070c0', }}
-          >
-            Result Graph
-          </span>
+
+        <Col
+          xs={12}
+          md={6}
+          className="d-flex flex-column flex-md-row justify-content-center justify-content-md-end text-center text-md-end"
+        >
+          {['Dashboard', 'Document Graph', 'PICO', 'Chat', 'Result Graph'].map((menu, idx) => (
+            <React.Fragment key={menu}>
+              {idx > 0 && <span className="px-2 d-none d-md-inline" style={{ marginTop: "5px" }}>|</span>} {/* Hide separator on small screens */}
+              <span
+                className="px-3 py-2 mb-2 mb-md-0"
+                onClick={() => handleMenuClick(menu)}
+                style={{
+                  cursor: 'pointer',
+                  color: activeMenu === menu ? '#000' : '#0070c0',
+                  borderBottom: activeMenu === menu ? '2px solid #0070c0' : 'none',
+                  display: 'block',
+                }}
+              >
+                {menu}
+              </span>
+            </React.Fragment>
+          ))}
         </Col>
+
         <Col xs={12} md={2} >
           <div style={{ height: "700px", background: "#ddd", overflowY: "auto", overflowX: "hidden" }}>
             <SourceDocumentSelector pdfList={studyData.source} onSelectionChange={handleSelectionChange} />
