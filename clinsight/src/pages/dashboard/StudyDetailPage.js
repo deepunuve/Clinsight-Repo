@@ -435,11 +435,6 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
               </>
             )}
 
-            {/* {activeMenu === 'Chat' && (
-              <div className="chat-content">
-                <Chatbot studyId={studyId} />
-              </div>
-            )} */}
             {activeMenu === 'Chat' && (
               <div className="chat-content">
                 <Container>
@@ -485,20 +480,6 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
                             <NetworkMeasure studyId={studyId} />
                           </div>}
                       </div>
-
-                      {/* Bottom Tab Navigation */}
-                      <Tabs
-                        activeKey={activeTab}
-                        onSelect={handleTabSelect}
-                        className="mt-3"
-                        id="bottom-tabs"
-                      >
-                        <Tab eventKey="tab1" title="Chat Bot" />
-                        <Tab eventKey="tab2" title="Summary" />
-                        <Tab eventKey="tab3" title="Extract" />
-                        <Tab eventKey="tab4" title="Topic Visualization" />
-                        <Tab eventKey="tab5" title="Network  Measures" />
-                      </Tabs>
                     </Col>
                   </Row>
                 </Container>

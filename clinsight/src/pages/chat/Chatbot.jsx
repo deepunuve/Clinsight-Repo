@@ -2,9 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Button, Form, InputGroup, Row, Col, Card, Spinner, Modal } from 'react-bootstrap'; // Import Modal
 import { getChatHistory, getChatResponse, getSummary } from '../../api/chat';
 import axios from 'axios';
-import { Document, Page, pdfjs } from 'react-pdf'; // Use pdfjs from react-pdf
-import { getDocument, GlobalWorkerOptions } from "pdfjs-dist";
-import PdfViewerTest from './SourceViewer';
 import SourceViewer from './SourceViewer';
 
 const Chatbot = (props) => {
@@ -14,7 +11,6 @@ const Chatbot = (props) => {
     const [showModal, setShowModal] = useState(false); // State to control the modal visibility
     const chatEndRef = useRef(null); // Reference for scrolling
     const [pdfData, setPdfData] = useState(null);
-
 
     useEffect(() => {
 
@@ -67,50 +63,53 @@ const Chatbot = (props) => {
         setMessages([...messages, newMessage]);
         setUserMessage('');
         setLoading(true);
+        try {
+            let input = {
+                study_id: props.studyId,
+                node: [],
+                query: userMessage
+            };
+            const response = await getChatResponse(input);
+            let formatted = formatResponseWithLink(response.answer, response.source)
 
-        if (userMessage.toLowerCase().includes("summarize")) {
-            try {
-
-                const response = await getSummary(props.studyId);
-                const dataCluster = fetchData(response.answer, response.matrix);
-                const botMessage = { sender: "bot", text: dataCluster, timestamp: response.date + ' ' + response.time };
-
-                setMessages((prevMessages) => [...prevMessages, botMessage]);
-
-            } catch (error) {
-                console.error("Error fetching chatbot response:", error);
-                setMessages((prevMessages) => [
-                    ...prevMessages,
-                    { sender: "bot", text: "Oops! Something went wrong.", timestamp: new Date() },
-                ]);
-            } finally {
-                // Set loading to false once the response is received
-                setLoading(false);
-            }
-        }
-        else {
-            try {
-                let input = {
-                    study_id: props.studyId,
-                    node: [],
-                    query: userMessage
-                };
-                const response = await getChatResponse(input);
-                const botMessage = { sender: "bot", text: formatResponseWithLink(response.answer, response.source), timestamp: response.date + ' ' + response.time };
-                setMessages((prevMessages) => [...prevMessages, botMessage]);
-            } catch (error) {
-                console.error("Error fetching chatbot response:", error);
-                setMessages((prevMessages) => [
-                    ...prevMessages,
-                    { sender: "bot", text: "Oops! Something went wrong.", timestamp: new Date() },
-                ]);
-            } finally {
-                // Set loading to false once the response is received
-                setLoading(false);
-            }
+            const botMessage = { sender: "bot", text: formatted, timestamp: response.date + ' ' + response.time };
+            setMessages((prevMessages) => [...prevMessages, botMessage]);
+        } catch (error) {
+            console.error("Error fetching chatbot response:", error);
+            setMessages((prevMessages) => [
+                ...prevMessages,
+                { sender: "bot", text: "Oops! Something went wrong.", timestamp: new Date() },
+            ]);
+        } finally {
+            // Set loading to false once the response is received
+            setLoading(false);
         }
     };
+    const handleSummary = async () => {
 
+        const newMessage = { sender: "user", text: 'Please explore the summary details here !', timestamp: new Date() };
+        setMessages([...messages, newMessage]);
+        setLoading(true);
+
+        try {
+            const response = await getChatResponse(props.studyId);
+            //const response = await getSummary(props.studyId);
+            const dataCluster = fetchData(response.answer, response.matrix);
+            const botMessage = { sender: "bot", text: dataCluster, timestamp: response.date + ' ' + response.time };
+
+            setMessages((prevMessages) => [...prevMessages, botMessage]);
+
+        } catch (error) {
+            console.error("Error fetching chatbot response:", error);
+            setMessages((prevMessages) => [
+                ...prevMessages,
+                { sender: "bot", text: "Oops! Something went wrong.", timestamp: new Date() },
+            ]);
+        } finally {
+            // Set loading to false once the response is received
+            setLoading(false);
+        }
+    };
     // Scroll to the bottom whenever messages change
     useEffect(() => {
         if (chatEndRef.current) {
@@ -121,47 +120,69 @@ const Chatbot = (props) => {
     const fetchData = (text, ranges) => {
         const parts = [];
         let lastIndex = 0;
-        ranges.map((range, index) => {
+
+        ranges.forEach((range, index) => {
             const { start_index, end_index, color } = range;
+
             // Add text before the colored part
-            parts.push(
-                '<span key={"part_' + index + '_before"}>' +
-                text.substring(lastIndex, start_index) +
-                '</span>'
-            );
+            if (lastIndex < start_index) {
+                parts.push(
+                    <span key={`part_${index}_before`}>
+                        {text.substring(lastIndex, start_index)}
+                    </span>
+                );
+            }
+
             // Add the colored part with background color
             parts.push(
-                '<span style="background:' + color + ';color:white;">' +
-                text.substring(start_index, end_index + 1) +
-                '</span>'
+                <span
+                    key={`part_${index}_highlight`}
+                    style={{ background: color, color: 'white' }}
+                >
+                    {text.substring(start_index, end_index + 1)}
+                </span>
             );
+
             lastIndex = end_index + 1;
         });
-        // Add remaining text
-        parts.push(
-            '<span key={"part_' + ranges.length + '_remainder"}>' +
-            text.substring(lastIndex) +
-            '</span>'
-        );
-        return parts.join(''); // Return the JSX elements created
-    };
 
+        // Add remaining text
+        if (lastIndex < text.length) {
+            parts.push(
+                <span key={`part_${ranges.length}_remainder`}>
+                    {text.substring(lastIndex)}
+                </span>
+            );
+        }
+
+        return <>{parts}</>; // Return the JSX elements wrapped in a fragment
+    };
     const formatResponseWithLink = (text, source) => {
-        // Check if source is provided, format it as a clickable link
-        if (source) {
+        // Check if source is provided and valid
+        if (source && source.includes("Source not available for summary")) {
             const [_, fileName, pageNumber] = source.match(/The file name is (\S+) and the page number is (\d+)/);
             return (
                 <>
                     {text} <br />
-                    <a href="#" onClick={(e) => handleFileClick(fileName)}>View File ({fileName}, Page: {pageNumber})</a>
+                    <a href="#" onClick={(e) => handleFileClick(fileName)}>
+                        View File ({fileName}, Page: {pageNumber})
+                    </a>
                 </>
             );
         }
-        return text;
+
+        // If source is not available or indicates no summary
+        return (
+            <>
+                {text} <br /><br />
+                <span style={{ color: "blue" }}>Source not available for summary</span>
+            </>
+        );
     };
 
-    const handleFileClick = async (url) => {
+    const handleFileClick = async (fileName) => {
         const response = await axios.get('http://184.105.215.253:9003/return_source_pdfs/?pdf_filename=Dermatology%2FDerm_Raw%2FRetroNectin%2FExternal%2FASGT.pdf');
+        //const response = await axios.get('/api1/return_source_pdfs/?pdf_filename=Dermatology%2FDerm_Raw%2FRetroNectin%2FExternal%2FASGT.pdf');
         setPdfData(response.data);
         setShowModal(true);
 
@@ -192,7 +213,11 @@ const Chatbot = (props) => {
                                             <div className={`p-2 rounded ${msg.sender === "bot" ? "bg-light text-dark" : "bg-primary text-white"}`} style={{ maxWidth: "60%" }}>
                                                 {/* Render HTML content if it's a bot response */}
                                                 {msg.sender === "bot" ? (
-                                                    <div dangerouslySetInnerHTML={{ __html: msg.text }}></div>
+                                                    isSummary ? (
+                                                        <div dangerouslySetInnerHTML={{ __html: msg.text }}></div>
+                                                    ) : (
+                                                        <div>{msg.text}</div>
+                                                    )
                                                 ) : (
                                                     msg.text
                                                 )}
@@ -204,7 +229,7 @@ const Chatbot = (props) => {
                                 {/* Display spinner only at the bottom when loading */}
                                 {loading && (
                                     <div className="d-flex justify-content-center mt-3">
-                                        <Spinner animation="border" variant="primary" />
+                                        <Spinner animation="border" variant="success" />
                                     </div>
                                 )}
 
@@ -220,12 +245,17 @@ const Chatbot = (props) => {
                                     value={userMessage}
                                     onChange={(e) => setUserMessage(e.target.value)}
                                     onKeyPress={(e) => {
-                                        if (e.key === 'Enter') handleSendMessage();
+                                        if (e.key === "Enter") handleSendMessage();
                                     }}
                                 />
-                                <Button variant="primary" onClick={handleSendMessage}>
-                                    Send
-                                </Button>
+                                <div className="d-flex">
+                                    <Button variant="primary" onClick={handleSendMessage}>
+                                        Send
+                                    </Button>
+                                    <Button variant="success" className="ms-2" onClick={handleSummary}>
+                                        Summary
+                                    </Button>
+                                </div>
                             </InputGroup>
                         </Card.Footer>
                     </Card>
