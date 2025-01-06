@@ -92,8 +92,8 @@ const Chatbot = (props) => {
         setLoading(true);
 
         try {
-            const response = await getChatResponse(props.studyId);
-            //const response = await getSummary(props.studyId);
+            //const response = await getChatResponse(props.studyId);
+            const response = await getSummary(props.studyId);
             const dataCluster = fetchData(response.answer, response.matrix);
             const botMessage = { sender: "bot", text: dataCluster, timestamp: response.date + ' ' + response.time };
 
