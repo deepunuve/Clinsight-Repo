@@ -19,7 +19,7 @@ const GraphCard = ({ dashData }) => {
                         <Card className="shadow-lg rounded card-border-blue">
                             <Card.Body style={{ background: "#fff" }}>
                                 <Card.Title className="h6 text-center">
-                                    Summary of top Five {chartItem.name}
+                                    Summary Of Top Five {chartItem.name}
                                 </Card.Title>
                                 <div style={{ height: '400px', overflowY: 'scroll' }}>
                                     {/* Render the chart dynamically based on the chart type */}
