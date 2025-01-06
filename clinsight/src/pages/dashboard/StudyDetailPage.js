@@ -13,6 +13,7 @@ import SourceDocumentSelector from '../sidebar/SourceDocumentSelector';
 import PdfViewer from '../chat/PdfViewer';
 import Topic from '../chat/Topic';
 import NetworkMeasure from '../chat/NetworkMeasure';
+import Airflow from '../airflow/Airflow';
 
 const StudyDetailPage = ({ updateHeaderTitle }) => {
   const { studyId } = useParams();
@@ -271,8 +272,6 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
       ]
         .filter(Boolean) // Remove any empty strings or undefined values
         .join(" & ");
-    } else {
-      newSelectedCardText = "Dashboard";
     }
     setSelectedCardText(newSelectedCardText);
 
@@ -319,7 +318,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
           md={6}
           className="d-flex flex-column flex-md-row justify-content-center justify-content-md-end text-center text-md-end"
         >
-          {['Dashboard', 'Document Graph', 'PICO', 'Chat', 'Result Graph'].map((menu, idx) => (
+          {['Dashboard', 'Document Graph', 'PICO', 'Chat', 'Result Graph', 'AirFlow'].map((menu, idx) => (
             <React.Fragment key={menu}>
               {idx > 0 && <span className="px-2 d-none d-md-inline" style={{ marginTop: "5px" }}>|</span>} {/* Hide separator on small screens */}
               <span
@@ -510,6 +509,18 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
                   <Row className="g-3">
                     <Col md={12} sm={12}>
                       <ResultGraph payload={payload} />
+                    </Col>
+                  </Row>
+                </div>
+              </div>
+            )}
+
+            {activeMenu === 'AirFlow' && (
+              <div className="result-content">
+                <div className="mb-3">
+                  <Row className="g-3">
+                    <Col md={12} sm={12}>
+                      <Airflow />
                     </Col>
                   </Row>
                 </div>

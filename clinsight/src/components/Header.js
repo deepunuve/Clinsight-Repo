@@ -41,18 +41,30 @@ const Header = ({ title }) => {
   return (
     <div className="header-container">
       <Navbar bg="white" variant="light" expand="lg" sticky="top" className="navbar">
-        <Navbar.Brand href="/dashboard">
-          <div className="custom-font">
-            <img
-              src="/images/logo-icon.png"
-              alt="Icon"
-              style={{ marginRight: '8px', width: '46px', height: '46px' }}
-            />
-            {title ? `${pageTitle} - ${title}` : pageTitle}
-          </div>
-        </Navbar.Brand>
+        {user?.role === 'admin' && (
+          <Navbar.Brand href="/adminDashboard">
+            <div className="custom-font">
+              <img
+                src="/images/logo-icon.png"
+                alt="Icon"
+                style={{ marginRight: '8px', width: '46px', height: '46px' }}
+              />
+              {title ? `${pageTitle} - ${title}` : pageTitle}
+            </div>
+          </Navbar.Brand>)}
+        {user?.role === 'user' && (
+          <Navbar.Brand href="/dashboard">
+            <div className="custom-font">
+              <img
+                src="/images/logo-icon.png"
+                alt="Icon"
+                style={{ marginRight: '8px', width: '46px', height: '46px' }}
+              />
+              {title ? `${pageTitle} - ${title}` : pageTitle}
+            </div>
+          </Navbar.Brand>)}
 
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        < Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto d-flex align-items-center">
             {user?.role === 'admin' && (
