@@ -467,7 +467,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
                       <div>
                         {activeTab === "tab1" &&
                           <div style={{ height: '600px', overflowY: 'scroll', overflowX: "hidden" }}>
-                            <Chatbot studyId={studyId} />
+                            <Chatbot studyId={studyId} payload={payload} />
                           </div>}
                         {activeTab === "tab2" &&
                           <div style={{ height: '600px', overflowY: 'scroll', overflowX: "hidden" }}>

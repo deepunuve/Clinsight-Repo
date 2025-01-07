@@ -66,7 +66,7 @@ const Chatbot = (props) => {
         try {
             let input = {
                 study_id: props.studyId,
-                node: [],
+                node: props.payload.doc,
                 query: userMessage
             };
             const response = await getChatResponse(input);
