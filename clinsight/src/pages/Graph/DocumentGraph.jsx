@@ -230,131 +230,153 @@ class DocumentGraph extends Component {
                                                     onNodeHover={this.handleNodeHover}
                                                     onNodeDrag={this.handleNodeDrag}
                                                     onNodeDragEnd={this.handleNodeDragEnd}
-                                                // nodeThreeObject={(node) => {
-                                                //     let geometry;
-                                                //     let material;
-                                                //     let randomColor;
+                                                    nodeThreeObject={(node) => {
+                                                        let geometry;
+                                                        let material;
+                                                        let randomColor;
 
-                                                //     // Triangle (node.type == 0)
-                                                //     if (node.type == 0) {
-                                                //         const triangleShape = new THREE.Shape();
-                                                //         const radius = 8; // Adjust the radius as needed
-                                                //         for (let i = 0; i < 3; i++) {
-                                                //             const angle = (i / 3) * Math.PI * 2;
-                                                //             const x = Math.cos(angle) * radius;
-                                                //             const y = Math.sin(angle) * radius;
-                                                //             if (i === 0) {
-                                                //                 triangleShape.moveTo(x, y);
-                                                //             } else {
-                                                //                 triangleShape.lineTo(x, y);
-                                                //             }
-                                                //         }
-                                                //         triangleShape.closePath();
-                                                //         geometry = new THREE.ShapeGeometry(triangleShape);
-                                                //         randomColor = "083fde";
-                                                //     }
+                                                        // Triangle (node.type == 0)
+                                                        if (node.type == 0) {
+                                                            const triangleShape = new THREE.Shape();
+                                                            const radius = 8; // Adjust the radius as needed
+                                                            for (let i = 0; i < 3; i++) {
+                                                                const angle = (i / 3) * Math.PI * 2;
+                                                                const x = Math.cos(angle) * radius;
+                                                                const y = Math.sin(angle) * radius;
+                                                                if (i === 0) {
+                                                                    triangleShape.moveTo(x, y);
+                                                                } else {
+                                                                    triangleShape.lineTo(x, y);
+                                                                }
+                                                            }
+                                                            triangleShape.closePath();
+                                                            geometry = new THREE.ShapeGeometry(triangleShape);
+                                                            randomColor = "083fde";
+                                                        }
 
-                                                //     // Hexagon (node.type == 1)
-                                                //     else if (node.type == 1) {
-                                                //         const hexagonShape = new THREE.Shape();
-                                                //         const radius = 8;
-                                                //         for (let i = 0; i < 6; i++) {
-                                                //             const angle = (i / 6) * Math.PI * 2;
-                                                //             const x = Math.cos(angle) * radius;
-                                                //             const y = Math.sin(angle) * radius;
-                                                //             if (i === 0) {
-                                                //                 hexagonShape.moveTo(x, y);
-                                                //             } else {
-                                                //                 hexagonShape.lineTo(x, y);
-                                                //             }
-                                                //         }
-                                                //         hexagonShape.closePath();
-                                                //         geometry = new THREE.ShapeGeometry(hexagonShape);
-                                                //         randomColor = "0b9250";
-                                                //     }
+                                                        // Hexagon (node.type == 1)
+                                                        else if (node.type == 1) {
+                                                            const hexagonShape = new THREE.Shape();
+                                                            const radius = 8;
+                                                            for (let i = 0; i < 6; i++) {
+                                                                const angle = (i / 6) * Math.PI * 2;
+                                                                const x = Math.cos(angle) * radius;
+                                                                const y = Math.sin(angle) * radius;
+                                                                if (i === 0) {
+                                                                    hexagonShape.moveTo(x, y);
+                                                                } else {
+                                                                    hexagonShape.lineTo(x, y);
+                                                                }
+                                                            }
+                                                            hexagonShape.closePath();
+                                                            geometry = new THREE.ShapeGeometry(hexagonShape);
+                                                            randomColor = "0b9250";
+                                                        }
 
-                                                //     // Sphere (node.type == 2)
-                                                //     else if (node.type == 2) {
-                                                //         geometry = new THREE.SphereGeometry(5);
-                                                //         randomColor = "841899";
-                                                //     }
+                                                        // Sphere (node.type == 2)
+                                                        else if (node.type == 2) {
+                                                            geometry = new THREE.SphereGeometry(5);
+                                                            randomColor = "841899";
+                                                        }
 
-                                                //     // Star (node.type == 3)
-                                                //     else if (node.type == 3) {
-                                                //         const starShape = new THREE.Shape();
-                                                //         const outerRadius = 10;
-                                                //         const innerRadius = 5;
-                                                //         for (let i = 0; i < 10; i++) {
-                                                //             const angle = (i / 10) * Math.PI * 2;
-                                                //             const radius = i % 2 === 0 ? outerRadius : innerRadius;
-                                                //             const x = Math.cos(angle) * radius;
-                                                //             const y = Math.sin(angle) * radius;
-                                                //             if (i === 0) {
-                                                //                 starShape.moveTo(x, y);
-                                                //             } else {
-                                                //                 starShape.lineTo(x, y);
-                                                //             }
-                                                //         }
-                                                //         starShape.closePath();
-                                                //         geometry = new THREE.ShapeGeometry(starShape);
-                                                //         randomColor = "f8b400"; // Star color (bright yellow)
-                                                //     }
+                                                        // Star (node.type == 3)
+                                                        else if (node.type == 3) {
+                                                            const starShape = new THREE.Shape();
+                                                            const outerRadius = 10;
+                                                            const innerRadius = 5;
+                                                            for (let i = 0; i < 10; i++) {
+                                                                const angle = (i / 10) * Math.PI * 2;
+                                                                const radius = i % 2 === 0 ? outerRadius : innerRadius;
+                                                                const x = Math.cos(angle) * radius;
+                                                                const y = Math.sin(angle) * radius;
+                                                                if (i === 0) {
+                                                                    starShape.moveTo(x, y);
+                                                                } else {
+                                                                    starShape.lineTo(x, y);
+                                                                }
+                                                            }
+                                                            starShape.closePath();
+                                                            geometry = new THREE.ShapeGeometry(starShape);
+                                                            randomColor = "f8b400"; // Star color (bright yellow)
+                                                        }
 
-                                                //     // Pentagon (node.type == 4)
-                                                //     else if (node.type == 4) {
-                                                //         const pentagonShape = new THREE.Shape();
-                                                //         const radius = 8;
-                                                //         for (let i = 0; i < 5; i++) {
-                                                //             const angle = (i / 5) * Math.PI * 2;
-                                                //             const x = Math.cos(angle) * radius;
-                                                //             const y = Math.sin(angle) * radius;
-                                                //             if (i === 0) {
-                                                //                 pentagonShape.moveTo(x, y);
-                                                //             } else {
-                                                //                 pentagonShape.lineTo(x, y);
-                                                //             }
-                                                //         }
-                                                //         pentagonShape.closePath();
-                                                //         geometry = new THREE.ShapeGeometry(pentagonShape);
-                                                //         randomColor = "ff5733"; // Pentagon color (orange)
-                                                //     }
+                                                        // Pentagon (node.type == 4)
+                                                        else if (node.type == 4) {
+                                                            const pentagonShape = new THREE.Shape();
+                                                            const radius = 8;
+                                                            for (let i = 0; i < 5; i++) {
+                                                                const angle = (i / 5) * Math.PI * 2;
+                                                                const x = Math.cos(angle) * radius;
+                                                                const y = Math.sin(angle) * radius;
+                                                                if (i === 0) {
+                                                                    pentagonShape.moveTo(x, y);
+                                                                } else {
+                                                                    pentagonShape.lineTo(x, y);
+                                                                }
+                                                            }
+                                                            pentagonShape.closePath();
+                                                            geometry = new THREE.ShapeGeometry(pentagonShape);
+                                                            randomColor = "ff5733"; // Pentagon color (orange)
+                                                        }
 
-                                                //     // Diamond (node.type == 5)
-                                                //     else {
-                                                //         geometry = new THREE.SphereGeometry(5);
-                                                //         randomColor = "841899";
-                                                //         // const diamondShape = new THREE.Shape();
-                                                //         // diamondShape.moveTo(0, 10);  // Top point
-                                                //         // diamondShape.lineTo(6, 0);   // Right point
-                                                //         // diamondShape.lineTo(0, -10); // Bottom point
-                                                //         // diamondShape.lineTo(-6, 0);  // Left point
-                                                //         // diamondShape.closePath();
-                                                //         // geometry = new THREE.ShapeGeometry(diamondShape);
-                                                //         // randomColor = "33cfff"; // Diamond color (light blue)
-                                                //     }
+                                                        // Diamond (node.type == 5)
+                                                        else {
+                                                            geometry = new THREE.SphereGeometry(5);
+                                                            randomColor = "841899";
+                                                            // const diamondShape = new THREE.Shape();
+                                                            // diamondShape.moveTo(0, 10);  // Top point
+                                                            // diamondShape.lineTo(6, 0);   // Right point
+                                                            // diamondShape.lineTo(0, -10); // Bottom point
+                                                            // diamondShape.lineTo(-6, 0);  // Left point
+                                                            // diamondShape.closePath();
+                                                            // geometry = new THREE.ShapeGeometry(diamondShape);
+                                                            // randomColor = "33cfff"; // Diamond color (light blue)
+                                                        }
 
-                                                //     material = new THREE.MeshBasicMaterial({ color: `#${randomColor}` });
-                                                //     return new THREE.Mesh(geometry, material);
-                                                // }}
+                                                        material = new THREE.MeshBasicMaterial({ color: `#${randomColor}` });
+                                                        return new THREE.Mesh(geometry, material);
+                                                    }}
                                                 />
                                             </div>
                                             {hoveredNode && (
-                                                <div className="hover-details" style={{ marginTop: '10px' }}>
-                                                    <p style={{ margin: '10px' }}>
-                                                        <span style={{ fontSize: '12px', color: 'white' }}>Name</span> : {hoveredNode.label}
-                                                    </p>
-                                                    <p style={{ margin: '10px' }}>
-                                                        <span style={{ fontSize: '12px', color: 'white' }}>Protocol Number</span> : {hoveredNode.protocolNumber}
-                                                    </p>
-                                                    <p style={{ margin: '10px' }}>
-                                                        <span style={{ fontSize: '12px', color: 'white' }}>Protocol Version</span> : {hoveredNode.protocolVersion}
-                                                    </p>
-                                                    <p style={{ margin: '10px' }}>
-                                                        <span style={{ fontSize: '12px', color: 'white' }}>Current Version Date</span> : {hoveredNode.currentversionDate}
-                                                    </p>
-                                                    <p style={{ margin: '10px' }}>
-                                                        <span style={{ fontSize: '12px', color: 'white' }}>Sponsor</span> : {hoveredNode.sponsor}
-                                                    </p>
+                                                <div
+                                                    className="hover-details"
+                                                >
+                                                    <Card style={{ width: '18rem', boxShadow: '0 8px 15px rgba(0, 0, 0, 0.2)', border: 'none' }}>
+                                                        <Card.Body style={{ borderLeft: "5px solid blue" }}>
+                                                            <Card.Text style={{ fontSize: '14px', marginBottom: '8px' }}>
+                                                                <span style={{ fontWeight: 'bold', color: '#6c757d', display: 'inline-block' }}>
+                                                                    Name:
+                                                                </span>
+                                                                <span style={{ color: '#000', fontWeight: 'normal', marginLeft: '10px' }}>{hoveredNode.label}</span>
+                                                            </Card.Text>
+                                                            <Card.Text style={{ fontSize: '14px', marginBottom: '8px' }}>
+                                                                <span style={{ fontWeight: 'bold', color: '#6c757d', display: 'inline-block' }}>
+                                                                    Protocol Number:
+                                                                </span>
+                                                                <span style={{ color: '#000', fontWeight: 'normal', marginLeft: '10px' }}>{hoveredNode.protocolNumber}</span>
+                                                            </Card.Text>
+                                                            <Card.Text style={{ fontSize: '14px', marginBottom: '8px' }}>
+                                                                <span style={{ fontWeight: 'bold', color: '#6c757d', display: 'inline-block' }}>
+                                                                    Protocol Version:
+                                                                </span>
+                                                                <span style={{ color: '#000', fontWeight: 'normal', marginLeft: '10px' }}>{hoveredNode.protocolVersion}</span>
+                                                            </Card.Text>
+                                                            <Card.Text style={{ fontSize: '14px', marginBottom: '8px' }}>
+                                                                <span style={{ fontWeight: 'bold', color: '#6c757d', display: 'inline-block' }}>
+                                                                    Current Version Date:
+                                                                </span>
+                                                                <span style={{ color: '#000', fontWeight: 'normal', marginLeft: '10px' }}>{hoveredNode.currentversionDate}</span>
+                                                            </Card.Text>
+                                                            <Card.Text style={{ fontSize: '14px', marginBottom: '0' }}>
+                                                                <span style={{ fontWeight: 'bold', color: '#6c757d', display: 'inline-block' }}>
+                                                                    Sponsor:
+                                                                </span>
+                                                                <span style={{ color: '#000', fontWeight: 'normal', marginLeft: '10px' }}>{hoveredNode.sponsor}</span>
+                                                            </Card.Text>
+                                                        </Card.Body>
+                                                    </Card>
+
                                                 </div>
                                             )}
                                         </Card.Body>

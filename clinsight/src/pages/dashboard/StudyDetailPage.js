@@ -252,6 +252,8 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
       entity_type: selectedEntity,  // Pass all selected entities
       doc: selectedNames
     };
+    const updatedDashData = await getDashboardData(inputStudyDetails);
+    setDashData(updatedDashData);
     setpayload(inputStudyDetails);
   };
   // Menu click handler
