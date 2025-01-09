@@ -58,17 +58,17 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
         const extractedSourceNames = response.source.map(pdf => pdf.source_name);
         // Update the state with the list of source names
         setSelectedPDFs(extractedSourceNames);
-
-        const responseDash = await getDashboardData(inputStudyDetails);
-        setDashData(responseDash);
-        const allEntityTypes = responseDash.entity.map(item => item.name);
-        const allDocuments = responseDash.Type.map(doc => doc.name); // Assuming `source` contains the document names
         inputStudyDetails = {
           study_id: studyId,
           doc_type: selectedDoc,
           entity_type: selectedEntity,
           doc: extractedSourceNames,
         };
+        const responseDash = await getDashboardData(inputStudyDetails);
+        setDashData(responseDash);
+        const allEntityTypes = responseDash.entity.map(item => item.name);
+        const allDocuments = responseDash.Type.map(doc => doc.name); // Assuming `source` contains the document names
+        
         setpayload(inputStudyDetails);
         setActiveCard(allDocuments); // Set all entities as active
         setActiveECard(allEntityTypes); // Set all entities as active
