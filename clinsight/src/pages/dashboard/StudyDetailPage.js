@@ -145,13 +145,14 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
       const extractedSourceNames = updatedStudyData.source.map(pdf => pdf.source_name);
       // Update the state with the list of source names
       setSelectedPDFs(extractedSourceNames);
-      const updatedDashData = await getDashboardData(inputStudyDetails);   // API call for dashboard data
       inputStudyDetails = {
         study_id: studyId,
         doc_type: updatedDocTypes,  // Send docId in the API call
         entity_type: selectedEntity,  // Send all selected entities
         doc: extractedSourceNames
       };
+
+      const updatedDashData = await getDashboardData(inputStudyDetails);   // API call for dashboard data      
       setpayload(inputStudyDetails);
       // Update state with the new data
       setStudyData(updatedStudyData);
@@ -224,13 +225,14 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
       const extractedSourceNames = updatedStudyData.source.map(pdf => pdf.source_name);
       // Update the state with the list of source names
       setSelectedPDFs(extractedSourceNames);
-      const updatedDashData = await getDashboardData(inputStudyDetails);   // API call for dashboard data
       inputStudyDetails = {
         study_id: studyId,
         doc_type: selectedDoc,  // Assuming you have a specific doc_type to pass based on the doc type card
         entity_type: updatedEntityTypes,  // Pass all selected entities
         doc: extractedSourceNames
       };
+
+      const updatedDashData = await getDashboardData(inputStudyDetails);   // API call for dashboard data      
       setpayload(inputStudyDetails);
       // Update state with the new data
       setStudyData(updatedStudyData);
