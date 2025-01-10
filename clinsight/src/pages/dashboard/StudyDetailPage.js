@@ -219,12 +219,13 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
         entity_type: updatedEntityTypes,  // Pass all selected entities
         doc: selectedPDFs
       };
-      setpayload(inputStudyDetails);
+      
       // Call the API to fetch the updated data
       const updatedStudyData = await fetchStudyDetails(inputStudyDetails); // API call for study details
       const extractedSourceNames = updatedStudyData.source.map(pdf => pdf.source_name);
       // Update the state with the list of source names
       setSelectedPDFs(extractedSourceNames);
+      
       inputStudyDetails = {
         study_id: studyId,
         doc_type: selectedDoc,  // Assuming you have a specific doc_type to pass based on the doc type card
