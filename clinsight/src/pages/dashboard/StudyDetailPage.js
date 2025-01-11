@@ -13,7 +13,7 @@ import SourceDocumentSelector from '../sidebar/SourceDocumentSelector';
 import PdfViewer from '../chat/PdfViewer';
 import Topic from '../chat/Topic';
 import NetworkMeasure from '../chat/NetworkMeasure';
-import Airflow from '../airflow/Airflow';
+import { FaSyncAlt } from "react-icons/fa";
 import ElasticsearchViewer from '../airflow/ElasticsearchViewer';
 
 const StudyDetailPage = ({ updateHeaderTitle }) => {
@@ -31,6 +31,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
   const [selectedPDFs, setSelectedPDFs] = useState([]);
   const [activeTab, setActiveTab] = useState("tab1");
   const pdfUrlTopic = '/temp/Protocol_template.pdf';
+
   const [payload, setpayload] = useState({
     study_id: studyId,
     doc_type: selectedDoc,
@@ -56,6 +57,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
         const response = await fetchStudyDetails(inputStudyDetails);
         setStudyData(response);
         const extractedSourceNames = response.source.map(pdf => pdf.source_name);
+
         // Update the state with the list of source names
         setSelectedPDFs(extractedSourceNames);
         inputStudyDetails = {
@@ -68,7 +70,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
         setDashData(responseDash);
         const allEntityTypes = responseDash.entity.map(item => item.name);
         const allDocuments = responseDash.Type.map(doc => doc.name); // Assuming `source` contains the document names
-        
+
         setpayload(inputStudyDetails);
         setActiveCard(allDocuments); // Set all entities as active
         setActiveECard(allEntityTypes); // Set all entities as active
@@ -219,13 +221,13 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
         entity_type: updatedEntityTypes,  // Pass all selected entities
         doc: selectedPDFs
       };
-      
+
       // Call the API to fetch the updated data
       const updatedStudyData = await fetchStudyDetails(inputStudyDetails); // API call for study details
       const extractedSourceNames = updatedStudyData.source.map(pdf => pdf.source_name);
       // Update the state with the list of source names
       setSelectedPDFs(extractedSourceNames);
-      
+
       inputStudyDetails = {
         study_id: studyId,
         doc_type: selectedDoc,  // Assuming you have a specific doc_type to pass based on the doc type card
@@ -259,6 +261,22 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
     setDashData(updatedDashData);
     setpayload(inputStudyDetails);
   };
+
+  const graphNodeClick = async (node) => {
+    let inputStudyDetails = {
+      study_id: studyId,
+      doc_type: selectedDoc,  // Assuming you have a specific doc_type to pass based on the doc type card
+      entity_type: selectedEntity,  // Pass all selected entities
+      doc: ["" + node.label + ""]
+    };
+    //setpayload(inputStudyDetails);
+  };
+
+  const refreshFunction = () => {
+    window.location.reload();
+  };
+
+
   // Menu click handler
   const handleMenuClick = (menu) => {
     let newSelectedCardText = '';
@@ -314,6 +332,14 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
               <Col xs={12} sm="auto">
                 <p className="text-dark mb-0">No of Documents: {dashData.Total_count}</p>
               </Col>
+              <Col xs={12} sm="auto">
+                <FaSyncAlt
+                  className="refresh-icon"
+                  style={{ cursor: "pointer", marginTop: "5px" }}
+                  onClick={() => refreshFunction()} // Replace with your refresh logic
+                  title="Refresh"
+                />
+              </Col>
             </Row>
           </div>
         </Col>
@@ -324,6 +350,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
           md={6}
           className="d-flex flex-column flex-md-row justify-content-center justify-content-md-end text-center text-md-end"
         >
+
           {['Dashboard', 'Document Graph', 'PICO', 'Chat', 'Result Graph', 'Elastic Search'].map((menu, idx) => (
             <React.Fragment key={menu}>
               {idx > 0 && <span className="px-2 d-none d-md-inline" style={{ marginTop: "5px" }}>|</span>} {/* Hide separator on small screens */}
@@ -514,7 +541,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
                 <div className="mb-3">
                   <Row className="g-3">
                     <Col md={12} sm={12}>
-                      <ResultGraph payload={payload} />
+                      <ResultGraph payload={payload} handleGraphClick={graphNodeClick} />
                     </Col>
                   </Row>
                 </div>

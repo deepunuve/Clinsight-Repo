@@ -15,6 +15,7 @@ class ResultGraph extends Component {
             // parentHeight: 500,
             sourceNames: [],
             layout: 'default', // Added layout state
+            hoveredNode: null
         };
         this.fgRef = React.createRef();
         this.geometryCache = {};
@@ -32,11 +33,11 @@ class ResultGraph extends Component {
     }
 
     handleNodeHover = (node) => {
-        const { elements } = this.state;
-        const hoveredNode = elements.nodes.find((n) => n.id === node.id);
-        if (hoveredNode) {
-            hoveredNode.hovered = !hoveredNode.hovered;
-            this.setState({ elements });
+        if (node) {
+            this.setState({ hoveredNode: node });
+            console.log(this.state.hoveredNode);
+        } else {
+            this.setState({ hoveredNode: null });
         }
     };
 
@@ -102,7 +103,7 @@ class ResultGraph extends Component {
     handleClick = (node) => {
         const updatedItems = [{ id: node.id, source_name: node.label, extra_data: node.extra_data, key: 'key' }];
         this.setState({ sourceNames: updatedItems });
-        this.handleGraphClick(updatedItems);
+        this.props.handleGraphClick(updatedItems);
 
         if (this.fgRef.current) {
             const distance = 700;  // Increase this value to reduce the zoom level
@@ -212,7 +213,7 @@ class ResultGraph extends Component {
     }
 
     render() {
-        const { isFullScreen, parentWidth, parentHeight, elements, isLoading, layout } = this.state;
+        const { isFullScreen, parentWidth, parentHeight, elements, isLoading, layout, hoveredNode } = this.state;
 
         return (
             <div className={` ${isFullScreen ? 'fullscreen' : 'fullscreen-container'}`}>
@@ -277,6 +278,7 @@ class ResultGraph extends Component {
                                                     linkDistance={100}
                                                     nodeRelSize={5}
                                                     nodeOpacity={1}
+                                                    onNodeHover={this.handleNodeHover}
                                                     onNodeClick={this.handleClick}
                                                     onNodeDrag={(node) => {
                                                         node.fx = node.x;
@@ -289,7 +291,35 @@ class ResultGraph extends Component {
                                                         node.fz = node.z;
                                                     }}
                                                     nodeThreeObject={this.nodeThreeObject}
-                                                /> </div>
+                                                />
+                                            </div>
+                                            {hoveredNode && (
+                                                <div
+                                                    className="hover-details"
+                                                >
+                                                    <Card style={{ width: '18rem', boxShadow: '0 8px 15px rgba(0, 0, 0, 0.2)', border: 'none' }}>
+                                                        <Card.Body style={{ borderLeft: '5px solid blue' }}>
+                                                            <Card.Text style={{ fontSize: '14px', marginBottom: '8px' }}>
+                                                                <span style={{ fontWeight: 'bold', color: '#6c757d', display: 'inline-block' }}>
+                                                                    Name:
+                                                                </span>
+                                                                <span style={{ color: '#000', fontWeight: 'normal', marginLeft: '10px' }}>
+                                                                    {hoveredNode.label}
+                                                                </span>
+                                                            </Card.Text>
+                                                            <Card.Text style={{ fontSize: '14px', marginBottom: '8px' }}>
+                                                                <span style={{ fontWeight: 'bold', color: '#6c757d', display: 'inline-block' }}>
+                                                                    Group:
+                                                                </span>
+                                                                <span style={{ color: '#000', fontWeight: 'normal', marginLeft: '10px' }}>
+                                                                    {hoveredNode.group}
+                                                                </span>
+                                                            </Card.Text>
+
+                                                        </Card.Body>
+                                                    </Card>
+                                                </div>
+                                            )}
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -297,6 +327,7 @@ class ResultGraph extends Component {
                         </div>
                     )
                 )}
+
             </div>
         );
     }
