@@ -94,6 +94,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
 
   const handleDocumentClick = async (text, docId) => {
     try {
+      setLoading(true);
       // Toggle entity selection logic
       let updatedDocTypes = [...selectedDoc];
 
@@ -164,11 +165,15 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
       console.error("Error updating data:", error);
       setError("Failed to update data. Please try again."); // Display an error message
     }
+    finally {
+      setLoading(false);
+    }
   };
 
 
   const handleEntityClick = async (text, entityId) => {
     try {
+      setLoading(true);
       // Toggle entity selection logic
       let updatedEntityTypes = [...selectedEntity];
 
@@ -245,9 +250,13 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
       console.error("Error updating data:", error);
       setError("Failed to update data. Please try again."); // Display an error message
     }
+    finally {
+      setLoading(false);
+    }
   };
 
   const handleSelectionChange = async (updatedSelection) => {
+    setLoading(true);
     const selectedNames = updatedSelection.map(pdf => pdf.name);
     setSelectedPDFs(selectedNames); // Update the selected PDFs list in the parent state
 
@@ -260,6 +269,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
     const updatedDashData = await getDashboardData(inputStudyDetails);
     setDashData(updatedDashData);
     setpayload(inputStudyDetails);
+    setLoading(false);
   };
 
   const graphNodeClick = async (node) => {
