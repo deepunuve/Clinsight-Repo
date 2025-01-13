@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { ForceGraph3D } from 'react-force-graph';
 import { getGraphData } from '../../api/graph';
 import * as THREE from 'three';
-import { Button, Dropdown, Form, Spinner, Row, Col, Card } from 'react-bootstrap';
-
+import { Button, Dropdown, Form, Spinner, Row, Col, Card, Alert } from 'react-bootstrap';
+import { FaTimes } from "react-icons/fa";
 class ResultGraph extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +15,8 @@ class ResultGraph extends Component {
             // parentHeight: 500,
             sourceNames: [],
             layout: 'default', // Added layout state
-            hoveredNode: null
+            hoveredNode: null,
+            selectedNodes: [],
         };
         this.fgRef = React.createRef();
         this.geometryCache = {};
@@ -28,14 +29,16 @@ class ResultGraph extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props.payload)
         this.getGraphDataDetails(this.props.payload);
+        const storedNodes = sessionStorage.getItem('selectedNodes');
+        if (storedNodes) {
+            this.setState({ selectedNodes: JSON.parse(storedNodes) });
+        }
     }
 
     handleNodeHover = (node) => {
         if (node) {
             this.setState({ hoveredNode: node });
-            console.log(this.state.hoveredNode);
         } else {
             this.setState({ hoveredNode: null });
         }
@@ -101,9 +104,25 @@ class ResultGraph extends Component {
     };
 
     handleClick = (node) => {
-        const updatedItems = [{ id: node.id, source_name: node.label, extra_data: node.extra_data, key: 'key' }];
-        this.setState({ sourceNames: updatedItems });
-        this.props.handleGraphClick(updatedItems);
+        this.setState(
+            (prevState) => {
+                // Avoid duplicates by checking if the node is already selected
+                const nodeExists = prevState.selectedNodes.some((n) => n.id === node.id);
+                if (!nodeExists) {
+                    const updatedSelectedNodes = [...prevState.selectedNodes, node];
+
+                    // Save the updated list to sessionStorage
+                    sessionStorage.setItem('selectedNodes', JSON.stringify(updatedSelectedNodes));
+
+                    return { selectedNodes: updatedSelectedNodes };
+                }
+                return prevState;
+            },
+            () => {
+                // Pass updated selectedNodes to the parent component
+                this.props.handleGraphClick(this.state.selectedNodes, node);
+            }
+        );
 
         if (this.fgRef.current) {
             const distance = 700;  // Increase this value to reduce the zoom level
@@ -115,6 +134,26 @@ class ResultGraph extends Component {
             );
         }
     };
+
+    handleUnselect = (nodeId) => {
+        this.setState(
+            (prevState) => {
+                // Filter out the node to unselect it
+                const updatedSelectedNodes = prevState.selectedNodes.filter((node) => node.id !== nodeId);
+
+                // Update sessionStorage with the new selected nodes list
+                sessionStorage.setItem('selectedNodes', JSON.stringify(updatedSelectedNodes));
+
+                // Return the updated state
+                return { selectedNodes: updatedSelectedNodes };
+            },
+            () => {
+                // Pass updated selectedNodes to the parent component
+                this.props.handleGraphClick(this.state.selectedNodes);
+            }
+        );
+    };
+
 
     handleGraphClick = (newValue) => {
         // this.props.onClick(newValue);
@@ -213,7 +252,7 @@ class ResultGraph extends Component {
     }
 
     render() {
-        const { isFullScreen, parentWidth, parentHeight, elements, isLoading, layout, hoveredNode } = this.state;
+        const { isFullScreen, parentWidth, parentHeight, elements, isLoading, layout, hoveredNode, selectedNodes } = this.state;
 
         return (
             <div className={` ${isFullScreen ? 'fullscreen' : 'fullscreen-container'}`}>
@@ -228,6 +267,33 @@ class ResultGraph extends Component {
                         <div className="mb-3">
                             <Row className="g-3">
                                 <Col md={12} lg={12}>
+                                    <div className="mt-3">
+                                        {selectedNodes && Array.isArray(selectedNodes) && selectedNodes.length > 0 ? (
+                                            <Alert variant="warning" className="d-flex flex-column py-1">
+                                                <div className="mb-2">
+                                                    <strong>Selected Node:</strong>
+                                                </div>
+                                                {/* Use a flex container to wrap the nodes */}
+                                                <div className="d-flex flex-wrap">
+                                                    {selectedNodes.map((node) => (
+                                                        <div key={node.id} className="d-flex align-items-center me-2 mb-2" style={{ flex: '0 1 auto' }}>
+                                                            {/* The label for the node */}
+                                                            <div className="me-2">{node.label}</div>
+                                                            {/* Delete icon */}
+                                                            <FaTimes
+                                                                onClick={() => this.handleUnselect(node.id)} // Handle unselect
+                                                                className="cursor-pointer"
+                                                                style={{ fontSize: '1.2rem', color: 'red', cursor: "pointer", marginTop: "-5px" }}
+                                                                title="Unselect"
+                                                            />
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </Alert>
+                                        ) : (
+                                            <div></div> // Optional: Show a message if no nodes are selected
+                                        )}
+                                    </div>
                                     <Card className="shadow-lg rounded">
                                         <Card.Body style={{ padding: '15px' }}>
                                             <div

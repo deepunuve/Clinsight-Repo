@@ -31,7 +31,12 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
   const [selectedPDFs, setSelectedPDFs] = useState([]);
   const [activeTab, setActiveTab] = useState("tab1");
   const pdfUrlTopic = '/temp/Protocol_template.pdf';
-
+  const [payloadGraph, setPayloadGraph] = useState({
+    study_id: studyId,
+    doc_type: selectedDoc,
+    entity_type: selectedEntity,
+    doc: selectedPDFs,
+  });
   const [payload, setpayload] = useState({
     study_id: studyId,
     doc_type: selectedDoc,
@@ -43,6 +48,24 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
     setActiveTab(tab);
   };
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const updatedDashData = await getDashboardData(payload); // Use payload here to trigger a new request
+        setDashData(updatedDashData);
+      } catch (err) {
+        setError('Failed to fetch dashboard data.');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    // Fetch data when payload changes
+    if (payload && payload.study_id) {
+      setLoading(true);
+      fetchData();
+    }
+  }, [payload]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -72,6 +95,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
         const allDocuments = responseDash.Type.map(doc => doc.name); // Assuming `source` contains the document names
 
         setpayload(inputStudyDetails);
+        setPayloadGraph(inputStudyDetails);
         setActiveCard(allDocuments); // Set all entities as active
         setActiveECard(allEntityTypes); // Set all entities as active
         setLoading(false);
@@ -157,6 +181,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
 
       const updatedDashData = await getDashboardData(inputStudyDetails);   // API call for dashboard data      
       setpayload(inputStudyDetails);
+      setPayloadGraph(inputStudyDetails);
       // Update state with the new data
       setStudyData(updatedStudyData);
       setDashData(updatedDashData);
@@ -242,6 +267,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
 
       const updatedDashData = await getDashboardData(inputStudyDetails);   // API call for dashboard data      
       setpayload(inputStudyDetails);
+      setPayloadGraph(inputStudyDetails);
       // Update state with the new data
       setStudyData(updatedStudyData);
       setDashData(updatedDashData);
@@ -269,20 +295,47 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
     const updatedDashData = await getDashboardData(inputStudyDetails);
     setDashData(updatedDashData);
     setpayload(inputStudyDetails);
+    setPayloadGraph(inputStudyDetails);
     //setLoading(false);
   };
 
-  const graphNodeClick = async (node) => {
-    let inputStudyDetails = {
-      study_id: studyId,
-      doc_type: selectedDoc,  // Assuming you have a specific doc_type to pass based on the doc type card
-      entity_type: selectedEntity,  // Pass all selected entities
-      doc: ["" + node.label + ""]
-    };
-    //setpayload(inputStudyDetails);
+  const graphNodeClick = async (nodes, selectedNode) => {
+    console.log(nodes);
+    if (nodes.length > 0) {
+      const sourceNames = nodes.map(item => item.label);
+      let inputStudyDetails = {
+        study_id: studyId, // Replace with your `studyId` variable
+        doc_type: selectedDoc, // Replace with your `selectedDoc` variable
+        entity_type: selectedEntity, // Replace with your `selectedEntity` variable
+        doc: sourceNames, // Use the updated sourceNamesList here
+      };
+      if (selectedNode && selectedNode.isDoc) {
+        setpayload(inputStudyDetails); // Call with inputStudyDetails
+      }
+      setPayloadGraph(inputStudyDetails);
+    }
+    if (nodes.length === 0) {
+      let inputStudyDetails = {
+        study_id: studyId, // Replace with your `studyId` variable
+        doc_type: selectedDoc, // Replace with your `selectedDoc` variable
+        entity_type: selectedEntity, // Replace with your `selectedEntity` variable
+        doc: selectedPDFs, // Use the updated sourceNamesList here
+      };
+      if (isPayloadDifferent(payload, inputStudyDetails)) {
+        setpayload(inputStudyDetails); // Update the payload only if it's different
+      }
+    }
   };
-
+  const isPayloadDifferent = (oldPayload, newPayload) => {
+    return (
+      oldPayload.study_id !== newPayload.study_id ||
+      JSON.stringify(oldPayload.doc_type) !== JSON.stringify(newPayload.doc_type) ||
+      JSON.stringify(oldPayload.entity_type) !== JSON.stringify(newPayload.entity_type) ||
+      JSON.stringify(oldPayload.doc) !== JSON.stringify(newPayload.doc)
+    );
+  };
   const refreshFunction = () => {
+    sessionStorage.removeItem('selectedNodes');
     window.location.reload();
   };
 
@@ -507,7 +560,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
                       <div>
                         {activeTab === "tab1" &&
                           <div style={{ height: '600px', overflowY: 'scroll', overflowX: "hidden" }}>
-                            <Chatbot studyId={studyId} payload={payload} />
+                            <Chatbot studyId={studyId} payload={payloadGraph} />
                           </div>}
                         {activeTab === "tab2" &&
                           <div style={{ height: '600px', overflowY: 'scroll', overflowX: "hidden" }}>

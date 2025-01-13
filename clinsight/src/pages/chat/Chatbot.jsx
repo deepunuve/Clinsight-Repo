@@ -11,6 +11,7 @@ const Chatbot = (props) => {
     const [showModal, setShowModal] = useState(false); // State to control the modal visibility
     const chatEndRef = useRef(null); // Reference for scrolling
     const [pdfData, setPdfData] = useState(null);
+    const [showModalSum, setShowModalSum] = useState(null);
 
     useEffect(() => {
 
@@ -85,8 +86,13 @@ const Chatbot = (props) => {
             setLoading(false);
         }
     };
-    const handleSummary = async () => {
-
+    const handleSummary = () => {
+        console.log("Summary action confirmed");
+        setShowModalSum(true); // Close the modal
+        // Additional logic for performing summary action
+    };
+    const confirmSummary = async () => {
+        setShowModalSum(false);
         const newMessage = { sender: "user", text: 'Please explore the summary details here !', timestamp: new Date() };
         setMessages([...messages, newMessage]);
         setLoading(true);
@@ -107,6 +113,7 @@ const Chatbot = (props) => {
             ]);
         } finally {
             // Set loading to false once the response is received
+
             setLoading(false);
         }
     };
@@ -192,7 +199,9 @@ const Chatbot = (props) => {
         setShowModal(false); // Close the modal
         setPdfData(null);
     };
-
+    const cancelSummary = () => {
+        setShowModalSum(false); // Just close the modal without performing any action
+    };
     return (
         <div className="mb-3">
             <Row className="g-3">
@@ -257,7 +266,22 @@ const Chatbot = (props) => {
                     </Card>
                 </Col>
             </Row>
-
+            <Modal show={showModalSum} onHide={cancelSummary}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Confirmation</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    Are you sure you want to proceed with the summary action?
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={cancelSummary}>
+                        Cancel
+                    </Button>
+                    <Button variant="primary" onClick={confirmSummary}>
+                        Confirm
+                    </Button>
+                </Modal.Footer>
+            </Modal>
             {/* Modal for displaying file */}
             <Modal show={showModal} onHide={handleCloseModal} size="lg">
                 <Modal.Header closeButton>
