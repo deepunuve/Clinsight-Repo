@@ -256,7 +256,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
   };
 
   const handleSelectionChange = async (updatedSelection) => {
-    setLoading(true);
+    //setLoading(true);
     const selectedNames = updatedSelection.map(pdf => pdf.name);
     setSelectedPDFs(selectedNames); // Update the selected PDFs list in the parent state
 
@@ -269,7 +269,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
     const updatedDashData = await getDashboardData(inputStudyDetails);
     setDashData(updatedDashData);
     setpayload(inputStudyDetails);
-    setLoading(false);
+    //setLoading(false);
   };
 
   const graphNodeClick = async (node) => {
