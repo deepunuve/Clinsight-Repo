@@ -48,24 +48,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
     setActiveTab(tab);
   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const updatedDashData = await getDashboardData(payload); // Use payload here to trigger a new request
-        setDashData(updatedDashData);
-      } catch (err) {
-        setError('Failed to fetch dashboard data.');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    // Fetch data when payload changes
-    if (payload && payload.study_id) {
-      setLoading(true);
-      fetchData();
-    }
-  }, [payload]);
+  
 
   useEffect(() => {
     const fetchData = async () => {
