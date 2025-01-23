@@ -8,6 +8,9 @@ const Sources = () => {
         { src: "/images/dash/Teradata_.png", alt: "Teradata", disabled: true, link: '' },
         { src: "/images/dash/postgrel.png", alt: "PostgreSQL", disabled: false, link: '' },
         { src: "/images/dash/mysql.png", alt: "MySQL", disabled: false, link: '' },
+        { src: "/images/dash/google.png", alt: "Google Drive", disabled: false, link: '' },
+        { src: "/images/dash/box.png", alt: "Box", disabled: false, link: '' },
+        { src: "/images/dash/dropbox.png", alt: "Dropbox", disabled: false, link: '' },
     ];
     const secondRowLogos = [
         { src: "/images/dash/NIH.png", alt: "NIH", disabled: false, link: '/nih' },
@@ -15,6 +18,7 @@ const Sources = () => {
         { src: "/images/dash/pubmed.png", alt: "PubMed", disabled: false, link: '/pubmed' },
         { src: "/images/dash/drugbank.png", alt: "DrugBank", disabled: true, link: '' },
         { src: "/images/dash/Snomed.png", alt: "Snomed", disabled: true, link: '' },
+        { src: "/images/dash/fda.png", alt: "Fda", disabled: true, link: '' },
     ];
 
 

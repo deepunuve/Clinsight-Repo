@@ -51,6 +51,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
   
 
   useEffect(() => {
+    sessionStorage.removeItem('selectedNodes');
     const fetchData = async () => {
       try {
         let inputStudyDetails = {
@@ -292,6 +293,15 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
         entity_type: selectedEntity, // Replace with your `selectedEntity` variable
         doc: sourceNames, // Use the updated sourceNamesList here
       };
+      // let newSource= [{
+      //   "id":nodes[0].id,
+      //   "key": nodes[0].key,
+      //   "source_name": nodes[0].label,
+      //   "selected": true
+      // }];
+      // studyData.source=newSource;
+      // console.log(studyData);
+      // setStudyData(studyData);
       if (selectedNode && selectedNode.isDoc) {
         setpayload(inputStudyDetails); // Call with inputStudyDetails
       }
@@ -397,7 +407,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
           className="d-flex flex-column flex-md-row justify-content-center justify-content-md-end text-center text-md-end"
         >
 
-          {['Dashboard', 'Document Graph', 'PICO', 'Chat', 'Result Graph', 'Elastic Search'].map((menu, idx) => (
+          {['Dashboard', 'Document Graph', 'PICO','Result Graph', 'Chat',  'Elastic Search'].map((menu, idx) => (
             <React.Fragment key={menu}>
               {idx > 0 && <span className="px-2 d-none d-md-inline" style={{ marginTop: "5px" }}>|</span>} {/* Hide separator on small screens */}
               <span

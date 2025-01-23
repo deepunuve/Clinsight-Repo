@@ -28,12 +28,12 @@ class ResultGraph extends Component {
         this.materialCache.white = new THREE.MeshBasicMaterial({ color: 0xffffff });
     }
 
-    componentDidMount() {
-        this.getGraphDataDetails(this.props.payload);
+    componentDidMount() {        
         const storedNodes = sessionStorage.getItem('selectedNodes');
         if (storedNodes) {
             this.setState({ selectedNodes: JSON.parse(storedNodes) });
         }
+        this.getGraphDataDetails(this.props.payload);
     }
 
     handleNodeHover = (node) => {
