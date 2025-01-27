@@ -61,7 +61,9 @@ function Pico(props) {
                 <Col md={12} lg={12}>
                     <Card className="shadow-lg rounded">
                         <Card.Body style={{ padding: '15px' }}>
-                            <h6 className="my-4">Pico Study Data</h6>
+                            <Col xs={12} md={5} className="card-border-left-blue" >
+                                <h4 className="text-left text-uppercase" style={{ marginLeft: "12px", marginBottom: "6px" }}>Pico Study Data</h4>
+                            </Col>
                             {data && (
                                 <Table striped bordered hover responsive>
                                     <thead>

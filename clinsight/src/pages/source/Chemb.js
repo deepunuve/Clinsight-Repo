@@ -86,7 +86,7 @@ const Chemb = () => {
                                     <div className="mb-3">
                                         <input
                                             type="text"
-                                            placeholder="Enter condition"
+                                            placeholder="Enter a Chemical"
                                             value={condition}
                                             onChange={handleConditionChange}
                                             className={`form-control ${error ? 'is-invalid' : ''}`}
