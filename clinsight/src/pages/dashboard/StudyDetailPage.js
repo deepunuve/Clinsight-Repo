@@ -1,6 +1,6 @@
 // src/pages/StudyDetailPage.js
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom'; // To access route parameters
+import { useParams, useSearchParams } from 'react-router-dom'; // To access route parameters
 import { Tabs, Tab, Container, Card, Row, Col, Spinner, Alert } from 'react-bootstrap';  // Importing bootstrap components
 import { getDashboardData, fetchStudyDetails } from '../../api/studies';  // Import API function
 import './DashboardPage.css';
@@ -44,14 +44,25 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
     doc: selectedPDFs,
   });
 
+  // Check if menu is null or empty
+
+  const [searchParams] = useSearchParams();
   const handleTabSelect = (tab) => {
     setActiveTab(tab);
   };
 
-  
+
 
   useEffect(() => {
     sessionStorage.removeItem('selectedNodes');
+    const menu = searchParams.get("menu");
+    if (menu) {
+      if (menu === undefined)
+        setActiveMenu("Dashboard");
+      else
+        setActiveMenu(menu);
+    }
+
     const fetchData = async () => {
       try {
         let inputStudyDetails = {
@@ -92,13 +103,13 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
     fetchData();
   }, [studyId]);
 
-  useEffect(() => {
-    if (selectedCardText) {
-      updateHeaderTitle(`${selectedCardText}`);
-    } else {
-      updateHeaderTitle();
-    }
-  }, [selectedCardText, studyData.title, updateHeaderTitle]);
+  // useEffect(() => {
+  //   if (selectedCardText) {
+  //     updateHeaderTitle(`${selectedCardText}`);
+  //   } else {
+  //     updateHeaderTitle();
+  //   }
+  // }, [selectedCardText, studyData.title, updateHeaderTitle]);
 
   const handleDocumentClick = async (text, docId) => {
     try {
@@ -327,9 +338,35 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
       JSON.stringify(oldPayload.doc) !== JSON.stringify(newPayload.doc)
     );
   };
-  const refreshFunction = () => {
-    sessionStorage.removeItem('selectedNodes');
-    window.location.reload();
+  const refreshFunction = async () => {
+    // sessionStorage.removeItem('selectedNodes');
+    setLoading(true);
+    // window.location.reload();
+    let inputStudyDetails = {
+      study_id: studyId,
+      doc_type: [],
+      entity_type: [],
+      doc: [],
+    };
+    const response = await fetchStudyDetails(inputStudyDetails);
+    setStudyData(response);
+    const extractedSourceNames = response.source.map(pdf => pdf.source_name);
+
+    // Update the state with the list of source names
+    setSelectedPDFs(extractedSourceNames);
+    inputStudyDetails = {
+      study_id: studyId,
+      doc_type: [],
+      entity_type: [],
+      doc: extractedSourceNames,
+    };
+    const responseDash = await getDashboardData(inputStudyDetails);
+    setDashData(responseDash);
+    setpayload(inputStudyDetails);
+    setPayloadGraph(inputStudyDetails);
+    setselectedDoc([]);
+    setSelectedEntity([]);
+    setLoading(false);
   };
 
 
@@ -407,7 +444,7 @@ const StudyDetailPage = ({ updateHeaderTitle }) => {
           className="d-flex flex-column flex-md-row justify-content-center justify-content-md-end text-center text-md-end"
         >
 
-          {['Dashboard', 'Document Graph', 'PICO','Result Graph', 'Chat',  'Elastic Search'].map((menu, idx) => (
+          {['Dashboard', 'Document Graph', 'PICO', 'Result Graph', 'Chat', 'Elastic Search'].map((menu, idx) => (
             <React.Fragment key={menu}>
               {idx > 0 && <span className="px-2 d-none d-md-inline" style={{ marginTop: "5px" }}>|</span>} {/* Hide separator on small screens */}
               <span

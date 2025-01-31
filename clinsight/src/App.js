@@ -21,7 +21,7 @@ import './App.css';
 import Chemb from './pages/source/Chemb';
 
 function App() {
-  const [headerTitle, setHeaderTitle] = useState('Study Details');
+  const [headerTitle, setHeaderTitle] = useState('');
 
   const updateHeaderTitle = (newTitle) => {
     setHeaderTitle(newTitle);

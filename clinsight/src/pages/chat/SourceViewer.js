@@ -51,8 +51,8 @@ const SourceViewer = ({ pdfData }) => {
 
     // Automatically load the PDF when component mounts
     useEffect(() => {
-        if (pdfData && pdfData.Page_number) {
-            renderPDF(pdfData.Page_number);
+        if (pdfData) {
+            renderPDF(1);
             setShowPdf(true);
         }
     }, [pdfData]);

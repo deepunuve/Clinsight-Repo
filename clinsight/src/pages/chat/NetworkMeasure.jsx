@@ -84,6 +84,11 @@ function NetworkMeasure(props) {
     return (
         <div>
             <Card className="shadow-sm mt-4">
+                <Card.Header>
+                    <div xs={12} md={5} className="card-border-left-blue" >
+                        <h5 className="text-left text-uppercase" style={{ marginLeft: "12px", marginBottom: "6px" }}>Network Measure of latest chat summary</h5>
+                    </div>
+                </Card.Header>
                 <Card.Body>
                     <Table responsive bordered hover>
                         <thead className="bg-dark text-white">

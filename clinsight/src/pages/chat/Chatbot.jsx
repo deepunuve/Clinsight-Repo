@@ -71,7 +71,7 @@ const Chatbot = (props) => {
                 query: userMessage
             };
             const response = await getChatResponse(input);
-            let formatted = formatResponseWithLink(response.answer, response.source)
+            let formatted = formatResponseWithLink(response.answer, response.source, response.key)
 
             const botMessage = { sender: "bot", text: formatted, timestamp: response.date + ' ' + response.time };
             setMessages((prevMessages) => [...prevMessages, botMessage]);
@@ -164,14 +164,14 @@ const Chatbot = (props) => {
 
         return <>{parts}</>; // Return the JSX elements wrapped in a fragment
     };
-    const formatResponseWithLink = (text, source) => {
+    const formatResponseWithLink = (text, source, key) => {
         // Check if source is provided and valid
-        if (source && source === ("")) {
+        if (source && source !== ("")) {
             const [_, fileName, pageNumber] = source.match(/The file name is (\S+) and the page number is (\d+)/);
             return (
                 <>
                     {text} <br />
-                    <a href="#" onClick={(e) => handleFileClick(fileName)}>
+                    <a href="#" onClick={(e) => handleFileClick(key)}>
                         View File ({fileName}, Page: {pageNumber})
                     </a>
                 </>
@@ -186,14 +186,21 @@ const Chatbot = (props) => {
             </>
         );
     };
-
     const handleFileClick = async (fileName) => {
-        const response = await axios.get('http://184.105.215.253:9003/return_source_pdfs/?pdf_filename=Dermatology%2FDerm_Raw%2FRetroNectin%2FExternal%2FASGT.pdf');
-        //const response = await axios.get('/api1/return_source_pdfs/?pdf_filename=Dermatology%2FDerm_Raw%2FRetroNectin%2FExternal%2FASGT.pdf');
-        setPdfData(response.data);
         setShowModal(true);
-
+        try {
+             const response = await axios.get('http://184.105.215.253:9003/bytearray_protocol_nl/?key=' + fileName);
+            //const response = await axios.get('/api1/bytearray_protocol_nl/?key=' + fileName);
+            await new Promise((resolve) => {
+                setPdfData(response.data);
+               
+                resolve(); // Ensures state update is awaited before proceeding
+            });
+        } catch (error) {
+            console.error("Error fetching PDF data:", error);
+        }
     };
+    
 
     const handleCloseModal = () => {
         setShowModal(false); // Close the modal
@@ -287,7 +294,11 @@ const Chatbot = (props) => {
                 <Modal.Header closeButton>
                 </Modal.Header>
                 <Modal.Body>
-                    <SourceViewer pdfData={pdfData} />
+                    {pdfData ? (
+                        <SourceViewer pdfData={pdfData} />
+                    ) : (
+                        <p>Loading PDF...</p>
+                    )}
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleCloseModal}>

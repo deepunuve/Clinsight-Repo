@@ -37,8 +37,8 @@ const DashboardPage = () => {
     loadStudies();
   }, []);
 
-  const handleCardClick = (studyId) => {
-    navigate(`/study/${studyId}`);
+  const handleCardClick = (studyId, menu) => {
+    navigate(`/study/${studyId}?menu=${menu}`);
   };
 
   const getBorderClass = (studyType) => {
@@ -98,7 +98,7 @@ const DashboardPage = () => {
                 </div>
 
                 {/* Card Header */}
-                <div className="card-header" onClick={() => handleCardClick(study.id)}>
+                <div className="card-header" onClick={() => handleCardClick(study.id, "Dashboard")}>
                   <div className={getBorderClass(study.study_type)}>
                     <div className="card-header-div">
                       <div className="intervention-title">{study.study_type}</div>
@@ -133,13 +133,13 @@ const DashboardPage = () => {
                 {/* Card Footer */}
                 <div className="card-footer bg-white">
                   <div className="d-flex justify-content-between">
-                    <button className="btn me-2">Dashboard</button>
+                    <button className="btn me-2" onClick={() => handleCardClick(study.id, "Dashboard")}>Dashboard</button>
                     <div className="divider"></div>
-                    <button className="btn me-2">PICO</button>
+                    <button className="btn me-2" onClick={() => handleCardClick(study.id, "PICO")}>PICO</button>
                     <div className="divider"></div>
-                    <button className="btn me-2">Chat</button>
+                    <button className="btn me-2" onClick={() => handleCardClick(study.id, "Chat")}>Chat</button>
                     <div className="divider"></div>
-                    <button className="btn me-2">Graphs</button>
+                    <button className="btn me-2" onClick={() => handleCardClick(study.id, "Result Graph")}>Graphs</button>
                   </div>
                 </div>
               </div>

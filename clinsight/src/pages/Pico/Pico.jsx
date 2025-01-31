@@ -9,14 +9,12 @@ function Pico(props) {
     const [page, setPage] = useState(1); // Starting from page 1
     const [rowsPerPage, setRowsPerPage] = useState(5); // Default rows per page
 
-
     useEffect(() => {
         const fetchData = async () => {
             try {
-
+                // const response = await axios.get('/temp/pico.json');
                 const response = await axios.post('http://184.105.215.253:9004/pico_nl/', props.payload);
                 //const response = await axios.post('/api2/pico_nl/', props.payload);
-                //const response = await axios.get('/temp/pico.json');
                 setData(Object.entries(response.data)); // Convert data to array of entries
             } catch (error) {
                 setError(error.message || 'An error occurred');
@@ -55,14 +53,31 @@ function Pico(props) {
 
     const totalPages = Math.ceil(data.length / rowsPerPage);
 
+    // Define how many pages to show at a time (5 pages)
+    const maxPagesToShow = 5;
+    const halfWindow = Math.floor(maxPagesToShow / 2);
+
+    // Calculate start and end pages
+    let startPage = Math.max(1, page - halfWindow);
+    let endPage = Math.min(totalPages, page + halfWindow);
+
+    // Adjust startPage if the window is near the last page
+    if (endPage - startPage + 1 < maxPagesToShow) {
+        startPage = Math.max(1, endPage - maxPagesToShow + 1);
+    }
+
+    const pages = Array.from({ length: endPage - startPage + 1 }, (_, index) => startPage + index);
+
     return (
         <div className="mb-3">
             <Row className="g-3">
                 <Col md={12} lg={12}>
                     <Card className="shadow-lg rounded">
                         <Card.Body style={{ padding: '15px' }}>
-                            <Col xs={12} md={5} className="card-border-left-blue" >
-                                <h4 className="text-left text-uppercase" style={{ marginLeft: "12px", marginBottom: "6px" }}>Pico Study Data</h4>
+                            <Col xs={12} md={5} className="card-border-left-blue">
+                                <h4 className="text-left text-uppercase" style={{ marginLeft: "12px", marginBottom: "6px" }}>
+                                    Pico Study Data
+                                </h4>
                             </Col>
                             {data && (
                                 <Table striped bordered hover responsive>
@@ -90,9 +105,13 @@ function Pico(props) {
                             )}
                             <Pagination className="justify-content-center">
                                 <Pagination.Prev onClick={() => handlePageChange(page - 1)} disabled={page === 1} />
-                                {Array.from({ length: totalPages }, (_, index) => (
-                                    <Pagination.Item key={index} active={index + 1 === page} onClick={() => handlePageChange(index + 1)}>
-                                        {index + 1}
+                                {pages.map((pageNumber) => (
+                                    <Pagination.Item
+                                        key={pageNumber}
+                                        active={pageNumber === page}
+                                        onClick={() => handlePageChange(pageNumber)}
+                                    >
+                                        {pageNumber}
                                     </Pagination.Item>
                                 ))}
                                 <Pagination.Next onClick={() => handlePageChange(page + 1)} disabled={page === totalPages} />
