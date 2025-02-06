@@ -71,7 +71,7 @@ const Chatbot = (props) => {
                 query: userMessage
             };
             const response = await getChatResponse(input);
-            let formatted = formatResponseWithLink(response.answer, response.source, response.key)
+            let formatted = formatResponseWithLink(response.answer, response.source)
 
             const botMessage = { sender: "bot", text: formatted, timestamp: response.date + ' ' + response.time };
             setMessages((prevMessages) => [...prevMessages, botMessage]);
@@ -164,21 +164,25 @@ const Chatbot = (props) => {
 
         return <>{parts}</>; // Return the JSX elements wrapped in a fragment
     };
+
     const formatResponseWithLink = (text, source, key) => {
         // Check if source is provided and valid
-        if (source && source !== ("")) {
-            const [_, fileName, pageNumber] = source.match(/The file name is (\S+) and the page number is (\d+)/);
+        if (Array.isArray(source) && source.length > 0) {
             return (
                 <>
                     {text} <br />
-                    <a href="#" onClick={(e) => handleFileClick(key)}>
-                        View File ({fileName}, Page: {pageNumber})
-                    </a>
+                    {source.map((item, index) => (
+                        <div key={index}>
+                            <a href="#" onClick={(e) => handleFileClick(item.key)}>
+                                View File ({item.name}, Page: {item.pageNumber})
+                            </a> <br />
+                        </div>
+                    ))}
                 </>
             );
         }
 
-        // If source is not available or indicates no summary
+        // If source is not available
         return (
             <>
                 {text} <br /><br />
@@ -186,21 +190,22 @@ const Chatbot = (props) => {
             </>
         );
     };
+
     const handleFileClick = async (fileName) => {
         setShowModal(true);
         try {
-             const response = await axios.get('http://184.105.215.253:9003/bytearray_protocol_nl/?key=' + fileName);
+            const response = await axios.get('http://184.105.215.253:9003/bytearray_protocol_nl/?key=' + fileName);
             //const response = await axios.get('/api1/bytearray_protocol_nl/?key=' + fileName);
             await new Promise((resolve) => {
                 setPdfData(response.data);
-               
+
                 resolve(); // Ensures state update is awaited before proceeding
             });
         } catch (error) {
             console.error("Error fetching PDF data:", error);
         }
     };
-    
+
 
     const handleCloseModal = () => {
         setShowModal(false); // Close the modal
