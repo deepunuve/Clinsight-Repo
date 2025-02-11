@@ -2,10 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { getDocument, GlobalWorkerOptions } from "pdfjs-dist";
 
 // Dynamically set the worker script using ES module syntax
-GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.mjs',
-    import.meta.url
-).toString();
+// GlobalWorkerOptions.workerSrc = new URL(
+//     'pdfjs-dist/build/pdf.worker.min.mjs',
+//     import.meta.url
+// ).toString();
+GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
 
 const SourceViewer = ({ pdfData }) => {
     const canvasRef = useRef(null);
