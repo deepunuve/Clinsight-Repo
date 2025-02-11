@@ -108,7 +108,7 @@ const DashboardPage = () => {
                 </div>
 
                 {/* Card Body */}
-                <div className="card-body" onClick={() => handleCardClick(study.id)}>
+                <div className="card-body" onClick={() => handleCardClick(study.id, "Dashboard")}>
                   <p className="card-text">
                     {study.brief_summary.length > 150
                       ? `${study.brief_summary.substring(0, 150)}...`

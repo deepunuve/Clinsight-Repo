@@ -17,7 +17,7 @@ const SourceViewer = ({ pdfData }) => {
         const byteNumbers = new Uint8Array(byteCharacters.length).map((_, i) =>
             byteCharacters.charCodeAt(i)
         );
-        const pdfBlob = new Blob([byteNumbers], { type: "application/pdf" });
+        const pdfBlob = new Blob([byteNumbers], { type: "application/javascript mjs" });
         const pdfUrl = URL.createObjectURL(pdfBlob);
 
         try {
