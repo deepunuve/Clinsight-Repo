@@ -8,7 +8,7 @@ import { getDocument, GlobalWorkerOptions } from "pdfjs-dist";
 // ).toString();
 GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
 
-const SourceViewer = ({ pdfData }) => {
+const SourceViewer = ({ pdfData, pageNumber }) => {
     const canvasRef = useRef(null);
     const [showPdf, setShowPdf] = useState(false);
 
@@ -53,7 +53,7 @@ const SourceViewer = ({ pdfData }) => {
     // Automatically load the PDF when component mounts
     useEffect(() => {
         if (pdfData) {
-            renderPDF(1);
+            renderPDF(pageNumber);
             setShowPdf(true);
         }
     }, [pdfData]);

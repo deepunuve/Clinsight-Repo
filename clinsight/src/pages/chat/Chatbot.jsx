@@ -11,6 +11,7 @@ const Chatbot = (props) => {
     const [showModal, setShowModal] = useState(false); // State to control the modal visibility
     const chatEndRef = useRef(null); // Reference for scrolling
     const [pdfData, setPdfData] = useState(null);
+    const [pageNumber, setPageNumber] = useState(null);
     const [showModalSum, setShowModalSum] = useState(null);
 
     useEffect(() => {
@@ -198,7 +199,7 @@ const Chatbot = (props) => {
             //const response = await axios.get('/api1/bytearray_protocol_nl/?key=' + fileName);
             await new Promise((resolve) => {
                 setPdfData(response.data);
-
+                setPageNumber(response.pageNumber);
                 resolve(); // Ensures state update is awaited before proceeding
             });
         } catch (error) {
@@ -300,7 +301,7 @@ const Chatbot = (props) => {
                 </Modal.Header>
                 <Modal.Body>
                     {pdfData ? (
-                        <SourceViewer pdfData={pdfData} />
+                        <SourceViewer pdfData={pdfData} pageNumber={pageNumber} />
                     ) : (
                         <p>Loading PDF...</p>
                     )}
