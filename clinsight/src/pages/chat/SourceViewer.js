@@ -13,7 +13,7 @@ const SourceViewer = ({ pdfData }) => {
     const [showPdf, setShowPdf] = useState(false);
 
     const renderPDF = async (pageNumber) => {
-        pageNumber = 1;
+        pageNumber = !pageNumber ? 1 : pageNumber;
         const byteCharacters = atob(pdfData.Data);  // Decode the base64-encoded data
         const byteNumbers = new Uint8Array(byteCharacters.length).map((_, i) =>
             byteCharacters.charCodeAt(i)
