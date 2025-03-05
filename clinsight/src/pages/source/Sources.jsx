@@ -6,11 +6,11 @@ const Sources = () => {
         { src: "/images/dash/oracle.png", alt: "Oracle", disabled: true, link: '' },
         { src: "/images/dash/medidata.png", alt: "Medidata", disabled: true, link: '' },
         { src: "/images/dash/Teradata_.png", alt: "Teradata", disabled: true, link: '' },
-        { src: "/images/dash/postgrel.png", alt: "PostgreSQL", disabled: false, link: '' },
-        { src: "/images/dash/mysql.png", alt: "MySQL", disabled: false, link: '' },
-        { src: "/images/dash/google.png", alt: "Google Drive", disabled: false, link: '' },
-        { src: "/images/dash/box.png", alt: "Box", disabled: false, link: '' },
-        { src: "/images/dash/dropbox.png", alt: "Dropbox", disabled: false, link: '' },
+        { src: "/images/dash/postgrel.png", alt: "PostgreSQL", disabled: true, link: '' },
+        { src: "/images/dash/mysql.png", alt: "MySQL", disabled: true, link: '' },
+        { src: "/images/dash/google.png", alt: "Google Drive", disabled: false, link: '/gdrive' },
+        { src: "/images/dash/box.png", alt: "Box", disabled: false, link: '/box' },
+        { src: "/images/dash/dropbox.png", alt: "Dropbox", disabled: false, link: '/dropbox' },
     ];
     const secondRowLogos = [
         { src: "/images/dash/NIH.png", alt: "NIH", disabled: false, link: '/nih' },
@@ -51,16 +51,18 @@ const Sources = () => {
                                                 onMouseLeave={(e) => { if (!logo.disabled) e.currentTarget.style.transform = 'scale(1)'; }}
                                             >
                                                 <Card.Body className="d-flex justify-content-center align-items-center p-3 ">
-                                                    <img
-                                                        src={logo.src}
-                                                        alt={logo.alt}
-                                                        className="img-fluid"
-                                                        style={{
-                                                            maxWidth: '120px',
-                                                            maxHeight: '80px',
-                                                            objectFit: 'contain'
-                                                        }}
-                                                    />
+                                                    <a href={logo.link}>
+                                                        <img
+                                                            src={logo.src}
+                                                            alt={logo.alt}
+                                                            className="img-fluid"
+                                                            style={{
+                                                                maxWidth: '120px',
+                                                                maxHeight: '80px',
+                                                                objectFit: 'contain'
+                                                            }}
+                                                        />
+                                                    </a>
                                                 </Card.Body>
                                                 <Card.Footer className="text-center">
                                                     <small className="text-muted">{logo.alt}</small>

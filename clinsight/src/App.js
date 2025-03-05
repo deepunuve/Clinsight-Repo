@@ -19,6 +19,9 @@ import AdminDashboardPage from './pages/dashboard/AdminDashboardPage';
 import AdminUserPage from './pages/User/AdminUserPage';
 import './App.css';
 import Chemb from './pages/source/Chemb';
+import Box from './pages/source/box';
+import Dropbox from './pages/source/dropbox';
+import Gdrive from './pages/source/gdrive';
 
 function App() {
   const [headerTitle, setHeaderTitle] = useState('');
@@ -127,6 +130,36 @@ function App() {
             <ProtectedRoute>
               <Layout>
                 <Pubmed />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/box"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <Box />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/gdrive"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <Gdrive />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dropbox"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <Dropbox />
               </Layout>
             </ProtectedRoute>
           }
