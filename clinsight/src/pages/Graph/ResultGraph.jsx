@@ -170,7 +170,6 @@ class ResultGraph extends Component {
         });
     };
     getPartialGraph = (fullGraph, percentage) => {
-        alert(percentage);
         if (!fullGraph || !fullGraph.nodes) return null;
 
         const totalNodes = fullGraph.nodes.length;
