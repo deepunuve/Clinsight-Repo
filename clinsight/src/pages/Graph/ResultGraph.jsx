@@ -17,8 +17,7 @@ class ResultGraph extends Component {
             layout: 'default', // Added layout state
             hoveredNode: null,
             selectedNodes: [],
-            fullGraph: null, // Store the full dataset
-            visibleNodesPercentage: 25, // Start with 25%
+            lastPayload: null,
         };
         this.fgRef = React.createRef();
         this.geometryCache = {};
@@ -35,7 +34,11 @@ class ResultGraph extends Component {
         if (storedNodes) {
             this.setState({ selectedNodes: JSON.parse(storedNodes) });
         }
-        this.getGraphDataDetails(this.props.payload);
+        if (this.props.payload !== this.state.lastPayload) {
+            this.getGraphDataDetails(this.props.payload);
+            this.setState({ lastPayload: this.props.payload });
+        }
+
     }
 
     handleNodeHover = (node) => {
@@ -160,67 +163,20 @@ class ResultGraph extends Component {
     handleGraphClick = (newValue) => {
         // this.props.onClick(newValue);
     };
-    handleLoadMore = () => {
-        this.setState((prevState) => {
-            const newPercentage = Math.min(prevState.visibleNodesPercentage + 25, 100);
-            return {
-                visibleNodesPercentage: newPercentage,
-                elements: this.getPartialGraph(prevState.fullGraph, newPercentage),
-            };
-        });
-    };
-    getPartialGraph = (fullGraph, percentage) => {
-        if (!fullGraph || !fullGraph.nodes) return null;
-
-        const totalNodes = fullGraph.nodes.length;
-        const visibleCount = Math.ceil((percentage / 100) * totalNodes);
-
-        // Get the subset of nodes
-        const visibleNodes = fullGraph.nodes.slice(0, visibleCount);
-        const visibleNodeIds = new Set(visibleNodes.map(n => n.id)); // Store node IDs for quick lookup
-
-        // Filter links to include only those where both source and target exist in visibleNodes
-        const visibleLinks = fullGraph.links.filter(link =>
-            visibleNodeIds.has(link.source) && visibleNodeIds.has(link.target)
-        );
-
-        return {
-            nodes: visibleNodes,
-            links: visibleLinks
-        };
-    };
-
 
     getGraphDataDetails = async (payload) => {
         try {
             this.setState({ isLoading: true });
             const response = await getGraphData(payload);
-
-            // Store the full data and initially show 25%
-            this.setState({
-                fullGraph: response,
-                elements: this.getPartialGraph(response, 25),
-                isLoading: false
-            });
+            this.setState({ elements: response, isLoading: false });
+            // }
         } catch (error) {
             console.error('Error fetching graph data:', error);
             this.setState({ isLoading: false });
+        } finally {
+            this.setState({ isLoading: false });
         }
     };
-
-    // getGraphDataDetails = async (payload) => {
-    //     try {
-    //         this.setState({ isLoading: true });
-    //         const response = await getGraphData(payload);
-    //         this.setState({ elements: response, isLoading: false });
-    //         // }
-    //     } catch (error) {
-    //         console.error('Error fetching graph data:', error);
-    //         this.setState({ isLoading: false });
-    //     } finally {
-    //         this.setState({ isLoading: false });
-    //     }
-    // };
 
     handleLayoutChange = (event) => {
         this.setState({ layout: event.target.value });
@@ -292,12 +248,9 @@ class ResultGraph extends Component {
     };
 
     componentDidUpdate(prevProps, prevState) {
-        // Check if layout has changed before applying layout
         if (prevState.layout !== this.state.layout) {
             this.applyLayout();
         }
-
-        // Check if payload has changed before fetching new graph data
         if (JSON.stringify(prevProps.payload) !== JSON.stringify(this.props.payload)) {
             this.getGraphDataDetails(this.props.payload);
         }
@@ -319,7 +272,6 @@ class ResultGraph extends Component {
                         <div className="mb-3">
                             <Row className="g-3">
                                 <Col md={12} lg={12}>
-
                                     <div className="mt-3">
                                         {selectedNodes && Array.isArray(selectedNodes) && selectedNodes.length > 0 ? (
                                             <Alert variant="warning" className="d-flex flex-column py-1">
@@ -362,26 +314,18 @@ class ResultGraph extends Component {
                                                 <Row className="mb-3">
                                                     <Col>
                                                         <div className="d-flex justify-content-between align-items-center">
-                                                            <Form.Select value={layout} onChange={this.handleLayoutChange} aria-label="Layout" style={{ width: '200px' }}>
+                                                            {/* <Button variant="outline-secondary" onClick={this.toggleFullScreen}>
+                                Fullscreen
+                            </Button> */}
+                                                            <Form.Select value={layout} onChange={this.handleLayoutChange} aria-label="Layout">
                                                                 <option value="default">Default</option>
                                                                 <option value="circular">Circular</option>
                                                                 <option value="grid">Grid</option>
                                                                 <option value="random">Random</option>
                                                                 <option value="radial">Radial</option>
                                                             </Form.Select>
-
-                                                            {this.state.visibleNodesPercentage < 101 ? (
-                                                                <Button
-                                                                    variant="primary"
-                                                                    onClick={this.handleLoadMore}
-                                                                    disabled={this.state.visibleNodesPercentage === 100}
-                                                                >
-                                                                    Load More Nodes({this.state.visibleNodesPercentage + 25}%)
-                                                                </Button>
-                                                            ) : null}
                                                         </div>
                                                     </Col>
-
                                                 </Row>
                                                 <ForceGraph3D
                                                     ref={this.fgRef}
@@ -419,7 +363,6 @@ class ResultGraph extends Component {
                                                     }}
                                                     nodeThreeObject={this.nodeThreeObject}
                                                 />
-
                                             </div>
                                             {hoveredNode && (
                                                 <div
