@@ -48,7 +48,7 @@ function NetworkMeasure(props) {
                 setMinValue(Math.min(...values));
                 setMaxValue(Math.max(...values));
             } catch (error) {
-                setError(error.message || 'An error occurred');
+                setError('No Response Found');
             } finally {
                 setIsLoading(false);
             }
@@ -74,7 +74,7 @@ function NetworkMeasure(props) {
     }
 
     if (error) {
-        return <div className="text-danger">Error: {error}</div>;
+        return <div className="text-danger">{error}</div>;
     }
 
     if (!data) {
